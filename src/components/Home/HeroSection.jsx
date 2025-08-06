@@ -52,8 +52,8 @@ const HeroSection = () => {
   return (
     <>
       <section className="section hero-home-a">
-        <div className="w-layout-blockcontainer main-container w-container">
-          <div className="headline-home-a">
+        <div className="w-layout-blockcontainer main-container w-container !z-10">
+          <div className="headline-home-a wow fadeInDown">
             <h1
               animate="title-load"
               data-w-id="990f4d2a-aa43-8599-8f58-cd49eb32e899"
@@ -90,7 +90,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div
+        <div 
           className="master-home-a-video"
           style={{ willChange: "width, height", width: "100%", height: "50vh" }}
         >
@@ -136,7 +136,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-layout-blockcontainer main-container w-container">
+        <div className="w-layout-blockcontainer main-container w-container z-10">
           <div className="home-a-bottom-tile">
             <div className="text-dark-88">
               A system for brands to feel as good as they look.
@@ -214,7 +214,7 @@ const HeroSection = () => {
         </div>
         <div
           data-w-id="14785626-1f9c-e5e3-32e4-fff0fcb7ff94"
-          className="parallax-master"
+          className="parallax-master z-10"
         >
           <div className="parallax-text">
             <div className="home-a-video-feature">
@@ -259,6 +259,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <img src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673b7b2a900da25c704cf634_Gradient Left.svg" loading="lazy" alt className="hero-gradient-left !-z-1" />
       </section>
     </>
   );

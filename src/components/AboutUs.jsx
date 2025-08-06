@@ -18,7 +18,7 @@ export default function AboutUs() {
         </div>
 
         {/* Right Content */}
-        <div className="text-slate-800 space-y-6">
+        <div className="text-slate-800 space-y-6 wow fadeInUp">
           <h4 className="text-sm font-semibold tracking-widest jost-font uppercase text-blue-500">
             Welcome to richmond shine dental Office
           </h4>

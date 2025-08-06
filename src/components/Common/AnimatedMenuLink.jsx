@@ -2,12 +2,12 @@
 import { useState } from "react"
 import Link from "next/link"
 
-export default function AnimatedMenuLink() {
+export default function AnimatedMenuLink({label,href}) {
   const [hover, setHover] = useState(false)
 
   return (
     <Link
-      href="/"
+      href={href}
       className="link-fixed-nav w-inline-block"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -22,7 +22,7 @@ export default function AnimatedMenuLink() {
             transition: "transform 0.5s ease",
           }}
         >
-          About
+          {label}
         </div>
         <div
           className="button-text-small _2"
@@ -33,7 +33,7 @@ export default function AnimatedMenuLink() {
             transition: "transform 0.5s ease",
           }}
         >
-          About
+          {label}
         </div>
       </div>
     </Link>

@@ -25,13 +25,13 @@ const Services = () => {
             <img
               src={treatment.image}
               alt={treatment.title}
-              className="w-full h-[300px] object-cover rounded-xl shadow-md"
+              className="w-full h-[300px] object-cover rounded-xl shadow-md wow fadeInUp"
               loading="lazy"
             />
           </div>
 
           {/* Text Content */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 wow fadeInUp">
             <h2 className="text-2xl font-bold mb-4">{treatment.title}</h2>
             <p className="text-gray-100 mb-4">{treatment.description}</p>
             <a

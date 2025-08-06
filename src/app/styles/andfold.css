@@ -2248,6 +2248,7 @@ textarea.w-select {
 :root {
   --_colors---bg--bg-1: #f7f4f1;
   --_text---text-body--font-family: var(--font--body);
+  --body-setting--body-text-color: #4b5869;
   --_colors---color--dark: #1e1c1a;
   --_text---text-body--font-size: 16px;
   --linen: #e4d9d1;
@@ -2495,7 +2496,7 @@ textarea.w-select {
 }
 
 body {
-  background-color: var(--_colors---bg--bg-1);
+  background-color: white;
   font-family: var(--_text---text-body--font-family);
   color: var(--_colors---color--dark);
   font-size: var(--_text---text-body--font-size);
@@ -2862,17 +2863,7 @@ figcaption {
   padding-bottom: var(--_spacing---spacing--160);
 }
 
-.section.hero-about-b {
-  padding-top: var(--_spacing---spacing--top-padding);
-  padding-bottom: var(--_spacing---spacing--160);
-  border-radius: var(--_spacing---radius--radius-2);
-  background-image: linear-gradient(
-    180deg,
-    var(--_colors---bg--bg-4),
-    var(--_colors---color--dark)
-  );
-  color: var(--_colors---color--light);
-}
+
 
 .section.hero-about-c {
   padding-top: var(--_spacing---spacing--top-padding);
@@ -9360,4 +9351,96 @@ figcaption {
     padding-top: 3.5em;
     padding-bottom: 3.5em;
   }
+}
+
+.hero-gradient-left {
+    position: absolute;
+    inset: 0% auto auto 0%;
+}
+
+.breadcrumb-section {
+    background-image: url(https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75a0/6571680382a8e33e84ff2097_title-bg01.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+    display: block;
+}
+
+.breadcrumb-wrap {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    display: flex;
+}
+
+.breadcrumb-title {
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+
+h2,h4{margin-bottom:10px;font-weight:bold;}
+h2{margin-top:20px;font-size:32px;line-height:36px;}
+h4{margin-top:10px;font-size:18px;line-height:24px;}
+
+
+
+
+h2{font-family:var(--heading-font);color:var(--dark-color);margin-top:10px;margin-bottom:30px;font-size:48px;font-weight:500;line-height:54px;}
+h4{font-family:var(--heading-font);color:var(--dark-color);margin-top:0;margin-bottom:20px;font-size:38px;font-weight:500;line-height:44px;}
+a{color:var(--global-color);text-decoration:none;}
+.container{justify-content:flex-start;align-items:flex-start;width:100%;max-width:1270px;min-height:50px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px;display:block;position:static;}
+.heading-subtitle{margin-bottom:40px;position:relative;}
+.heading-subtitle.center{text-align:center;align-items:center;margin-bottom:0;display:block;}
+.subtitle-wrap{font-family:var(--heading-font);color:var(--body-setting--body-text-color);letter-spacing:2px;text-transform:uppercase;align-items:center;margin-bottom:0;font-size:13px;font-weight:600;display:flex;position:relative;}
+.subtitle-wrap.center{justify-content:center;}
+.section-gap{padding-top:130px;padding-bottom:130px;}
+.service-two{flex-direction:row;align-items:stretch;padding-top:20px;padding-bottom:0;display:block;}
+.service-two-list{grid-column-gap:25px;grid-row-gap:25px;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr;grid-auto-columns:1fr;display:grid;}
+.service-two-list.grid{grid-column-gap:35px;grid-row-gap:35px;}
+.service-two-item{margin-right:auto;padding-left:0;padding-right:0;position:relative;overflow:visible;}
+.service-two-item:nth-child(2n){margin-top:0;padding-top:0;top:auto;}
+.service-two-image{aspect-ratio:auto;object-fit:cover;border-radius:0;max-width:100%;}
+.service-two-icon-wrap{opacity:1;background-color:#4f87fb78;border:0 #0000;border-radius:50%;width:80px;height:80px;padding:0;display:inline-block;position:relative;top:-40px;overflow:visible;}
+.service-two-overlay{z-index:99;text-align:center;background-color:#0000;border-radius:0;justify-content:space-between;align-items:center;margin-top:0;margin-left:auto;padding-top:0;padding-left:25px;padding-right:25px;display:block;position:relative;top:-10px;}
+.service-two-overlay:hover{background-color:var(--white-color);}
+.service-two-title{color:var(--dark-color);margin-bottom:0;font-size:24px;line-height:30px;position:static;inset:auto 0% 0%;}
+.heading-title{margin-top:0;font-size:54px;line-height:60px;}
+.subtitle-icon{z-index:0;color:var(--global-color);margin-right:5px;font-size:10px;}
+.service-two-link{border-bottom:1px solid var(--global-color);text-align:center;border-radius:8px;padding:22px;box-shadow:0 2px 13px -3px #051a471a;}
+.service-two-text{color:var(--body-setting--body-text-color);margin-top:7px;}
+.service-two-image-wrap{overflow:hidden;}
+.service-two-line{background-color:#76879d3d;width:80px;height:1px;padding-bottom:0;display:inline-block;}
+.service-two-icon{filter:brightness(0%) invert();width:40px;}
+.service-two-icon-border{background-color:var(--global-color);border-radius:50%;width:60px;height:60px;margin:10px;padding:14px;}
+@media screen and (max-width: 991px){
+.section-gap{padding-top:80px;padding-bottom:80px;}
+.service-two{grid-column-gap:16px;grid-row-gap:16px;flex-direction:column;grid-template-rows:auto auto;grid-template-columns:1fr 1fr;grid-auto-columns:1fr;padding-top:0;display:flex;}
+.service-two-list{grid-template-rows:auto auto;grid-template-columns:1fr 1fr;}
+.service-two-item{margin-top:0;}
+.service-two-item:nth-child(2n){top:0;}
+.subtitle-icon{left:-2%;}
+}
+@media screen and (max-width: 767px){
+.heading-subtitle.center{margin-bottom:20px;}
+.section-gap{padding-top:60px;padding-bottom:60px;}
+.service-two{padding-top:0;padding-bottom:0;}
+.service-two-list{grid-column-gap:30px;grid-row-gap:30px;grid-template-rows:auto auto auto auto;grid-template-columns:1fr;}
+.service-two-item{margin-right:0;}
+.service-two-image{width:100%;}
+.service-two-title{font-size:20px;line-height:30px;}
+.heading-title{font-size:40px;line-height:46px;}
+.subtitle-icon{top:-30px;}
+.service-two-link{display:block;}
+}
+@media screen and (max-width: 479px){
+.heading-subtitle{margin-bottom:40px;}
+.heading-subtitle.center{margin-bottom:10px;}
+.service-two{padding-bottom:0;}
+.service-two-list{grid-template-rows:auto auto auto;}
+.heading-title{font-size:32px;line-height:40px;}
+.service-two-link{padding:12px;}
 }

@@ -102,19 +102,19 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-              <AnimatedHoverLink href="/" label="About" />
+              <AnimatedHoverLink href="/about" label="About" />
               </div>
                 <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-              <AnimatedHoverLink href="/" label="Services" />
+              <AnimatedHoverLink href="/services" label="Services" />
               </div>
                 <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-              <AnimatedHoverLink href="/" label="Contact" />
+              <AnimatedHoverLink href="/contact" label="Contact" />
               </div>
               <a
                 href="https://webflow.com/templates/html/fold-website-template"
@@ -183,16 +183,16 @@ const Header = () => {
                   <div className="text-h4">Home</div>
                 </Link>
                 <Link
-                  href="/"
+                  href="/about"
                   className="nav-mobile-link w-inline-block"
                 >
                   <div className="text-h4">About</div>
                 </Link>
-                <Link href="/" className="nav-mobile-link w-inline-block">
+                <Link href="/services" className="nav-mobile-link w-inline-block">
                   <div className="text-h4">Services</div>
                 </Link>
                 <Link
-                  href="/"
+                  href="/contact"
                   className="nav-mobile-link w-inline-block"
                 >
                   <div className="text-h4">Contact</div>
@@ -378,8 +378,8 @@ const Header = () => {
                 data-w-id="fee3d0c6-da15-5a95-c7ea-8709843b5996"
                 className="nav-link-wrap"
               >
-                <a
-                  href="/contact/contact-a"
+                <Link
+                  href="/contact"
                   className="link-fixed-nav w-inline-block"
                 >
                   <div className="button-text-mask small">
@@ -403,7 +403,7 @@ const Header = () => {
                       Contact
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <a
                 href="https://webflow.com/templates/html/fold-website-template"
