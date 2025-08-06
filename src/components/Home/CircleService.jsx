@@ -2,7 +2,7 @@ import React from 'react'
 import treatments from '@/data/treatments'
 const CircleService = () => {
   return (
- <section className="section cta-block-images">
+ <section className="section cta-block-images bg-white">
   <div className="w-layout-blockcontainer main-container w-container">
     <div className="content-cta-images">
       <div className="label-master bg-2">
