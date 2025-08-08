@@ -13,99 +13,34 @@ const Footer = () => {
             <div className="wrap-column-footer">
               <div className="label text-dark-48">Explore</div>
               <div className="link-list-footer">
-                <div
+                <Link
+                 href="/"
                   data-w-id="6c6719f6-ac3b-fee1-6a35-bdb5f72f6eb8"
                   className="link-footer-variants"
                 >
                   <div className="text-h4">Home</div>
-                  <div className="link-variants-footer">
-                    <a
-                      href="index.html"
-                      aria-current="page"
-                      className="variant-block _1 w-inline-block w--current"
-                    >
-                      <div className="label-small">01</div>
-                    </a>
-                    <a
-                      href="homepage/home-b.html"
-                      className="variant-block _2 w-inline-block"
-                    >
-                      <div className="label-small">02</div>
-                    </a>
-                    <a
-                      href="homepage/home-c.html"
-                      className="variant-block _3 w-inline-block"
-                    >
-                      <div className="label-small">03</div>
-                    </a>
-                  </div>
-                </div>
-                <div
+                </Link>
+                <Link
+                  href="/about"
                   data-w-id="eed5b01e-4adf-d2c2-6748-5f5f863965a8"
                   className="link-footer-variants"
                 >
                   <div className="text-h4">About</div>
-                  <div className="link-variants-footer">
-                    <a
-                      href="about/about-a.html"
-                      className="variant-block _1 w-inline-block"
-                    >
-                      <div className="label-small">01</div>
-                    </a>
-                    <a
-                      href="about/about-b.html"
-                      className="variant-block _2 w-inline-block"
-                    >
-                      <div className="label-small">02</div>
-                    </a>
-                    <a
-                      href="about/about-c.html"
-                      className="variant-block _3 w-inline-block"
-                    >
-                      <div className="label-small">03</div>
-                    </a>
-                  </div>
-                </div>
-                <a
-                  href="offerings.html"
+                </Link>
+                <Link
+                  href="/services"
                   className="link-footer-large w-inline-block"
                 >
-                  <div className="text-footer-link _1">Offerings</div>
-                  <div className="text-footer-link _2">Offerings</div>
-                </a>
-                <a
-                  href="journal.html"
-                  className="link-footer-large w-inline-block"
-                >
-                  <div className="text-footer-link _1">Journal</div>
-                  <div className="text-footer-link _2">Journal</div>
-                </a>
-                <div
+                  <div className="text-footer-link _1">Services</div>
+                </Link>
+                <Link
+                 href="/contact"
                   data-w-id="08cbe1a0-71c5-26dd-1dfd-722f6523e1e7"
                   className="link-footer-variants"
                 >
                   <div className="text-h4">Contact</div>
-                  <div className="link-variants-footer">
-                    <a
-                      href="contact/contact-a.html"
-                      className="variant-block _1 w-inline-block"
-                    >
-                      <div className="label-small">01</div>
-                    </a>
-                    <a
-                      href="contact/contact-b.html"
-                      className="variant-block _2 w-inline-block"
-                    >
-                      <div className="label-small">02</div>
-                    </a>
-                    <a
-                      href="contact/contact-c.html"
-                      className="variant-block _3 w-inline-block"
-                    >
-                      <div className="label-small">03</div>
-                    </a>
-                  </div>
-                </div>
+                  
+                </Link>
               </div>
             </div>
             <div className="wrap-column-footer">
@@ -182,53 +117,52 @@ const Footer = () => {
         </div>
         <div className="footer-bottom-tile">
           <div className="left-bottom-footer">
-          <Link
+            <Link
               href="/"
               aria-current="page"
               className="brand-logo w-nav-brand w--current text-2xl font-bold text-center"
             >
-             Langley Dental
+              Langley Dental
             </Link>
             <div className="footer-bottom-left">
-              <div className="label-small text-dark-64">© 2025 &amp;Fold™</div>
-              <div className="label-small text-dark-64">·</div>
-              <div className="label-small text-dark-64">
-                Built with care by
-                <a
-                  href="https://www.byq.studio/"
+              <p className="!mb-0">
+                <b> © 2014-2025 Langley Dental </b> | All Rights
+                Reserved. Design By{" "}
+                <Link
+                  className="PULSE"
+                  href="https://www.hexbytes.in"
                   target="_blank"
-                  className="text-dark-64 text-underline"
                 >
-                  BYQ
-                </a>
-              </div>
+                  HexBytes
+                </Link>
+              </p>
             </div>
           </div>
           <div className="right-bottom-footer">
-            <a href="legal.html" className="label-small text-dark-64">
+            <Link href="#" className="label-small text-dark-64">
               Terms
-            </a>
+            </Link>
             <div className="label-small text-dark-64">·</div>
-            <a
-              href="template/style-guide.html"
+            <Link
+              href="#"
               className="label-small text-dark-64"
             >
               Style Guide
-            </a>
+            </Link>
             <div className="label-small text-dark-64">·</div>
-            <a
-              href="template/licenses.html"
+            <Link
+              href="#"
               className="label-small text-dark-64"
             >
               Licenses
-            </a>
+            </Link>
             <div className="label-small text-dark-64">·</div>
-            <a
-              href="template/changelog.html"
+            <Link
+              href="#"
               className="label-small text-dark-64"
             >
               Changelog
-            </a>
+            </Link>
           </div>
         </div>
       </div>

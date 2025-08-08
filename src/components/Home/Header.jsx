@@ -1,15 +1,15 @@
 "use client";
 import Link from "next/link";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedHoverLink from "../Common/AnimatedMenuLink";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-   const [translateY, setTranslateY] = useState("-500px"); 
+  const [translateY, setTranslateY] = useState("-500px");
   useEffect(() => {
     if (open) {
-      setIsVisible(true);           // Show overlay
+      setIsVisible(true); // Show overlay
       // Animate from -500px to 0
       setTimeout(() => {
         setTranslateY("0px");
@@ -39,7 +39,10 @@ const Header = () => {
             <div className="menu-button w-nav-button">
               <div className="nav-menu-button">
                 <div className="menu-open">
-                  <div onClick={()=> setOpen(!open)} className="icon-menu w-embed">
+                  <div
+                    onClick={() => setOpen(!open)}
+                    className="icon-menu w-embed"
+                  >
                     <svg
                       width="100%"
                       height="100%"
@@ -96,62 +99,39 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-              <AnimatedHoverLink href="/" label="Home" />
+                <AnimatedHoverLink href="/" label="Home" />
               </div>
-               <div
+              <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-              <AnimatedHoverLink href="/about" label="About" />
+                <AnimatedHoverLink href="/about" label="About" />
               </div>
-                <div
+              <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-              <AnimatedHoverLink href="/services" label="Services" />
+                <AnimatedHoverLink href="/services" label="Services" />
               </div>
-                <div
-                data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
-                className="nav-link-wrap"
-              >
-              <AnimatedHoverLink href="/contact" label="Contact" />
-              </div>
-              <a
-                href="https://webflow.com/templates/html/fold-website-template"
+              <Link
+                href="/contact"
                 target="_blank"
                 className="link-fixed-nav main w-inline-block"
               >
                 <div className="button-text-mask small">
-                  <div className="button-text-small _1">Get &amp;Fold</div>
-                  <div className="button-text-small _2">Get &amp;Fold</div>
+                  <div className="button-text-small _1"> Contact</div>
                 </div>
-              </a>
-              <div className="cta-nav-menu">
-                <div className="content-dropdown-cta">
-                  <div className="text-wrap-dropdown-cta">
-                    <div className="text-large text-bold">&amp;Fold™</div>
-                    <div>A quiet system for brands</div>
-                  </div>
-                  <div className="cta-small blur-light">
-                    <div className="button-text-mask small">
-                      <div className="button-text-small _1">Buy Template</div>
-                      <div className="button-text-small _2">Buy Template</div>
-                    </div>
-                    <div className="button-bg blur-light" />
-                  </div>
-                </div>
-                <div className="overlay-nav-cta" />
-              </div>
+              </Link>
+           
             </div>
           </nav>
           <div className="nav-mobile-button">
-            <a href="#" className="cta-main w-inline-block">
+            <Link href="/contact" className="cta-main w-inline-block">
               <div className="button-text-mask">
-                <div className="button-text _1">Get &amp;Fold</div>
-                <div className="button-text _2">Get &amp;Fold</div>
+                <div className="button-text _1">Contact</div>
               </div>
               <div className="button-bg" />
-            </a>
+            </Link>
           </div>
         </div>
         <div
@@ -159,272 +139,52 @@ const Header = () => {
           data-wf-ignore
           id="w-nav-overlay-0"
           style={{
-        height: isVisible ? "100vh" : "0px",
-        display: isVisible ? "block" : "none",
-        overflow: "hidden",
-      }}
+            height: isVisible ? "100vh" : "0px",
+            display: isVisible ? "block" : "none",
+            overflow: "hidden",
+          }}
         >
           {isVisible && (
-          <nav
-            role="navigation"
-            className="nav-menu w-nav-menu"
-            style={{
-            transition: "transform 400ms ease",
-            transform: `translateY(${translateY})`,
-          }}
-            data-nav-menu-open
-          >
-            <div className="menu-inner-sticky">
-              <div className="nav-mobile-menu">
-                <Link
-                  href="/"
-                  className="nav-mobile-link w-inline-block"
-                >
-                  <div className="text-h4">Home</div>
-                </Link>
-                <Link
-                  href="/about"
-                  className="nav-mobile-link w-inline-block"
-                >
-                  <div className="text-h4">About</div>
-                </Link>
-                <Link href="/services" className="nav-mobile-link w-inline-block">
-                  <div className="text-h4">Services</div>
-                </Link>
-                <Link
-                  href="/contact"
-                  className="nav-mobile-link w-inline-block"
-                >
-                  <div className="text-h4">Contact</div>
-                </Link>
-              </div>
-              <div
-                data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
-                className="nav-link-wrap"
-              >
-                <a
-                  href="/about/about-a"
-                  className="link-fixed-nav w-inline-block"
-                >
-                  <div className="button-text-mask small">
-                    <div
-                      className="button-text-small _1"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      }}
-                    >
-                      About
-                    </div>
-                    <div
-                      className="button-text-small _2"
-                      style={{
-                        opacity: 0,
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                      }}
-                    >
-                      About
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-hover="true"
-                data-delay={300}
-                data-w-id="4cfb9b2b-9532-963a-ceb6-f81ad1f09504"
-                className="nav-dropdown w-dropdown w--nav-dropdown-open"
-              >
+            <nav
+              role="navigation"
+              className="nav-menu w-nav-menu"
+              style={{
+                transition: "transform 400ms ease",
+                transform: `translateY(${translateY})`,
+              }}
+              data-nav-menu-open
+            >
+              <div className="menu-inner-sticky">
+                <div className="nav-mobile-menu">
+                  <Link href="/" className="nav-mobile-link w-inline-block">
+                    <div className="text-h4">Home</div>
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">About</div>
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Services</div>
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Contact</div>
+                  </Link>
+                </div>
                 <div
-                  className="dropdown-toggle-nav w-dropdown-toggle w--nav-dropdown-toggle-open"
-                  id="w-dropdown-toggle-0"
-                  aria-controls="w-dropdown-list-0"
-                  aria-haspopup="menu"
-                  aria-expanded="false"
-                  role="button"
-                  tabIndex={0}
-                >
-                  <div
-                    data-w-id="f460391d-19b6-1f42-43b0-98d68a307163"
-                    className="nav-link-wrap"
-                  >
-                    <a
-                      href="/offerings"
-                      className="link-fixed-nav w-inline-block"
-                    >
-                      <div className="button-text-mask small">
-                        <div
-                          className="button-text-small _1"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          }}
-                        >
-                          Offerings
-                        </div>
-                        <div
-                          className="button-text-small _2"
-                          style={{
-                            opacity: 0,
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                          }}
-                        >
-                          Offerings
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <nav
-                  className="dropdown-list-navigation w-dropdown-list w--nav-dropdown-list-open"
-                  id="w-dropdown-list-0"
-                  aria-labelledby="w-dropdown-toggle-0"
+                  data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
+                  className="nav-link-wrap"
                 >
                   <a
-                    href="/offerings"
-                    className="dropdown-menu-nav w-inline-block"
-                    tabIndex={0}
-                    style={{}}
-                  >
-                    <div className="left-dropdown-menu">
-                      <div className="label-small text-dark-48">Offerings</div>
-                      <div className="list-dropdown-menu">
-                        <div className="dropdown-link-nav text-h7">
-                          Coaching Sessions
-                        </div>
-                        <div className="dropdown-link-nav text-h7">
-                          Consulting Packages
-                        </div>
-                        <div className="dropdown-link-nav text-h7">
-                          Workshops Programs
-                        </div>
-                        <div className="dropdown-link-nav text-h7">
-                          Visual Strategy
-                        </div>
-                        <div className="dropdown-link-nav text-h7">
-                          Aesthetic Audits™
-                        </div>
-                        <div className="dropdown-link-nav text-h7">
-                          Spiritual UX Cleanse
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cta-dropdown-menu">
-                      <div className="content-dropdown-cta">
-                        <div className="text-wrap-dropdown-cta">
-                          <div className="text-large text-bold">&amp;Fold™</div>
-                          <div>A quiet system for brands</div>
-                        </div>
-                        <div className="cta-small blur-light">
-                          <div className="button-text-mask small">
-                            <div
-                              className="button-text-small _1"
-                              style={{
-                                transform:
-                                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                              }}
-                            >
-                              Buy Template
-                            </div>
-                            <div
-                              className="button-text-small _2"
-                              style={{
-                                opacity: 0,
-                                transform:
-                                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                              }}
-                            >
-                              Buy Template
-                            </div>
-                          </div>
-                          <div className="button-bg blur-light" />
-                        </div>
-                      </div>
-                      <div className="overlay-dropdown-cta" />
-                    </div>
-                  </a>
-                </nav>
-              </div>
-              <div
-                data-w-id="aab947cc-4b08-f4b5-b097-324a30b9d18c"
-                className="nav-link-wrap"
-              >
-                <a href="/journal" className="link-fixed-nav w-inline-block">
-                  <div className="button-text-mask small">
-                    <div
-                      className="button-text-small _1"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      }}
-                    >
-                      Journal
-                    </div>
-                    <div
-                      className="button-text-small _2"
-                      style={{
-                        opacity: 0,
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                      }}
-                    >
-                      Journal
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-w-id="fee3d0c6-da15-5a95-c7ea-8709843b5996"
-                className="nav-link-wrap"
-              >
-                <Link
-                  href="/contact"
-                  className="link-fixed-nav w-inline-block"
-                >
-                  <div className="button-text-mask small">
-                    <div
-                      className="button-text-small _1"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      }}
-                    >
-                      Contact
-                    </div>
-                    <div
-                      className="button-text-small _2"
-                      style={{
-                        opacity: 0,
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                      }}
-                    >
-                      Contact
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <a
-                href="https://webflow.com/templates/html/fold-website-template"
-                target="_blank"
-                className="link-fixed-nav main w-inline-block"
-              >
-                <div className="button-text-mask small">
-                  <div className="button-text-small _1">Get &amp;Fold</div>
-                  <div className="button-text-small _2">Get &amp;Fold</div>
-                </div>
-              </a>
-              <div className="cta-nav-menu">
-                <div className="content-dropdown-cta">
-                  <div className="text-wrap-dropdown-cta">
-                    <div className="text-large text-bold">&amp;Fold™</div>
-                    <div>A quiet system for brands</div>
-                  </div>
-                  <a
-                    href="https://webflow.com/templates/html/fold-website-template"
-                    target="_blank"
-                    className="cta-small blur-light w-inline-block"
+                    href="/about/about-a"
+                    className="link-fixed-nav w-inline-block"
                   >
                     <div className="button-text-mask small">
                       <div
@@ -434,7 +194,7 @@ const Header = () => {
                             "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                         }}
                       >
-                        Buy Template
+                        About
                       </div>
                       <div
                         className="button-text-small _2"
@@ -444,20 +204,185 @@ const Header = () => {
                             "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
                         }}
                       >
-                        Buy Template
+                        About
                       </div>
                     </div>
-                    <div className="button-bg blur-light" />
                   </a>
                 </div>
-                <div className="overlay-nav-cta" />
+                <div
+                  data-hover="true"
+                  data-delay={300}
+                  data-w-id="4cfb9b2b-9532-963a-ceb6-f81ad1f09504"
+                  className="nav-dropdown w-dropdown w--nav-dropdown-open"
+                >
+                  <div
+                    className="dropdown-toggle-nav w-dropdown-toggle w--nav-dropdown-toggle-open"
+                    id="w-dropdown-toggle-0"
+                    aria-controls="w-dropdown-list-0"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    role="button"
+                    tabIndex={0}
+                  >
+                    <div
+                      data-w-id="f460391d-19b6-1f42-43b0-98d68a307163"
+                      className="nav-link-wrap"
+                    >
+                      <a
+                        href="/offerings"
+                        className="link-fixed-nav w-inline-block"
+                      >
+                        <div className="button-text-mask small">
+                          <div
+                            className="button-text-small _1"
+                            style={{
+                              transform:
+                                "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            }}
+                          >
+                            Offerings
+                          </div>
+                          <div
+                            className="button-text-small _2"
+                            style={{
+                              opacity: 0,
+                              transform:
+                                "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
+                            }}
+                          >
+                            Offerings
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <nav
+                    className="dropdown-list-navigation w-dropdown-list w--nav-dropdown-list-open"
+                    id="w-dropdown-list-0"
+                    aria-labelledby="w-dropdown-toggle-0"
+                  >
+                    <a
+                      href="/offerings"
+                      className="dropdown-menu-nav w-inline-block"
+                      tabIndex={0}
+                      style={{}}
+                    >
+                      <div className="left-dropdown-menu">
+                        <div className="label-small text-dark-48">
+                          Offerings
+                        </div>
+                        <div className="list-dropdown-menu">
+                          <div className="dropdown-link-nav text-h7">
+                            Coaching Sessions
+                          </div>
+                          <div className="dropdown-link-nav text-h7">
+                            Consulting Packages
+                          </div>
+                          <div className="dropdown-link-nav text-h7">
+                            Workshops Programs
+                          </div>
+                          <div className="dropdown-link-nav text-h7">
+                            Visual Strategy
+                          </div>
+                          <div className="dropdown-link-nav text-h7">
+                            Aesthetic Audits™
+                          </div>
+                          <div className="dropdown-link-nav text-h7">
+                            Spiritual UX Cleanse
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </a>
+                  </nav>
+                </div>
+                <div
+                  data-w-id="aab947cc-4b08-f4b5-b097-324a30b9d18c"
+                  className="nav-link-wrap"
+                >
+                  <a href="/journal" className="link-fixed-nav w-inline-block">
+                    <div className="button-text-mask small">
+                      <div
+                        className="button-text-small _1"
+                        style={{
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                        }}
+                      >
+                        Journal
+                      </div>
+                      <div
+                        className="button-text-small _2"
+                        style={{
+                          opacity: 0,
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
+                        }}
+                      >
+                        Journal
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-w-id="fee3d0c6-da15-5a95-c7ea-8709843b5996"
+                  className="nav-link-wrap"
+                >
+                  <Link
+                    href="/contact"
+                    className="link-fixed-nav w-inline-block"
+                  >
+                    <div className="button-text-mask small">
+                      <div
+                        className="button-text-small _1"
+                        style={{
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                        }}
+                      >
+                        Contact
+                      </div>
+                      <div
+                        className="button-text-small _2"
+                        style={{
+                          opacity: 0,
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
+                        }}
+                      >
+                        Contact
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <a
+                  href="https://webflow.com/templates/html/fold-website-template"
+                  target="_blank"
+                  className="link-fixed-nav main w-inline-block"
+                >
+                  <div className="button-text-mask small">
+                    <div className="button-text-small _1">Get &amp;Fold</div>
+                    <div className="button-text-small _2">Get &amp;Fold</div>
+                  </div>
+                </a>
+                <div className="cta-nav-menu">
+                  <div className="content-dropdown-cta">
+                    <div className="text-wrap-dropdown-cta">
+                      <div className="text-large text-bold">Langley Dental</div>
+                      <div>Your smile, our priority</div>
+                    </div>
+                  </div>
+                  <div className="overlay-nav-cta" />
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
           )}
         </div>
       </div>
-      <div className="nav-blur-bg" style={{display:open? 'flex':'none',opacity:open? 1:0}}>
+      <div
+        className="nav-blur-bg"
+        style={{ display: open ? "flex" : "none", opacity: open ? 1 : 0 }}
+      >
         <div className="overlay-nav-bg" />
       </div>
     </div>

@@ -26,3 +26,40 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.PULSE {
+  background: black;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: PULSE 1.5s infinite alternate;
+  
+  /* Standard Syntax */
+  animation: PULSE 1.5s infinite alternate;
+}
+
+/* Keyframes for glowing golden effect */
+@keyframes PULSE {
+  0% {
+    color: #FFD700; /* Gold */
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFA500, 0 0 15px #FF8C00;
+  }
+  100% {
+    color: #FFEC8B; /* Light golden */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF8C00;
+  }
+}
+
+/* Webkit for Safari, Chrome */
+@-webkit-keyframes PULSE {
+  0% {
+    color: #FFD700;
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFA500, 0 0 15px #FF8C00;
+  }
+  100% {
+    color: #FFEC8B;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF8C00;
+  }
+}
