@@ -51,7 +51,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="section hero-home-a">
+      <section className="section hero-home-a relative bg-white">
         <div className="w-layout-blockcontainer main-container w-container !z-10">
           <div className="headline-home-a wow fadeInDown">
             <h1

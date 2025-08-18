@@ -12,8 +12,8 @@ const CircleService = () => {
         Follow me on Instagram
       </h2>
       <a href="https://instagram.com/" data-wf--cta-main--variant="light" className="cta-main w-variant-2e8ddc6f-d353-888a-d0b0-71d6a7c69162 w-inline-block"><div button-text className="button-text-mask">
-          <div className="button-text _1">@andfold.studio</div>
-          <div className="button-text _2">@andfold.studio</div>
+          <div className="button-text _1">@Langley.Dental</div>
+          <div className="button-text _2">@Langley.Dental</div>
         </div>
         <div button-bg className="button-bg w-variant-2e8ddc6f-d353-888a-d0b0-71d6a7c69162" /></a>
     </div>

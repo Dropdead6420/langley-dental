@@ -8,7 +8,7 @@ const Services = () => {
       <div className="label-master">
         <div className="label-small">Your thoughts &amp; work</div>
       </div>
-      <h2 animate="title" data-w-id="292c5d2c-c769-eb72-28e3-95fda83a3ad3" style={{opacity: 0, filter: 'blur(20px)'}} className="no-margins">
+      <h2 animate="title" data-w-id="292c5d2c-c769-eb72-28e3-95fda83a3ad3"  className="no-margins">
         A journal of your process
       </h2>
     </div>

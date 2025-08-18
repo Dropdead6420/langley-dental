@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactMain = () => {
@@ -48,7 +49,7 @@ const ContactMain = () => {
                           />
                         </svg>
                       </div>
-                      <div>templates@byqstudio.io</div>
+                      <div>info@shinefamilydental.com</div>
                     </div>
                     <div className="contact-b-social-tile">
                       <div className="icon-contact-b w-embed">
@@ -77,7 +78,7 @@ const ContactMain = () => {
                           />
                         </svg>
                       </div>
-                      <div>@byqstudio</div>
+                      <div>@dr.singh_shinedental</div>
                     </div>
                     <div className="contact-b-social-tile">
                       <div className="icon-contact-b w-embed">
@@ -96,7 +97,7 @@ const ContactMain = () => {
                           />
                         </svg>
                       </div>
-                      <div>+1 600 600 000</div>
+                      <div>+17783667770</div>
                     </div>
                   </div>
                 </div>
@@ -203,9 +204,9 @@ const ContactMain = () => {
                   for a healthier, brighter smile.
                 </div>
                 <div className="cta-button-wrap">
-                  <a href="contact-a.html" className="cta-main w-inline-block">
+                  <Link href="#" className="cta-main w-inline-block">
                     <div>Get started</div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

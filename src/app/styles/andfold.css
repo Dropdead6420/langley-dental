@@ -2799,7 +2799,7 @@ figcaption {
 }
 
 .section.cta-block-images {
-  padding-top: var(--_spacing---spacing--120);
+  padding-top: 80px;
   padding-bottom: 500px;
   overflow: clip;
 }
@@ -2972,8 +2972,8 @@ figcaption {
 }
 
 .section.journal-home-a-section {
-  padding-top: var(--_spacing---spacing--160);
-  padding-bottom: var(--_spacing---spacing--160);
+  padding-top: 80px;
+  padding-bottom: var(--_spacing---spacing--120);
   background-image: linear-gradient(
     180deg,
     var(--_colors---bg--bg-4),
@@ -3795,7 +3795,7 @@ figcaption {
   grid-row-gap: 56px;
   flex-flow: column;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -4112,7 +4112,7 @@ figcaption {
   margin-right: 50%;
   display: flex;
   position: absolute;
-  top: 504px;
+  top: 395px;
   transform: translate(-50%);
 }
 

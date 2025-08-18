@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const ImageSwitcher = () => {
-  const [hoveredCity, setHoveredCity] = useState("");
+  const [hoveredCity, setHoveredCity] = useState("new-york");
 
   return (
     <div className="med-1">
@@ -18,7 +18,7 @@ const ImageSwitcher = () => {
               <div className="med-1-block">
                 <Link
                   onMouseEnter={() => setHoveredCity("new-york")}
-                  onMouseLeave={() => setHoveredCity("")}
+                  onMouseLeave={() => setHoveredCity("new-york")}
                   data-w-id="3f2e1cd5-d226-ebf1-01be-f4acc37fe94c"
                   href="#"
                   className="med-1-link w-inline-block"
@@ -45,7 +45,7 @@ const ImageSwitcher = () => {
               <div className="med-1-block">
                 <Link
                   onMouseEnter={() => setHoveredCity("london")}
-                  onMouseLeave={() => setHoveredCity("")}
+                  onMouseLeave={() => setHoveredCity("new-york")}
                   data-w-id="3f2e1cd5-d226-ebf1-01be-f4acc37fe94c"
                   href="#"
                   className="med-1-link w-inline-block"
@@ -72,7 +72,7 @@ const ImageSwitcher = () => {
               <div className="med-1-block">
                 <Link
                   onMouseEnter={() => setHoveredCity("berlin")}
-                  onMouseLeave={() => setHoveredCity("")}
+                  onMouseLeave={() => setHoveredCity("new-york")}
                   data-w-id="3f2e1cd5-d226-ebf1-01be-f4acc37fe94c"
                   href="#"
                   className="med-1-link w-inline-block"

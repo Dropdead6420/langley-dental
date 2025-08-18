@@ -6,7 +6,7 @@ export default function AnimatedMenuLink({label,href}) {
   const [hover, setHover] = useState(false)
 
   return (
-    <Link
+    <a
       href={href}
       className="link-fixed-nav w-inline-block"
       onMouseEnter={() => setHover(true)}
@@ -36,6 +36,6 @@ export default function AnimatedMenuLink({label,href}) {
           {label}
         </div>
       </div>
-    </Link>
+    </a>
   )
 }

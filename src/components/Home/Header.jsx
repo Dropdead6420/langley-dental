@@ -85,13 +85,13 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <Link
+            <a
               href="/"
               aria-current="page"
               className="brand-logo w-nav-brand w--current text-2xl font-bold text-center"
             >
               Langley Dental
-            </Link>
+            </a>
           </div>
           <nav role="navigation" className="nav-menu w-nav-menu">
             <div className="menu-inner-sticky">
@@ -115,7 +115,6 @@ const Header = () => {
               </div>
               <Link
                 href="/contact"
-                target="_blank"
                 className="link-fixed-nav main w-inline-block"
               >
                 <div className="button-text-mask small">

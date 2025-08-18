@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <section className="footer bg-white relative">
       <div className="w-layout-blockcontainer main-container w-container">
         <div className="w-layout-grid footer-halves">
           <div
@@ -46,38 +46,31 @@ const Footer = () => {
             <div className="wrap-column-footer">
               <div className="label text-dark-48">Social</div>
               <div className="link-list-footer">
-                <a
-                  href="https://instagram.com/"
+                <Link
+                  href="https://www.facebook.com/shinedentaloffice"
+                  target="_blank"
+                  className="link-footer-large w-inline-block"
+                >
+                  <div className="text-footer-link _1">Facebook</div>
+                  <div className="text-footer-link _2">Facebook</div>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/dr.singh_shinedental"
                   target="_blank"
                   className="link-footer-large w-inline-block"
                 >
                   <div className="text-footer-link">Instagram</div>
                   <div className="text-footer-link _2">Instagram</div>
-                </a>
-                <a
-                  href="https://linkedin.com/"
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/shinefamilydental"
                   target="_blank"
                   className="link-footer-large w-inline-block"
                 >
                   <div className="text-footer-link _1">LinkedIn</div>
-                  <div className="text-footer-link _2">Facebook</div>
-                </a>
-                <a
-                  href="https://spotify.com/"
-                  target="_blank"
-                  className="link-footer-large w-inline-block"
-                >
-                  <div className="text-footer-link _1">Spotify</div>
-                  <div className="text-footer-link _2">Spotify</div>
-                </a>
-                <a
-                  href="https://spotify.com/"
-                  target="_blank"
-                  className="link-footer-large w-inline-block"
-                >
-                  <div className="text-footer-link _1">Substack</div>
-                  <div className="text-footer-link _2">AirBnb</div>
-                </a>
+                  <div className="text-footer-link _2">LinkedIn</div>
+                </Link>
+                
               </div>
             </div>
           </div>
@@ -89,9 +82,9 @@ const Footer = () => {
               <div className="info-block-footer">
                 <div className="label text-dark-48">Phone</div>
                 <div>
-                  <a href="tel:+6281234768291" className="text-dark">
-                    <span>+48 793 000 765</span>
-                  </a>
+                  <Link href="tel:+17783667770" className="text-dark">
+                    <span>+1 778-366-7770</span>
+                  </Link>
                   <br />
                   Weekdays, 9am–5pm
                 </div>
@@ -99,18 +92,18 @@ const Footer = () => {
               <div className="info-block-footer">
                 <div className="label text-dark-48">WhatsApp</div>
                 <div className="text-dark">
-                  <a href="tel:+6281234768291" className="text-dark">
-                    +48 793 000 765
-                  </a>
+                  <Link href="tel:+17783667770" className="text-dark">
+                   +1 778-366-7770
+                  </Link>
                 </div>
               </div>
               <div className="info-block-footer">
                 <div className="label text-dark-48">Address</div>
-                <div>Remote, based in Poland</div>
+                <div> 20654 Fraser Hwy Unit #1, Langley, BC V3A 4G5, Canada</div>
               </div>
               <div className="info-block-footer">
                 <div className="label text-dark-48">Email</div>
-                <div>hello@andfold.studio</div>
+                <div>info@shinefamilydental.com</div>
               </div>
             </div>
           </div>
@@ -124,8 +117,8 @@ const Footer = () => {
             >
               Langley Dental
             </Link>
-            <div className="footer-bottom-left">
-              <p className="!mb-0">
+            <div className="footer-bottom-left text-xs">
+              <p className="!mb-0 !text-sm">
                 <b> © 2014-2025 Langley Dental </b> | All Rights
                 Reserved. Design By{" "}
                 <Link
@@ -139,30 +132,17 @@ const Footer = () => {
             </div>
           </div>
           <div className="right-bottom-footer">
-            <Link href="#" className="label-small text-dark-64">
+            <Link href="/terms" className="label-small text-dark-64">
               Terms
             </Link>
             <div className="label-small text-dark-64">·</div>
             <Link
-              href="#"
+              href="/privacy-policy"
               className="label-small text-dark-64"
             >
-              Style Guide
+              Privacy Policy
             </Link>
-            <div className="label-small text-dark-64">·</div>
-            <Link
-              href="#"
-              className="label-small text-dark-64"
-            >
-              Licenses
-            </Link>
-            <div className="label-small text-dark-64">·</div>
-            <Link
-              href="#"
-              className="label-small text-dark-64"
-            >
-              Changelog
-            </Link>
+          
           </div>
         </div>
       </div>
