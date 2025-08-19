@@ -29,7 +29,6 @@ const HeroSection = ({treatment}) => {
                  {treatment?.title}
                 </h1>
               </div>
-             
             </div>
           </div>
         </div>

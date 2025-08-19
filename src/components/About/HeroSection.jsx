@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-
+import { useContactModal } from "../ContactModal";
 const HeroSection = () => {
+    const { setOpen } = useContactModal();
   return (
     <section className="section hero-about-b bg-white">
       <div className="w-layout-blockcontainer main-container w-container">
@@ -14,6 +15,7 @@ const HeroSection = () => {
               <Link
                 data-w-id="8d385fbb-a80a-30a7-a60b-8da8d45883c1"
                 href="#"
+                 onClick={() => setOpen(true)}
                 className="rating w-inline-block"
               >
                 <div className="rating-icon-wrap">
