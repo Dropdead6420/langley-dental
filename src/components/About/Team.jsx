@@ -15,7 +15,7 @@ const Team = () => {
             >
               <div className="member-image">
                 <img
-                  src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e395508314118611f1365_Member.avif"
+                  src="/assets/images/team/taran-arora.jpeg"
                   loading="lazy"
                   sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
                   alt
@@ -23,7 +23,7 @@ const Team = () => {
                 />
               </div>
               <div className="member-info-tile">
-                <div className="text-medium">Kristine Runolfsson</div>
+                <div className="text-medium">Dr. Taran Arora</div>
                 <div className="member-profession">Dentist</div>
               </div>
             </div>
@@ -33,7 +33,7 @@ const Team = () => {
             >
               <div className="member-image">
                 <img
-                  src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e3956c3eee5df05267199_Member-6.avif"
+                  src="/assets/images/team/satpreet-singh.png"
                   loading="lazy"
                   sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
                   alt
@@ -41,7 +41,7 @@ const Team = () => {
                 />
               </div>
               <div className="member-info-tile">
-                <div className="text-medium">Kristine Runolfsson</div>
+                <div className="text-medium">Dr. Satpreet Singh</div>
                 <div className="member-profession">Dentist</div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Team = () => {
             >
               <div className="member-image">
                 <img
-                  src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e395501a048d1182a793b_Member-7.avif"
+                  src="/assets/images/team/doc1.jpeg"
                   loading="lazy"
                   sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
                   alt
@@ -59,7 +59,7 @@ const Team = () => {
                 />
               </div>
               <div className="member-info-tile">
-                <div className="text-medium">Kristine Runolfsson</div>
+                <div className="text-medium">Dr. Surleen Sikri</div>
                 <div className="member-profession">Dentist</div>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Team = () => {
               data-w-id="897fb359-0d95-de36-b08a-ced87eda49e2"
               className="member-card wow fadeInUp"
             >
-              <div className="member-image">
+              {/* <div className="member-image">
                 <img
                   src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e3956b19fb54578166195_Member-5.avif"
                   loading="lazy"
@@ -75,8 +75,8 @@ const Team = () => {
                   alt
                   className="image-cover"
                 />
-              </div>
-              <div className="member-info-tile">
+              </div> */}
+              {/* <div className="member-info-tile">
                 <div className="text-medium">Kristine Runolfsson</div>
                 <div className="member-profession">Dentist</div>
               </div>
@@ -169,7 +169,7 @@ const Team = () => {
               <div className="member-info-tile">
                 <div className="text-medium">Kristine Runolfsson</div>
                 <div className="member-profession">Dentist</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
