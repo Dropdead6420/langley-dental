@@ -46,6 +46,24 @@ const Team = () => {
               </div>
             </div>
             <div
+              data-w-id="35200175-5a43-00d1-84f8-035f8728f63f"
+              className="member-card wow fadeInUp"
+            >
+              <div className="member-image">
+                <img
+                  src="/assets/images/team/kanwar-grewal.jpg"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
+                  alt
+                  className="image-cover"
+                />
+              </div>
+              <div className="member-info-tile">
+                <div className="text-medium">Dr. Kanwar Grewal</div>
+                <div className="member-profession">Dentist</div>
+              </div>
+            </div>
+            <div
               data-w-id="3d4c6595-801f-f399-cef4-30d90fe4513a"
               className="member-card wow fadeInUp"
             >
@@ -58,6 +76,7 @@ const Team = () => {
                   className="image-cover"
                 />
               </div>
+
               <div className="member-info-tile">
                 <div className="text-medium">Dr. Surleen Sikri</div>
                 <div className="member-profession">Dentist</div>
