@@ -1093,7 +1093,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
                     <div className="flex justify-center items-center gap-2 mb-2">
                         <div className="w-2 h-2 rounded-full bg-blue-500"></div>
                         <span className="text-sm font-medium tracking-widest text-gray-600 uppercase">
-                            Our Services
+                            Treatments We Offer
                         </span>
                     </div>
                     <h2 className="text-4xl md:text-6xl jost-font font-bold text-[#0d072c] leading-tight text-center">

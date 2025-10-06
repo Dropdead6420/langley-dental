@@ -35,30 +35,30 @@ const ClientLogo = () => {
     >
       {[...Array(4)].map((_, i) => (
         <div className="single-text-marquee" key={i}>
-          <img
+          {/* <img
             loading="lazy"
             src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e431f92a4e63d42fb21a8_Logo%20Company-2.svg"
             alt=""
             className="marquee-logo small"
-          />
-          <img
+          /> */}
+          {/* <img
             loading="lazy"
             src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e431fa57cfea2214a9621_Logo%20Company-3.svg"
             alt=""
             className="marquee-logo small"
-          />
-          <img
+          /> */}
+          {/* <img
             loading="lazy"
             src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e431f6d9a2df040cc427e_Logo%20Company-1.svg"
             alt=""
             className="marquee-logo"
-          />
-          <img
+          /> */}
+          {/* <img
             loading="lazy"
             src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e431f6f96ad26b82135b7_Logo%20Company.svg"
             alt=""
             className="marquee-logo big"
-          />
+          /> */}
         </div>
       ))}
     </div>

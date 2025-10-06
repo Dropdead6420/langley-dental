@@ -19,8 +19,7 @@ const AboutCta = () => {
           <div className="cta-mid-tile">
             <div className="text-h5">Call us</div>
             <div className="cta-number-tile">
-              <div className="text-body">+1 600 600 000</div>
-              <div className="text-body">+1 600 600 000</div>
+              <div className="text-body">+1 778-366-7770</div>
             </div>
           </div>
           <div className="cta-socials">
@@ -34,7 +33,7 @@ const AboutCta = () => {
                     </svg>
                   </div>
                 </div>
-                <div>templates@byqstudio.io</div>
+                <div>info@langleycaredental.com</div>
               </div>
               <div className="social-item">
                 <div className="social-icon-wrap">
@@ -54,7 +53,7 @@ const AboutCta = () => {
                     </svg>
                   </div>
                 </div>
-                <div>+1 600 600 000</div>
+                <div>+1 778-366-7770</div>
               </div>
             </div>
           </div>

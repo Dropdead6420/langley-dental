@@ -111,8 +111,9 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/services" label="Services" />
+                <AnimatedHoverLink href="/treatments" label="Treatments" />
               </div>
+              
               <Link
                 href="/contact"
                 className="link-fixed-nav main w-inline-block"

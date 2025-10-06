@@ -68,47 +68,47 @@ const HeroSection = () => {
             >
               <div className="reviews-tile">
                 <div className="reviews-avatars">
-                  <div className="reviews-avatar">
+                  {/* <div className="reviews-avatar">
                     <img
                       src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28ed3b2b62a63fcb3cbc_Avatar.avif"
                       loading="lazy"
                       alt
                       className="image-cover"
                     />
-                  </div>
-                  <div className="reviews-avatar inside">
+                  </div> */}
+                  {/* <div className="reviews-avatar inside">
                     <img
                       src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28eddc80296b4cf34520_Avatar-1.avif"
                       loading="lazy"
                       alt
                       className="image-cover"
                     />
-                  </div>
-                  <div className="reviews-avatar inside">
+                  </div> */}
+                  {/* <div className="reviews-avatar inside">
                     <img
                       src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28ed58770195fee933cc_Avatar-2.avif"
                       loading="lazy"
                       alt
                       className="image-cover"
                     />
-                  </div>
-                  <div className="reviews-avatar inside">
+                  </div> */}
+                  {/* <div className="reviews-avatar inside">
                     <img
                       src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28ed0231b55fb8893011_Avatar-3.avif"
                       loading="lazy"
                       alt
                       className="image-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
-                <div className="reviews-text">
+                {/* <div className="reviews-text">
                   <span className="text-underline">Reviews:</span> 4.8 out of 5
-                </div>
+                </div> */}
               </div>
-              <div className="review-number-wrap">
+              {/* <div className="review-number-wrap">
                 <div className="text-number">1M+</div>
                 <div className="reviews-text">Trusted users</div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div

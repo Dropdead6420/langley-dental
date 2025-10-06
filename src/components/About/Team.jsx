@@ -13,21 +13,7 @@ const Team = () => {
               data-w-id="73fefbbb-0330-2f67-2787-7348b235a4dd"
               className="member-card wow fadeInUp"
             >
-              <div className="member-image">
-                <img
-                  src="/assets/images/team/taran-arora.jpeg"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
-                  alt
-                  className="image-cover"
-                />
-              </div>
-              <div className="member-info-tile">
-                <div className="text-medium">Dr. Taran Arora</div>
-                <div className="member-profession">Dentist</div>
-              </div>
-            </div>
-            <div
+              <div
               data-w-id="35200175-5a43-00d1-84f8-035f8728f63f"
               className="member-card wow fadeInUp"
             >
@@ -45,6 +31,21 @@ const Team = () => {
                 <div className="member-profession">Dentist</div>
               </div>
             </div>
+              <div className="member-image">
+                <img
+                  src="/assets/images/team/taran-arora.jpeg"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
+                  alt
+                  className="image-cover"
+                />
+              </div>
+              <div className="member-info-tile">
+                <div className="text-medium">Dr. Taran Arora</div>
+                <div className="member-profession">Dentist</div>
+              </div>
+            </div>
+            
             <div
               data-w-id="35200175-5a43-00d1-84f8-035f8728f63f"
               className="member-card wow fadeInUp"
