@@ -111,6 +111,18 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
+                <AnimatedHoverLink href="/blog" label="Blog" />
+              </div>
+              <div
+                data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
+                className="nav-link-wrap"
+              >
+                <AnimatedHoverLink href="/gallery" label="Gallery" />
+              </div>
+              <div
+                data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
+                className="nav-link-wrap"
+              >
                 <AnimatedHoverLink href="/treatments" label="Treatments" />
               </div>
               
@@ -164,6 +176,18 @@ const Header = () => {
                     className="nav-mobile-link w-inline-block"
                   >
                     <div className="text-h4">About</div>
+                  </Link>
+                  <Link
+                    href="/blog"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Blog</div>
+                  </Link>
+                  <Link
+                    href="/gallery"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Gallery</div>
                   </Link>
                   <Link
                     href="/services"
@@ -355,16 +379,7 @@ const Header = () => {
                     </div>
                   </Link>
                 </div>
-                <a
-                  href="https://webflow.com/templates/html/fold-website-template"
-                  target="_blank"
-                  className="link-fixed-nav main w-inline-block"
-                >
-                  <div className="button-text-mask small">
-                    <div className="button-text-small _1">Get &amp;Fold</div>
-                    <div className="button-text-small _2">Get &amp;Fold</div>
-                  </div>
-                </a>
+                
                 <div className="cta-nav-menu">
                   <div className="content-dropdown-cta">
                     <div className="text-wrap-dropdown-cta">

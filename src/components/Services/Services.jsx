@@ -1154,6 +1154,12 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
                                             <div className="service-two-text">
                                                 {service.description}
                                             </div>
+                                            <Link
+                                                href={`/services/${service.slug}`}
+                                                className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                                            >
+                                                Read More
+                                            </Link>
                                         </div>
                                     </Link>
                                 </div>

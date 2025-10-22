@@ -59,15 +59,14 @@ const HeroSection = () => {
               data-w-id="990f4d2a-aa43-8599-8f58-cd49eb32e899"
               style={{ opacity: 1, filter: "blur(0px)" }}
             >
-              From solo practices to emerging collectives
-            </h1>
+              Where Innovative Teams Shape Healthier Smiles            </h1>
             <div
               data-w-id="2cdbe5e4-a7ca-0107-f8a5-c243ac3b1515"
               style={{ opacity: 1 }}
               className="home-a-tag-1"
             >
               <div className="label-master yellow">
-                <div className="label-small">BRAND AS BODY</div>
+                <div className="label-small">patient-first</div>
               </div>
             </div>
             <div
@@ -76,7 +75,7 @@ const HeroSection = () => {
               className="home-a-tag-2"
             >
               <div className="label-master accent-1">
-                <div className="label-small">FEMALE-LED</div>
+                <div className="label-small">outcomes focused</div>
               </div>
             </div>
             <div
@@ -85,7 +84,7 @@ const HeroSection = () => {
               className="home-a-tag-3"
             >
               <div className="label-master light">
-                <div className="label-small">Consulting</div>
+                <div className="label-small"> smile</div>
               </div>
             </div>
           </div>
@@ -125,7 +124,7 @@ const HeroSection = () => {
                 data-object-fit="cover"
               >
                 <source
-                  src="https://static.vecteezy.com/system/resources/previews/039/330/771/mp4/woman-dental-surgeon-examining-teeth-of-patient-using-operating-microscope-modern-dental-equipment-in-dentistry-dental-instruments-for-treating-a-patient-with-toothache-in-the-clinic-video.mp4"
+                  src="https://videos.pexels.com/video-files/6528843/6528843-uhd_2732_1440_25fps.mp4"
                   data-wf-ignore="true"
                 />
                 <source
@@ -219,7 +218,7 @@ const HeroSection = () => {
           <div className="parallax-text">
             <div className="home-a-video-feature">
               <div className="label-master dark-32">
-                <div className="label-small">Where I Begin</div>
+                <div className="label-small">Your First Step</div>
               </div>
               <h2
                 animate="text"
@@ -227,12 +226,12 @@ const HeroSection = () => {
                 style={{ opacity: 1, filter: "blur(0px)" }}
                 className="no-margins"
               >
-                I guide you back to what’s already yours.
+                We listen to your goals for a healthier smile.
               </h2>
             </div>
             <div className="home-a-video-feature">
               <div className="label-master dark-32">
-                <div className="label-small">What I’ve Seen</div>
+                <div className="label-small">Our Proven Results</div>
               </div>
               <h2
                 animate="text"
@@ -240,12 +239,12 @@ const HeroSection = () => {
                 style={{ opacity: 1, filter: "blur(0px)" }}
                 className="no-margins"
               >
-                Healing isn’t linear <br />— but it’s real.
+                Confidence isn't just cosmetic —<br/> it's foundational.
               </h2>
             </div>
             <div className="home-a-video-feature">
               <div className="label-master dark-32">
-                <div className="label-small">Why I Stay</div>
+                <div className="label-small">Our Commitment</div>
               </div>
               <h2
                 animate="text"
@@ -253,8 +252,7 @@ const HeroSection = () => {
                 style={{ opacity: 1, filter: "blur(0px)" }}
                 className="no-margins"
               >
-                Because presence <br />
-                changes everything.
+                Because your comfort and<br/> care matter most to us.
               </h2>
             </div>
           </div>
