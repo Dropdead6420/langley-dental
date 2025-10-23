@@ -1,6 +1,7 @@
 "use client"
 import { getAllBlogs } from "@/services/blogService";
 import { useEffect, useMemo, useState } from "react";
+import toast from "react-hot-toast";
 
 function BlogCard({ post, onOpen }) {
   return (
