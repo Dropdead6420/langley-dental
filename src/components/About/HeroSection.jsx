@@ -119,7 +119,7 @@ const HeroSection = () => {
               src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673db118c379e23c771a3348_Pinned Article.avif"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, 576px"
-              alt
+              alt={"image"}
               className="image-cover"
             />
           </div>
@@ -128,7 +128,7 @@ const HeroSection = () => {
       <img
         src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673b7b2a900da25c704cf634_Gradient Left.svg"
         loading="lazy"
-        alt
+        alt={"image"}
         className="hero-gradient-left"
       />
     </section>

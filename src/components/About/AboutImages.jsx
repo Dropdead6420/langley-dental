@@ -13,7 +13,7 @@ const AboutImages = () => {
               src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673db118917d312c0f6783e1_Article Thumbnail-8.avif"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
-              alt
+              alt={"image"}
               className="image-cover"
             />
           </div>
@@ -22,7 +22,7 @@ const AboutImages = () => {
               src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673db11847fa67e4e56afaa4_Article Thumbnail-4.avif"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
-              alt
+              alt={"image"}
               className="image-cover"
             />
           </div>
