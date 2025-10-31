@@ -1,57 +1,80 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { getHeroSliders } from "@/services/herosectionServices";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
+  const [videoUrl, setVideoUrl] = useState("");
+  const rootRef = useRef(null);
+
   useEffect(() => {
-    // Height animation
-    const heightAnim = gsap.to(".master-home-a-video", {
-      height: "100vh",
-      scrollTrigger: {
-        trigger: ".master-home-a-video",
-        start: "top center",      // कब शुरू
-        end: "bottom 20%",        // कब खत्म
-        scrub: true,              // scroll से sync
-      },
-    });
-
-    // Width animation
-    const widthAnim = gsap.to(".video-wrap-home-a", {
-      width: "100%",
-      scrollTrigger: {
-        trigger: ".master-home-a-video",
-        start: "top center",
-        end: "bottom 20%",
-        scrub: true,
-      },
-    });
-
-    // Border radius animation
-    const borderRadiusAnim = gsap.to(".video-wrap-home-a", {
-      borderRadius: "16px",
-      scrollTrigger: {
-        trigger: ".master-home-a-video",
-        start: "top center",
-        end: "bottom 20%",
-        scrub: true,
-      },
-    });
-
-    // cleanup on unmount
-    return () => {
-      heightAnim.kill();
-      widthAnim.kill();
-      borderRadiusAnim.kill();
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    const fetchSlider = async () => {
+      try {
+        const res = await getHeroSliders(); 
+        if (res?.status) {
+          
+          
+            setVideoUrl(res?.data?.media?.url);
+          
+        }
+      } catch (err) {
+        console.error("Failed to fetch hero slider:", err);
+      }
     };
+    fetchSlider();
+  }, []);
+
+  useEffect(() => {
+    // Scope animations to this component only
+    const ctx = gsap.context(() => {
+      const triggerEl = ".master-home-a-video";
+
+      gsap.to(".master-home-a-video", {
+        height: "100vh",
+        scrollTrigger: {
+          id: "hero-height",
+          trigger: triggerEl,
+          start: "top center",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".video-wrap-home-a", {
+        width: "100%",
+        scrollTrigger: {
+          id: "hero-width",
+          trigger: triggerEl,
+          start: "top center",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".video-wrap-home-a", {
+        borderRadius: "16px",
+        scrollTrigger: {
+          id: "hero-radius",
+          trigger: triggerEl,
+          start: "top center",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+    }, rootRef);
+
+    // recalc positions after layout
+    ScrollTrigger.refresh();
+
+    return () => ctx.revert();
   }, []);
 
   return (
     <>
-      <section className="section hero-home-a relative bg-white">
+      <section ref={rootRef} className="section hero-home-a relative bg-white">
         <div className="w-layout-blockcontainer main-container w-container !z-10">
           <div className="headline-home-a wow fadeInDown">
             <h1
@@ -59,7 +82,8 @@ const HeroSection = () => {
               data-w-id="990f4d2a-aa43-8599-8f58-cd49eb32e899"
               style={{ opacity: 1, filter: "blur(0px)" }}
             >
-              Where Innovative Teams Shape Healthier Smiles            </h1>
+              Where Innovative Teams Shape Healthier Smiles
+            </h1>
             <div
               data-w-id="2cdbe5e4-a7ca-0107-f8a5-c243ac3b1515"
               style={{ opacity: 1 }}
@@ -89,7 +113,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div 
+
+        <div
           className="master-home-a-video"
           style={{ willChange: "width, height", width: "100%", height: "50vh" }}
         >
@@ -102,39 +127,25 @@ const HeroSection = () => {
               height: "100%",
             }}
           >
-            <div
-              data-poster-url="https://cdn.prod.website-files.com/6862c1e820c1f89803264a02%2F686a8944b8678b5802e0842b_9836597-uhd_4096_2160_25fps-poster-00001.jpg"
-              data-video-urls="https://cdn.prod.website-files.com/6862c1e820c1f89803264a02%2F686a8944b8678b5802e0842b_9836597-uhd_4096_2160_25fps-transcode.mp4,https://cdn.prod.website-files.com/6862c1e820c1f89803264a02%2F686a8944b8678b5802e0842b_9836597-uhd_4096_2160_25fps-transcode.webm"
-              data-autoplay="true"
-              data-loop="true"
-              data-wf-ignore="true"
-              className="video-home-a w-background-video-2 w-background-video-atom"
-            >
-              <video
-                id="0b3f6c0f-f1da-37e8-3883-f486ab220282-video"
-                autoPlay
-                loop
-                style={{
-                  backgroundImage:
-                    'url("https://cdn.prod.website-files.com/6862c1e820c1f89803264a02%2F686a8944b8678b5802e0842b_9836597-uhd_4096_2160_25fps-poster-00001.jpg")',
-                }}
-                muted
-                playsInline
-                data-wf-ignore="true"
-                data-object-fit="cover"
-              >
-                <source
-                  src="https://videos.pexels.com/video-files/6528843/6528843-uhd_2732_1440_25fps.mp4"
-                  data-wf-ignore="true"
-                />
-                <source
-                  src="https://cdn.prod.website-files.com/6862c1e820c1f89803264a02%2F686a8944b8678b5802e0842b_9836597-uhd_4096_2160_25fps-transcode.webm"
-                  data-wf-ignore="true"
-                />
-              </video>
-            </div>
+            <div className="video-home-a w-background-video-2 w-background-video-atom">
+  <video
+    id="hero-video"
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"
+    className="w-full h-full object-cover"
+    crossOrigin="anonymous"
+  >
+    {videoUrl && <source src={videoUrl} type="video/mp4" />}
+    Your browser does not support the video tag.
+  </video>
+</div>
+
           </div>
         </div>
+
         <div className="w-layout-blockcontainer main-container w-container z-10">
           <div className="home-a-bottom-tile">
             <div className="text-dark-88">
@@ -147,23 +158,8 @@ const HeroSection = () => {
                 className="cta-main w-inline-block"
               >
                 <div button-text className="button-text-mask">
-                  <div
-                    className="button-text _1"
-                    style={{
-                      transform:
-                        "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                    }}
-                  >
-                    Get template
-                  </div>
-                  <div
-                    className="button-text _2"
-                    style={{
-                      opacity: 0,
-                      transform:
-                        "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                    }}
-                  >
+                  <div className="button-text _1">Get template</div>
+                  <div className="button-text _2" style={{ opacity: 0 }}>
                     Get template
                   </div>
                 </div>
@@ -175,57 +171,24 @@ const HeroSection = () => {
                 className="cta-main w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9 w-inline-block"
               >
                 <div button-text className="button-text-mask">
-                  <div
-                    className="button-text _1"
-                    style={{
-                      transform:
-                        "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                      opacity: 1,
-                    }}
-                  >
-                    explore
-                  </div>
-                  <div
-                    className="button-text _2"
-                    style={{
-                      opacity: 0,
-                      transform:
-                        "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 8deg)",
-                      transformStyle: "preserve-3d",
-                    }}
-                  >
+                  <div className="button-text _1">explore</div>
+                  <div className="button-text _2" style={{ opacity: 0 }}>
                     explore
                   </div>
                 </div>
-                <div
-                  button-bg
-                  className="button-bg w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9"
-                  style={{
-                    transform:
-                      "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                    transformStyle: "preserve-3d",
-                  }}
-                />
+                <div button-bg className="button-bg w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9" />
               </a>
             </div>
           </div>
         </div>
-        <div
-          data-w-id="14785626-1f9c-e5e3-32e4-fff0fcb7ff94"
-          className="parallax-master z-10"
-        >
+
+        <div data-w-id="14785626-1f9c-e5e3-32e4-fff0fcb7ff94" className="parallax-master z-10">
           <div className="parallax-text">
             <div className="home-a-video-feature">
               <div className="label-master dark-32">
                 <div className="label-small">Your First Step</div>
               </div>
-              <h2
-                animate="text"
-                data-w-id="14785626-1f9c-e5e3-32e4-fff0fcb7ff9a"
-                style={{ opacity: 1, filter: "blur(0px)" }}
-                className="no-margins"
-              >
+              <h2 animate="text" className="no-margins">
                 We listen to your goals for a healthier smile.
               </h2>
             </div>
@@ -233,31 +196,27 @@ const HeroSection = () => {
               <div className="label-master dark-32">
                 <div className="label-small">Our Proven Results</div>
               </div>
-              <h2
-                animate="text"
-                data-w-id="f2cc1132-6437-041b-3887-29c106f5c236"
-                style={{ opacity: 1, filter: "blur(0px)" }}
-                className="no-margins"
-              >
-                Confidence isn't just cosmetic —<br/> it's foundational.
+              <h2 animate="text" className="no-margins">
+                Confidence isn't just cosmetic —<br /> it's foundational.
               </h2>
             </div>
             <div className="home-a-video-feature">
               <div className="label-master dark-32">
                 <div className="label-small">Our Commitment</div>
               </div>
-              <h2
-                animate="text"
-                data-w-id="c9d89755-fe56-4f53-c74a-88d3b94b0688"
-                style={{ opacity: 1, filter: "blur(0px)" }}
-                className="no-margins"
-              >
-                Because your comfort and<br/> care matter most to us.
+              <h2 animate="text" className="no-margins">
+                Because your comfort and<br /> care matter most to us.
               </h2>
             </div>
           </div>
         </div>
-        <img src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673b7b2a900da25c704cf634_Gradient Left.svg" loading="lazy" alt className="hero-gradient-left !-z-1" />
+
+        <img
+          src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673b7b2a900da25c704cf634_Gradient Left.svg"
+          loading="lazy"
+          alt=""
+          className="hero-gradient-left !-z-1"
+        />
       </section>
     </>
   );
