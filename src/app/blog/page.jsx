@@ -208,17 +208,17 @@ export default function BlogPage() {
 
   return (
     // Background set to light blue gradient, top margin set to pt-20.
-    <main className="mx-auto max-w-7xl px-4 pt-20 pb-12 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50/50 to-white min-h-screen">
-
+    <main className="mx-auto  px-4 pt-24 pb-12 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50/50 to-white min-h-screen">
+      <div className="container">
       {/* Page Header */}
       <header className="mb-10 sm:mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900">
+          <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 !mb-4">
             Clinical Blog
           </h1>
           <p className="mt-2 text-lg text-zinc-600">
             Insights, case notes, and practical guides from the clinic.
-          </p>
+          </p> 
         </div>
 
         {/* Search & Filter */}
@@ -297,6 +297,7 @@ export default function BlogPage() {
 
       {/* Reader Modal */}
       <ReaderModal open={open} onClose={() => setOpen(false)} post={active} />
+      </div>
     </main>
   );
 }

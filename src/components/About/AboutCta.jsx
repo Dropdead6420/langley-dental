@@ -43,7 +43,7 @@ const AboutCta = () => {
                     </svg>
                   </div>
                 </div>
-                <div>@byqstudio</div>
+                <div>@dr.singh_shinedental</div>
               </div>
               <div className="social-item">
                 <div className="social-icon-wrap">

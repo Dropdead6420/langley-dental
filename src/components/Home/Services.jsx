@@ -1,9 +1,10 @@
 import React from "react";
 import treatments from "@/data/treatments";
+import Link from "next/link";
 const Services = () => {
   return (
     <section className="section journal-home-a-section">
-  <div className="w-layout-blockcontainer main-container w-container">
+  <div className="w-layout-blockcontainer main-container w-container !max-w-7xl">
     <div className="headline-home-a-journal">
       <div className="label-master">
         <div className="label-small">Your thoughts &amp; work</div>
@@ -32,14 +33,18 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="w-full lg:w-1/2 wow fadeInUp">
+          <Link 
+          href={`/treatments/${treatment.slug}`}
+          >
             <h2 className="text-2xl font-bold mb-4">{treatment.title}</h2>
+          </Link>
             <p className="text-gray-100 mb-4">{treatment.description}</p>
-            <a
+            <Link
               href={`/treatments/${treatment.slug}`}
               className="text-blue-600 font-medium underline hover:no-underline"
             >
               Read more →
-            </a>
+            </Link>
           </div>
         </div>
       ))}

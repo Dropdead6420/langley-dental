@@ -171,6 +171,7 @@ function ContactModal() {
                         ref={firstFieldRef}
                         id="name"
                         label="Full name"
+                        placeholder="full name"
                         icon={<User className="!h-4 !w-4 !text-black" />}
                         autoComplete="name"
                         required
@@ -178,6 +179,7 @@ function ContactModal() {
                       <LabelInput
                         id="email"
                         type="email"
+                        placeholder="email"
                         label="Email"
                         icon={<Mail className="!h-4 !w-4" />}
                         autoComplete="email"
@@ -188,6 +190,7 @@ function ContactModal() {
                     <LabelSelect
                         id="treatment"
                         label="Select a treatment"
+                        placeholder="select a treatment"
                         icon={<ClipboardList className="!h-4 !w-4" />}
                         options={TREATMENT_OPTIONS}
                         required
@@ -197,6 +200,7 @@ function ContactModal() {
                       id="phone"
                       type="tel"
                       label="Phone (optional)"
+                      placeholder="phone number"
                       icon={<Phone className="!h-4 !w-4" />}
                       autoComplete="tel"
                     />
@@ -204,6 +208,7 @@ function ContactModal() {
                     <LabelTextarea
                       id="message"
                       label="How can we help?"
+                      placeholder="write your query"
                       icon={<MessageSquare className="!h-4 !w-4" />}
                       rows={4}
                       required
@@ -294,6 +299,7 @@ const LabelInput = React.forwardRef(
     type = "text",
     required = false,
     autoComplete,
+    placeholder,
   },
   ref
 ) => {
@@ -312,7 +318,7 @@ const LabelInput = React.forwardRef(
           required={required}
           autoComplete={autoComplete}
           className="!w-full !border-0 !bg-transparent !px-3 !py-3 !text-sm !text-neutral-900 placeholder:!text-neutral-400 focus:!outline-none"
-          placeholder=""
+          placeholder={placeholder}
         />
       </div>
     </div>

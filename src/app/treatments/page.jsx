@@ -189,7 +189,7 @@ const TreatmentsPage = () => {
 
               {/* Content */}
               <div className="!p-6 !flex !flex-col !h-full">
-                <h2 className="!text-2xl !font-bold !text-indigo-800 !mb-2">
+                <h2 className="!text-2xl !font-bold !tracking-tight !text-indigo-800 !mb-2">
                   {treatment.title}
                 </h2>
                 <p className="!text-gray-600 !text-sm !mb-4 !flex-grow">

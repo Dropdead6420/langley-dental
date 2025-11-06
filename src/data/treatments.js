@@ -571,7 +571,7 @@ const treatments = [
      description:
       "Crowns and Bridges: Restoring Function and Aesthetics Dental crowns and bridges are essential restorative treatments designed to address damaged or missing teeth.",
     image:
-      "/assets/images/treatments/1-9.png", // Replace with your actual image URL
+      "/assets/images/treatments/1-12.png", // Replace with your actual image URL
     content: `
     <h2>Crowns and Bridges: Restoring Function and Aesthetics</h2>
     <p>Dental crowns and bridges are essential restorative treatments designed to address damaged or missing teeth. Whether you need to restore a single tooth or replace multiple missing teeth, these solutions play a vital role in improving both the function and appearance of your smile.</p>
