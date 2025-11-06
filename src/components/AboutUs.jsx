@@ -1,9 +1,10 @@
 "use client";
-
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutUs() {
+  const [open,setOpen] = useState(false);
   return (
     <section className="relative bg-gradient-to-r from-white via-sky-50 to-white py-16 px-6 sm:px-10 md:px-20 z-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -30,13 +31,14 @@ export default function AboutUs() {
           <p className="!text-base md:text-lg !mt-[20px] text-slate-600 !leading-relaxed">
             We are conveniently located in Surrey at the intersection of King George Blvd and 76th Ave in The King’s Cross Shopping Centre. We have a huge parking lot and it’s free at all the times. At Langley Dental our goal is to care for your teeth and help you maintain them.
           </p>
+          {open && (
           <p className="!text-base md:text-lg text-slate-600 !leading-relaxed">
            Our brand new, state of the art dental office uses the latest technology for your dental treatment. We provide dental care for your whole family. Whether you are looking for regular checkup and cleanings, cosmetic dentistry or a specific concern,  you are always welcome.
           </p>
-
-          <Link href="/about" className="!mt-6 px-6 py-3 rounded-xl !bg-blue-700 !text-white text-sm font-semibold shadow-md hover:bg-blue-800 transition">
-            Know More...
-          </Link>
+          )}
+          <button onClick={()=>setOpen(!open)} className="!mt-6 px-6 py-3 rounded-xl !bg-blue-700 !text-white text-sm !font-semibold shadow-md hover:bg-blue-800 transition">
+            {open ? 'read less':'read more'} 
+          </button>
         </div>
       </div>
     </section>

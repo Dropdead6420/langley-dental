@@ -3996,7 +3996,8 @@ figcaption {
 }
 
 .label-master.light {
-  background-color: var(--_colors---color--light);
+  background-color: #008fcf;
+  color:white;
 }
 
 .label-master.accent-1 {
@@ -5808,7 +5809,7 @@ figcaption {
 
 .home-a-tag-1 {
   position: absolute;
-  inset: -10px auto auto 20%;
+  inset: -30px auto auto 20%;
 }
 
 .home-a-tag-2 {

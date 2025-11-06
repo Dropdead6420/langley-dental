@@ -15,10 +15,7 @@ const HeroSection = () => {
       try {
         const res = await getHeroSliders(); 
         if (res?.status) {
-          
-          
-            setVideoUrl(res?.data?.media?.url);
-          
+            setVideoUrl(res?.data[0].media?.url);
         }
       } catch (err) {
         console.error("Failed to fetch hero slider:", err);
@@ -71,6 +68,7 @@ const HeroSection = () => {
 
     return () => ctx.revert();
   }, []);
+console.log("video url",videoUrl)
 
   return (
     <>
