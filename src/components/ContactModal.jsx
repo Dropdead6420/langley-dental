@@ -10,9 +10,25 @@ import React from 'react';
 // ---------------------------------------------------------------
 const TREATMENT_OPTIONS = [
   { value: "", label: "Select a treatment..." },
+  { value: "bondings-veneers", label: "Bondings and Veneers" },
+  { value: "childrens-dentistry", label: "Children’s Dentistry" },
+  { value: "dentures", label: "Complete and Partial Dentures" },
+  { value: "dental-emergencies", label: "Dental Emergencies" },
+  { value: "digital-radiography", label: "Digital Radiography" },
+  { value: "invisalign", label: "Invisalign Treatment" },
+  { value: "full-mouth-reconstruction", label: "Full Mouth Reconstruction" },
+  { value: "amalgam-removal", label: "Amalgam Removal and White Fillings" },
   { value: "cosmetic", label: "Cosmetic Dentistry" },
+  { value: "general-dentistry", label: "General Dentistry" },
+  { value: "botox", label: "Botox Treatment" },
+  { value: "cleaning-prevention", label: "Cleaning and Prevention" },
+  { value: "crowns-bridges", label: "Crowns and Bridges" },
   { value: "implants", label: "Dental Implants" },
-  { value: "general", label: "General Checkup & Cleaning" },
+  { value: "extractions-grafting", label: "Extractions and Bone Grafting" },
+  { value: "root-canal", label: "Root Canal Treatment" },
+  { value: "teeth-whitening", label: "Teeth Whitening" },
+  { value: "smile-makeover", label: "Smile Makeovers" },
+  { value: "sedation", label: "Sedation Dentistry" },
   { value: "orthodontics", label: "Orthodontics (Braces/Aligners)" },
   { value: "emergency", label: "Emergency Dental Care" },
   { value: "other", label: "Other / Not Sure" },
@@ -152,7 +168,7 @@ function ContactModal() {
               <div className="!relative !grid !gap-6 !p-6 sm:!p-8">
                 <div className="!space-y-1">
                   <h2 id="contact-heading" className="!text-xl sm:!text-2xl !font-semibold !tracking-tight !text-neutral-900">
-                    Book Appointment
+                    Book An Appointment
                   </h2>
                   <p className="!text-sm !text-neutral-600">
                     We'd love to hear from you. Fill out the form and our team will get back within 1–2 business days.

@@ -1,7 +1,8 @@
-import Link from "next/link";
 import React from "react";
+import { useContactModal } from "../ContactModal";
 
 const ContactMain = () => {
+  const { setOpen } = useContactModal();
   return (
     <>
       <div>
@@ -204,9 +205,15 @@ const ContactMain = () => {
                   for a healthier, brighter smile.
                 </div>
                 <div className="cta-button-wrap">
-                  <Link href="#" className="cta-main w-inline-block">
+                  {/* Use a button — not a Link — since this opens a modal */}
+                  <button
+                    type="button"
+                    className="cta-main w-inline-block"
+                    onClick={() => setOpen(true)}
+                    aria-label="Get started — open contact modal"
+                  >
                     <div>Get started</div>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
