@@ -2,11 +2,13 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import AnimatedHoverLink from "../Common/AnimatedMenuLink";
-
+import { useContactModal } from "../ContactModal";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [translateY, setTranslateY] = useState("-500px");
+  const { setOpen: setContactModalOpen } = useContactModal();
+
   useEffect(() => {
     if (open) {
       setIsVisible(true); // Show overlay
@@ -125,15 +127,20 @@ const Header = () => {
               >
                 <AnimatedHoverLink href="/treatments" label="Treatments" />
               </div>
-              
-              <Link
-                href="/contact"
+                <div
+                data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
+                className="nav-link-wrap"
+              >
+                <AnimatedHoverLink href="/contact" label="Contact" />
+              </div>
+              <button
+                onClick={() => setContactModalOpen(true)}
                 className="link-fixed-nav main w-inline-block"
               >
                 <div className="button-text-mask small">
-                  <div className="button-text-small _1"> Contact</div>
+                  <div className="button-text-small _1"> Book an Appointment</div>
                 </div>
-              </Link>
+              </button>
            
             </div>
           </nav>

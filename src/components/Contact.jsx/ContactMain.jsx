@@ -50,7 +50,7 @@ const ContactMain = () => {
                           />
                         </svg>
                       </div>
-                      <div>info@shinefamilydental.com</div>
+                      <div>Info@langleycaredental.com</div>
                     </div>
                     <div className="contact-b-social-tile">
                       <div className="icon-contact-b w-embed">
