@@ -151,8 +151,8 @@ const TreatmentsPage = () => {
     <div className="!min-h-screen !bg-gray-50 !py-16 !px-4 sm:!px-6 lg:!px-8">
       
       {/* Header Section */}
-      <header className="!max-w-4xl !mx-auto !text-center !mb-16">
-        <h1 className="!text-5xl !font-extrabold !text-indigo-900 !mb-4 sm:!text-6xl">
+      <header className="!max-w-4l !mx-auto !my-12 !text-center !mb-16">
+        <h1 className="!text-5xl !font-extrabold !tracking-tight !text-indigo-900 !mb-4 sm:!text-6xl">
           Comprehensive Dental Services
         </h1>
         <p className="!text-xl !text-gray-600">

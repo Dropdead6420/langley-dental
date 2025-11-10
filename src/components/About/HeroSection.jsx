@@ -48,16 +48,16 @@ const HeroSection = () => {
                 </div>
                 <div className="text-body">
                   <span className="text-underline">
-                    <strong>Unlock</strong>
+                    <strong>Book An Appointment</strong>
                   </span>&nbsp;
-                  your <strong>healths</strong> potential
+                 
                 </div>
               </Link>
               <div
                 data-w-id="bd56ca11-fb3b-a2af-d2cf-0858bb545c06"
                 className="text-h3 !text-start wow fadeInUp"
               >
-                At Dental Health, we’re dedicated to creating healthy, beautiful
+                At Langley Dental, we’re dedicated to creating healthy, beautiful
                 smiles. Trust our expert team to provide gentle, personalized
                 care for the whole family.
               </div>
