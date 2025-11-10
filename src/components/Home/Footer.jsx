@@ -103,7 +103,7 @@ const Footer = () => {
               </div>
               <div className="info-block-footer">
                 <div className="label text-dark-48">Email</div>
-                <div>info@shinefamilydental.com</div>
+                <div>Info@langleycaredental.com</div>
               </div>
             </div>
           </div>

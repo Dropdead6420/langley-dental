@@ -3,12 +3,13 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { getHeroSliders } from "@/services/herosectionServices";
-
+import { useContactModal } from "../ContactModal";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
   const [videoUrl, setVideoUrl] = useState("");
   const rootRef = useRef(null);
+   const { setOpen } = useContactModal();
 
   useEffect(() => {
     const fetchSlider = async () => {
@@ -109,7 +110,13 @@ console.log("video url",videoUrl)
                 <div className="label-small"> smile</div>
               </div>
             </div>
+             <button   onClick={() => setOpen(true)} class="relative !mx-auto inline-flex items-center justify-center !mt-4 px-8 !py-3 overflow-hidden text-lg font-semibold !text-white bg-gradient-to-r from-sky-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+  <span class="relative z-10">Book an Appointment</span>
+  <span class="absolute inset-0 bg-gradient-to-r from-blue-400 to-sky-500 opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></span>
+</button>
           </div>
+         
+
         </div>
 
         <div
