@@ -23,12 +23,16 @@ const Services = () => {
         >
           {/* Image */}
           <div className="w-full lg:w-1/2">
+          <Link 
+          href={`/treatments/${treatment.slug}`}
+          >
             <img
               src={treatment.image}
               alt={treatment.title}
               className="w-full h-[300px] object-cover rounded-xl shadow-md wow fadeInUp"
               loading="lazy"
             />
+          </Link>
           </div>
 
           {/* Text Content */}
