@@ -113,19 +113,25 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/blog" label="Blog" />
+                <AnimatedHoverLink href="/treatments" label="Services" />
               </div>
               <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/gallery" label="Gallery" />
+                <AnimatedHoverLink href="/gallery" label="Invisalign®" />
               </div>
               <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/treatments" label="Treatments" />
+                <AnimatedHoverLink href="#" label="Emergency Care" />
+              </div>
+                 <div
+                data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
+                className="nav-link-wrap"
+              >
+                <AnimatedHoverLink href="#" label="Financing" />
               </div>
                 <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"

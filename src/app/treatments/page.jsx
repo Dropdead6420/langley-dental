@@ -7,21 +7,21 @@ const treatments = [
   {
     slug: "bondings-and-veneers",
     title: "Bondings and Veneers",
-    description: "At Richmond Shine Dental clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth.",
+    description: "At Langley Care Dental Clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth.",
     image: "/assets/images/treatments/boundings-veneers.jpg",
     content: "" // Content omitted for brevity
   },
   {
     slug: "childrens-dentistry",
     title: "Children’s Dentistry",
-    description: "At Richmond Shine Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority.",
+    description: "At Langley Care Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority.",
     image: "/assets/images/treatments/1-8.png",
     content: ""
   },
   {
     slug: "complete-and-partial-dentures",
     title: "Complete and Partial Dentures",
-    description: "Restore your smile and confidence with custom-made dentures at Richmond Shine Dental Clinic.",
+    description: "Restore your smile and confidence with custom-made dentures at Langley Care Dental Clinic.",
     image: "/assets/images/treatments/Screenshot_1.png",
     content: ""
   },
@@ -35,14 +35,14 @@ const treatments = [
   {
     slug: "digital-radiography",
     title: "Digital Radiography",
-    description: "At Richmond Shine Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging.",
+    description: "At Langley Care Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging.",
     image: "/assets/images/treatments/1-15.png",
     content: ""
   },
   {
     slug: "invisalign",
     title: "Invisalign Treatment",
-    description: "Achieve a straighter, more confident smile with Invisalign a Richmond Shine Dental Clinic. ",
+    description: "Achieve a straighter, more confident smile with Invisalign a Langley Care Dental Clinic. ",
     image: "/assets/images/treatments/1-19.png",
     content: ""
   },
@@ -63,7 +63,7 @@ const treatments = [
   {
     slug: "cosmetic-dentistry",
     title: "Cosmetic Dentistry",
-    description: "Cosmetic Dentistry: Transform Your Smile with Richmond Shine Dental Clinic Cosmetic dentistry is all about enhancing the beauty of your smile.",
+    description: "Cosmetic Dentistry: Transform Your Smile with Langley Care Dental Clinic Cosmetic dentistry is all about enhancing the beauty of your smile.",
     image: "/assets/images/treatments/tumblr_og2gy8QaPk1sfyngeo3_1280.jpg",
     content: ""
   },
@@ -84,7 +84,7 @@ const treatments = [
   {
     slug: "cleaning-and-prevention",
     title: "Cleaning and Prevention",
-    description: "Cleaning and Prevention: The Foundation of a Healthy Smile Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Richmond Shine Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up.",
+    description: "Cleaning and Prevention: The Foundation of a Healthy Smile Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Langley Care Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up.",
     image: "/assets/images/treatments/1-9.png",
     content: ""
   },
@@ -112,7 +112,7 @@ const treatments = [
   {
     slug: "root-canal-treatment",
     title: "Root Canal Treatment",
-    description: "Root Canal Treatment: Save Your Natural Teeth Your teeth are precious, and at Richmond Shine Dental Clinic, we believe in preserving them whenever possible.",
+    description: "Root Canal Treatment: Save Your Natural Teeth Your teeth are precious, and at Langley Care Dental Clinic, we believe in preserving them whenever possible.",
     image: "/assets/images/treatments/2-3.png",
     content: ""
   },

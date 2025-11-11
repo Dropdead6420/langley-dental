@@ -14,13 +14,13 @@ const Services = () => {
             content: `
     <h1>General Dentistry</h1>
 
-    <p>Maintaining optimal dental health is crucial for your overall well-being. At Richmond Shine Dental Clinic, we pride ourselves on offering exceptional general dentistry services designed for every age group. From routine check-ups to advanced treatments, our family dental care ensures you and your loved ones achieve healthy, beautiful smiles.</p>
+    <p>Maintaining optimal dental health is crucial for your overall well-being. At Langley Care Dental Clinic, we pride ourselves on offering exceptional general dentistry services designed for every age group. From routine check-ups to advanced treatments, our family dental care ensures you and your loved ones achieve healthy, beautiful smiles.</p>
 
     <h2>What Is General Dentistry?</h2>
     <p>General dentistry focuses on the prevention, diagnosis, and treatment of oral health issues. A general dentist acts as your primary dental care provider, addressing common concerns and customizing treatments to your unique needs. Preventive care lies at its core, aiming to stop dental problems before they escalate into significant oral health issues.</p>
 
-    <h2>General Dentistry Services Offered at Richmond Shine Dental Clinic</h2>
-    <p>Richmond Shine Dental Clinic delivers comprehensive general dentistry services to maintain and restore your smile. Here’s an in-depth look at what we do:</p>
+    <h2>General Dentistry Services Offered at Langley Care Dental Clinic</h2>
+    <p>Langley Care Dental Clinic delivers comprehensive general dentistry services to maintain and restore your smile. Here’s an in-depth look at what we do:</p>
 
     <h3>Preventive Dental Care</h3>
     <ul>
@@ -36,7 +36,7 @@ const Services = () => {
       <li>Structural damage</li>
       <li>Hidden infections</li>
     </ul>
-    <p>By catching problems early, Richmond Shine Dental Clinic ensures you avoid more invasive or costly procedures later.</p>
+    <p>By catching problems early, Langley Care Dental Clinic ensures you avoid more invasive or costly procedures later.</p>
 
     <h3>Cavity Treatment (Fillings)</h3>
     <p>We offer tooth-colored composite fillings that seamlessly blend with your natural teeth while effectively restoring function.</p>
@@ -71,7 +71,7 @@ const Services = () => {
     </ul>
     <p>This education empowers you to take charge of your dental health between appointments.</p>
 
-    <h2>Why Choose Richmond Shine Dental Clinic?</h2>
+    <h2>Why Choose Langley Care Dental Clinic?</h2>
     <ul>
       <li><strong>Comprehensive Services Under One Roof:</strong> From preventive care to restorative solutions, our full range of services caters to your entire family.</li>
       <li><strong>Flexible and Convenient Scheduling:</strong> We offer timely appointments to fit your busy lifestyle.</li>
@@ -91,8 +91,8 @@ const Services = () => {
     <h2>Dental Implants: A Permanent Solution for a Natural Smile</h2>
     <p>Dental implants are a revolutionary advancement in modern dentistry, offering a reliable and long-lasting way to restore both the function and aesthetics of your smile. These titanium posts are surgically placed into the jawbone, mimicking the natural tooth structure from root to crown. Not only do they provide a stable and secure fit, but they also stimulate the jawbone, preventing bone loss and maintaining facial structure over time.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Dental Implants?</h3>
-    <p>At Richmond Shine Dental Clinic, we specialize in delivering exceptional dental implant care. Here’s why patients trust us:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Dental Implants?</h3>
+    <p>At Langley Care Dental Clinic, we specialize in delivering exceptional dental implant care. Here’s why patients trust us:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Implants:</strong> We handle every step of the process in-house for a seamless experience.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -128,7 +128,7 @@ const Services = () => {
     </ul>
 
     <h3>Ready to Restore Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile with dental implants!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile with dental implants!</p>
   `,
         },
         {
@@ -170,11 +170,11 @@ const Services = () => {
     slug: "bondings-and-veneers",
     title: "Bondings and Veneers",
     description:
-      "At Richmond Shine Dental clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth.",
+      "At Langley Care Dental Clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth.",
     image: "/assets/images/treatments/boundings-veneers.jpg",
 icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     content: `
-      <p><strong>At Richmond Shine Dental clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth. Whether you choose dental bonding or veneers, our treatments are designed to enhance your smile and boost your confidence.</strong></p>
+      <p><strong>At Langley Care Dental Clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth. Whether you choose dental bonding or veneers, our treatments are designed to enhance your smile and boost your confidence.</strong></p>
 
       <h3>Dental Bonding</h3>
       <p><strong>What is Dental Bonding?</strong></p>
@@ -220,7 +220,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
         <li>Durable and long-lasting solution for multiple cosmetic issues.</li>
       </ul>
 
-      <h3>Why Choose Richmond Shine Dental Clinic for Dental Implants?</h3>
+      <h3>Why Choose Langley Care Dental Clinic for Dental Implants?</h3>
       <ul class="list-image-[url(/assets/images/icon/check.svg)]">
         <li>Start-to-Finish Care: Comprehensive dental implant services under one roof.</li>
         <li>Sedation Dentistry: Safe and effective options for patients with anxiety or special healthcare needs.</li>
@@ -229,18 +229,18 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
         <li>Caring Professionals: A team dedicated to your comfort and satisfaction.</li>
       </ul>
 
-      <p>At Richmond Shine Dental Clinic, we are committed to providing personalized care for all your dental needs. Whether you’re looking for cosmetic enhancements or restorative solutions, we’re here to help you achieve a healthy, radiant smile.</p>
+      <p>At Langley Care Dental Clinic, we are committed to providing personalized care for all your dental needs. Whether you’re looking for cosmetic enhancements or restorative solutions, we’re here to help you achieve a healthy, radiant smile.</p>
     `,
   },
   {
     slug: "childrens-dentistry",
     title: "Children’s Dentistry",
     description:
-      "At Richmond Shine Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority.",
+      "At Langley Care Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority.",
     image: "/assets/images/treatments/1-8.png", // (example image – you can change)
  icon: "https://cdn-icons-png.flaticon.com/512/616/616655.png",
     content: `
-      <p>At Richmond Shine Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority. Dr. Singh and our team are passionate about creating positive dental experiences for kids, setting the foundation for a lifetime of healthy smiles.</p>
+      <p>At Langley Care Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority. Dr. Singh and our team are passionate about creating positive dental experiences for kids, setting the foundation for a lifetime of healthy smiles.</p>
 
       <p>We understand that children can feel anxious or fearful about dental visits, which is why we’ve designed our clinic to be a welcoming and fun environment. Our interactive play area helps kids feel at ease, and we ensure every visit ends with a positive experience.</p>
 
@@ -268,7 +268,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
         <li><strong>Transition to Adult Dentistry:</strong> Preparing children for a smooth transition to adult dental care as they grow.</li>
       </ul>
 
-      <h3>Why Choose Richmond Shine Dental Clinic for Your Child’s Dental Care?</h3>
+      <h3>Why Choose Langley Care Dental Clinic for Your Child’s Dental Care?</h3>
       <ul class="list-image-[url(/assets/images/icon/check.svg)]">
         <li><strong>Kid-Friendly Environment:</strong> Interactive play area and a welcoming atmosphere to ease anxiety.</li>
         <li><strong>Experienced Professionals:</strong> Dr. Singh and our team specialize in treating children with care and compassion.</li>
@@ -276,22 +276,22 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
         <li><strong>Focus on Education:</strong> We empower kids and parents with the knowledge to maintain healthy smiles at home.</li>
       </ul>
 
-      <p>At Richmond Shine Dental Clinic, we’re dedicated to making dental visits enjoyable and stress-free for your little ones. Schedule an appointment today and let us partner with you in nurturing your child’s healthy, happy smile!</p>
+      <p>At Langley Care Dental Clinic, we’re dedicated to making dental visits enjoyable and stress-free for your little ones. Schedule an appointment today and let us partner with you in nurturing your child’s healthy, happy smile!</p>
     `,
   },
   {
     slug: "complete-and-partial-dentures",
     title: "Complete and Partial Dentures",
      description:
-      "Restore your smile and confidence with custom-made dentures at Richmond Shine Dental Clinic.",
+      "Restore your smile and confidence with custom-made dentures at Langley Care Dental Clinic.",
     image:
       "/assets/images/treatments/Screenshot_1.png", // Replace with your preferred image URL
        icon: "https://cdn-icons-png.flaticon.com/512/616/616663.png",
     content: `
-      <p>Restore your smile and confidence with custom-made dentures at Richmond Shine Dental Clinic. Dentures are artificial replacements for natural teeth and gums, designed to help you regain the appearance and function of a full set of teeth. Whether you’ve lost teeth due to an accident, disease, or poor oral health, dentures can be an effective solution.</p>
+      <p>Restore your smile and confidence with custom-made dentures at Langley Care Dental Clinic. Dentures are artificial replacements for natural teeth and gums, designed to help you regain the appearance and function of a full set of teeth. Whether you’ve lost teeth due to an accident, disease, or poor oral health, dentures can be an effective solution.</p>
 
       <h3>What Are Dentures?</h3>
-      <p>Dentures are removable dental prosthetics that replace missing teeth and surrounding tissues. They are custom-made to fit your mouth, ensuring comfort and functionality. At Richmond Shine Dental Clinic, we create your dentures using precise impressions of your teeth to ensure a perfect fit.</p>
+      <p>Dentures are removable dental prosthetics that replace missing teeth and surrounding tissues. They are custom-made to fit your mouth, ensuring comfort and functionality. At Langley Care Dental Clinic, we create your dentures using precise impressions of your teeth to ensure a perfect fit.</p>
 
       <h3>Types of Dentures</h3>
       <h4>Complete Dentures</h4>
@@ -316,7 +316,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
         <li><strong>Removable:</strong> Easy to clean and maintain.</li>
       </ul>
 
-      <h3>Why Choose Richmond Shine Dental Clinic for Dentures?</h3>
+      <h3>Why Choose Langley Care Dental Clinic for Dentures?</h3>
       <ul class="list-image-[url(/assets/images/icon/check.svg)]">
         <li><strong>Custom-Made Solutions:</strong> We use precise impressions to create dentures tailored to your unique needs.</li>
         <li><strong>Comprehensive Care:</strong> From initial consultation to final fitting, we guide you through every step of the process.</li>
@@ -325,9 +325,9 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       </ul>
 
       <h3>Looking for a Permanent Solution?</h3>
-      <p>If you’re seeking a more permanent alternative to dentures, consider dental implants at Richmond Shine Dental Clinic. Our start-to-finish dental implant services provide a durable and natural-looking solution for missing teeth.</p>
+      <p>If you’re seeking a more permanent alternative to dentures, consider dental implants at Langley Care Dental Clinic. Our start-to-finish dental implant services provide a durable and natural-looking solution for missing teeth.</p>
 
-      <p>At Richmond Shine Dental Clinic, we’re here to help you regain your smile and confidence. Whether you need complete or partial dentures, our caring team is ready to provide personalized care. Schedule your consultation today and take the first step toward a healthier, happier smile!</p>
+      <p>At Langley Care Dental Clinic, we’re here to help you regain your smile and confidence. Whether you need complete or partial dentures, our caring team is ready to provide personalized care. Schedule your consultation today and take the first step toward a healthier, happier smile!</p>
     `,
   },
   {
@@ -338,7 +338,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     image: "/assets/images/treatments/1-14.png", // Replace with the actual image URL
  icon: "https://cdn-icons-png.flaticon.com/512/4320/4320348.png",
     content: `
-    <p>Dental emergencies can happen unexpectedly and often require immediate attention to alleviate pain, prevent further damage, and preserve your oral health. At Richmond Shine Dental Clinic, we’re here to provide prompt and effective care when you need it most.</p>
+    <p>Dental emergencies can happen unexpectedly and often require immediate attention to alleviate pain, prevent further damage, and preserve your oral health. At Langley Care Dental Clinic, we’re here to provide prompt and effective care when you need it most.</p>
 
     <h3>What to Do in a Dental Emergency</h3>
 
@@ -371,7 +371,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       <li><strong>Objects Caught Between Teeth:</strong> Use dental floss to gently remove the object. Avoid using sharp tools that could damage your gums or teeth.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Dental Emergencies?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Dental Emergencies?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Immediate Care:</strong> We prioritize emergency cases and strive to see you as quickly as possible.</li>
       <li><strong>Comprehensive Services:</strong> From knocked-out teeth to severe toothaches, we handle a wide range of dental emergencies.</li>
@@ -380,20 +380,20 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     </ul>
 
     <h3>Looking for a Permanent Solution?</h3>
-    <p>If your dental emergency involves missing teeth, consider dental implants at Richmond Shine Dental Clinic. Our start-to-finish implant services provide a durable and natural-looking solution to restore your smile.</p>
+    <p>If your dental emergency involves missing teeth, consider dental implants at Langley Care Dental Clinic. Our start-to-finish implant services provide a durable and natural-looking solution to restore your smile.</p>
 
-    <p>At Richmond Shine Dental Clinic, we’re here to help you through any dental emergency. Don’t wait—call us immediately if you’re experiencing pain, discomfort, or an urgent dental issue. Your oral health is our priority!</p>
+    <p>At Langley Care Dental Clinic, we’re here to help you through any dental emergency. Don’t wait—call us immediately if you’re experiencing pain, discomfort, or an urgent dental issue. Your oral health is our priority!</p>
   `,
   },
   {
     slug: "digital-radiography",
     title: "Digital Radiography",
     description:
-      "At Richmond Shine Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging.",
+      "At Langley Care Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging.",
     image: "/assets/images/treatments/1-15.png", // Replace with your preferred image URL
     icon: "https://cdn-icons-png.flaticon.com/512/3223/3223924.png",
     content: `
-    <p>At Richmond Shine Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging. This modern technology has replaced traditional film-based X-rays, offering numerous benefits for both patients and dental professionals.</p>
+    <p>At Langley Care Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging. This modern technology has replaced traditional film-based X-rays, offering numerous benefits for both patients and dental professionals.</p>
 
     <h3>What is Digital Radiography?</h3>
     <p>Digital radiography is an advanced imaging technique that captures detailed images of your teeth, jawbone, and surrounding oral structures. These high-quality images are instantly available, allowing for quicker diagnoses and treatment planning.</p>
@@ -407,7 +407,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       <li><strong>Improved Patient Experience:</strong> The process is quick, comfortable, and less invasive, ensuring a better overall experience for patients.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Digital Radiography?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Digital Radiography?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>State-of-the-Art Technology:</strong> We use the latest digital imaging systems to ensure accurate and efficient diagnostics.</li>
       <li><strong>Patient Safety:</strong> Our digital X-rays minimize radiation exposure while maintaining high-quality imaging.</li>
@@ -416,20 +416,20 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     </ul>
 
     <h3>Looking for a Permanent Solution?</h3>
-    <p>If your diagnostic imaging reveals missing teeth or other dental concerns, consider dental implants at Richmond Shine Dental Clinic. Our start-to-finish implant services provide a durable and natural-looking solution to restore your smile.</p>
+    <p>If your diagnostic imaging reveals missing teeth or other dental concerns, consider dental implants at Langley Care Dental Clinic. Our start-to-finish implant services provide a durable and natural-looking solution to restore your smile.</p>
 
-    <p>At Richmond Shine Dental Clinic, we’re committed to using the best technology to enhance your dental care. Schedule your appointment today and experience the benefits of digital radiography for yourself!</p>
+    <p>At Langley Care Dental Clinic, we’re committed to using the best technology to enhance your dental care. Schedule your appointment today and experience the benefits of digital radiography for yourself!</p>
   `,
   },
   {
     slug: "invisalign",
     title: "Invisalign Treatment",
     description:
-      "Achieve a straighter, more confident smile with Invisalign a Richmond Shine Dental Clinic. ",
+      "Achieve a straighter, more confident smile with Invisalign a Langley Care Dental Clinic. ",
     image: "/assets/images/treatments/1-19.png", // Replace with your actual image URL
       icon: "https://cdn-icons-png.flaticon.com/512/616/616660.png",
     content: `
-    <p>Achieve a straighter, more confident smile with Invisalign a Richmond Shine Dental Clinic. Invisalign is a modern orthodontic treatment that uses clear, removable aligners to correct a variety of dental issues without the need for traditional metal braces.</p>
+    <p>Achieve a straighter, more confident smile with Invisalign a Langley Care Dental Clinic. Invisalign is a modern orthodontic treatment that uses clear, removable aligners to correct a variety of dental issues without the need for traditional metal braces.</p>
 
     <h3>What is Invisalign?</h3>
     <p>Invisalign is a comprehensive orthodontic solution designed to gradually shift and straighten teeth using a series of custom-made, clear aligners. These aligners are virtually invisible, making them a discreet and comfortable alternative to conventional braces.</p>
@@ -453,7 +453,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       <li><strong>Effective Results:</strong> Invisalign delivers predictable and precise results when treatment guidelines are followed.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Invisalign?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Invisalign?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Experienced Professionals:</strong> Dr. Singh and our team are certified Invisalign providers with extensive experience in orthodontic care.</li>
       <li><strong>Personalized Treatment Plans:</strong> We create custom aligners tailored to your unique dental needs and goals.</li>
@@ -467,7 +467,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <h3>Looking for a Permanent Solution?</h3>
     <p>If you’re considering orthodontic treatment as part of a broader dental plan, explore our dental implants and other comprehensive services at Shine Family Dental Clinic.</p>
 
-    <p>At Richmond Shine Dental Clinic, we’re here to help you achieve the smile you’ve always wanted. Schedule your Invisalign consultation today and take the first step toward a straighter, healthier smile!</p>
+    <p>At Langley Care Dental Clinic, we’re here to help you achieve the smile you’ve always wanted. Schedule your Invisalign consultation today and take the first step toward a straighter, healthier smile!</p>
   `,
   },
   {
@@ -482,8 +482,8 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <h2>Full Mouth Reconstruction: Transform Your Smile and Oral Health</h2>
     <p>Full Mouth Reconstruction is a comprehensive dental solution designed to address multiple oral health issues while restoring the functionality and aesthetics of your entire mouth. This personalized treatment plan is tailored to meet your unique needs, whether you’re dealing with missing teeth, damaged or decayed teeth, bite alignment problems, or overall oral health concerns.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Full Mouth Reconstruction?</h3>
-    <p>At Richmond Shine Dental Clinic, we specialize in delivering exceptional care and results for full-mouth reconstructions. Here’s why patients trust us:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Full Mouth Reconstruction?</h3>
+    <p>At Langley Care Dental Clinic, we specialize in delivering exceptional care and results for full-mouth reconstructions. Here’s why patients trust us:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish Full-Mouth Reconstructions:</strong> We handle every step of the process in-house for a seamless experience.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -505,7 +505,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     </ul>
 
     <h3>Ready to Transform Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile!</p>
   `,
   },
   {
@@ -519,8 +519,8 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <h2>A Healthier, More Aesthetic Choice</h2>
     <p>Say goodbye to dark, unsightly fillings and hello to a brighter, healthier smile! White fillings are a modern, mercury-free alternative to traditional silver (amalgam) fillings. Not only do they offer excellent bond strength and durability comparable to metal fillings, but they also enhance the aesthetics of your teeth. Whether you’re dealing with a leaky metal filling or simply want a more natural look, replacing old amalgam fillings with white fillings is a safe and effective solution.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Amalgam Removal and White Fillings?</h3>
-    <p>At Richmond Shine Dental Clinic, we prioritize your oral health and satisfaction. Here’s why patients trust us for their dental care:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Amalgam Removal and White Fillings?</h3>
+    <p>At Langley Care Dental Clinic, we prioritize your oral health and satisfaction. Here’s why patients trust us for their dental care:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Implants:</strong> We handle every step of your dental journey in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Ideal for patients with dental anxiety or special healthcare needs.</li>
@@ -538,23 +538,23 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     </ul>
 
     <h3>Ready to Upgrade Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and learn more about amalgam removal and white fillings. Let us help you achieve a healthier, more beautiful smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and learn more about amalgam removal and white fillings. Let us help you achieve a healthier, more beautiful smile!</p>
   `,
   },
   {
     slug: "cosmetic-dentistry",
     title: "Cosmetic Dentistry",
     description:
-      "Cosmetic Dentistry: Transform Your Smile with Richmond Shine Dental Clinic Cosmetic dentistry is all about enhancing the beauty of your smile.",
+      "Cosmetic Dentistry: Transform Your Smile with Langley Care Dental Clinic Cosmetic dentistry is all about enhancing the beauty of your smile.",
     image:
       "/assets/images/treatments/tumblr_og2gy8QaPk1sfyngeo3_1280.jpg", // Replace with your actual image URL
        icon: "https://cdn-icons-png.flaticon.com/512/5736/5736741.png",
     content: `
-    <h2>Cosmetic Dentistry: Transform Your Smile with Richmond Shine Dental Clinic</h2>
+    <h2>Cosmetic Dentistry: Transform Your Smile with Langley Care Dental Clinic</h2>
     <p>Cosmetic dentistry is all about enhancing the beauty of your smile. Unlike traditional dentistry, which focuses on oral health and functionality, cosmetic dentistry is dedicated to improving the visual appeal of your teeth and gums. From whitening to veneers, these treatments are designed to create a radiant, harmonious smile that boosts your confidence.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Cosmetic Dentistry?</h3>
-    <p>At Richmond Shine Dental Clinic, we specialize in delivering stunning, natural-looking results. Here’s why patients trust us for their cosmetic dental needs:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Cosmetic Dentistry?</h3>
+    <p>At Langley Care Dental Clinic, we specialize in delivering stunning, natural-looking results. Here’s why patients trust us for their cosmetic dental needs:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Cosmetic Dentistry:</strong> We handle every step of your smile transformation in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -563,7 +563,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       <li><strong>Caring Dental Professionals:</strong> Our team is committed to your comfort and satisfaction.</li>
     </ul>
 
-    <h3>Cosmetic Dentistry Services at Richmond Shine Dental Clinic</h3>
+    <h3>Cosmetic Dentistry Services at Langley Care Dental Clinic</h3>
     <p>We offer a wide range of cosmetic dental treatments to help you achieve your dream smile:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Teeth Whitening:</strong><br>Brighten your smile by removing stains and discoloration. Teeth whitening is one of the most popular and effective ways to restore a youthful, radiant appearance.</li>
@@ -573,7 +573,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     </ul>
 
     <h3>Ready to Enhance Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and explore the cosmetic dentistry options that are right for you. Let us help you achieve a smile you’ll love to show off!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and explore the cosmetic dentistry options that are right for you. Let us help you achieve a smile you’ll love to show off!</p>
   `,
   },
   {
@@ -586,13 +586,13 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
   content: `
     <h1>General Dentistry</h1>
 
-    <p>Maintaining optimal dental health is crucial for your overall well-being. At Richmond Shine Dental Clinic, we pride ourselves on offering exceptional general dentistry services designed for every age group. From routine check-ups to advanced treatments, our family dental care ensures you and your loved ones achieve healthy, beautiful smiles.</p>
+    <p>Maintaining optimal dental health is crucial for your overall well-being. At Langley Care Dental Clinic, we pride ourselves on offering exceptional general dentistry services designed for every age group. From routine check-ups to advanced treatments, our family dental care ensures you and your loved ones achieve healthy, beautiful smiles.</p>
 
     <h2>What Is General Dentistry?</h2>
     <p>General dentistry focuses on the prevention, diagnosis, and treatment of oral health issues. A general dentist acts as your primary dental care provider, addressing common concerns and customizing treatments to your unique needs. Preventive care lies at its core, aiming to stop dental problems before they escalate into significant oral health issues.</p>
 
-    <h2>General Dentistry Services Offered at Richmond Shine Dental Clinic</h2>
-    <p>Richmond Shine Dental Clinic delivers comprehensive general dentistry services to maintain and restore your smile. Here’s an in-depth look at what we do:</p>
+    <h2>General Dentistry Services Offered at Langley Care Dental Clinic</h2>
+    <p>Langley Care Dental Clinic delivers comprehensive general dentistry services to maintain and restore your smile. Here’s an in-depth look at what we do:</p>
 
     <h3>Preventive Dental Care</h3>
     <ul>
@@ -608,7 +608,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       <li>Structural damage</li>
       <li>Hidden infections</li>
     </ul>
-    <p>By catching problems early, Richmond Shine Dental Clinic ensures you avoid more invasive or costly procedures later.</p>
+    <p>By catching problems early, Langley Care Dental Clinic ensures you avoid more invasive or costly procedures later.</p>
 
     <h3>Cavity Treatment (Fillings)</h3>
     <p>We offer tooth-colored composite fillings that seamlessly blend with your natural teeth while effectively restoring function.</p>
@@ -643,7 +643,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     </ul>
     <p>This education empowers you to take charge of your dental health between appointments.</p>
 
-    <h2>Why Choose Richmond Shine Dental Clinic?</h2>
+    <h2>Why Choose Langley Care Dental Clinic?</h2>
     <ul>
       <li><strong>Comprehensive Services Under One Roof:</strong> From preventive care to restorative solutions, our full range of services caters to your entire family.</li>
       <li><strong>Flexible and Convenient Scheduling:</strong> We offer timely appointments to fit your busy lifestyle.</li>
@@ -662,7 +662,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     content: `
     <h2>Botox Treatment in Dentistry: Therapeutic and Cosmetic Benefits</h2>
-    <p>Botox isn’t just for cosmetic and medical purposes—it has valuable applications in dentistry as well. At Richmond Shine Dental Clinic, we use Botox for both therapeutic and cosmetic treatments to address a variety of oral and facial concerns. Whether you’re dealing with TMJ disorders, bruxism, or a gummy smile, Botox can be an effective solution when administered by trained professionals.</p>
+    <p>Botox isn’t just for cosmetic and medical purposes—it has valuable applications in dentistry as well. At Langley Care Dental Clinic, we use Botox for both therapeutic and cosmetic treatments to address a variety of oral and facial concerns. Whether you’re dealing with TMJ disorders, bruxism, or a gummy smile, Botox can be an effective solution when administered by trained professionals.</p>
 
     <h3>Applications of Botox in Dentistry</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
@@ -673,8 +673,8 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
       <li><strong>Facial Aesthetics in Dentistry:</strong><br>Enhance your smile with complementary facial aesthetic treatments, such as reducing wrinkles or fine lines around the mouth.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Botox Treatments?</h3>
-    <p>At Richmond Shine Dental Clinic, we prioritize safety, precision, and patient satisfaction. Here’s why patients trust us for Botox treatments:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Botox Treatments?</h3>
+    <p>At Langley Care Dental Clinic, we prioritize safety, precision, and patient satisfaction. Here’s why patients trust us for Botox treatments:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every aspect of your treatment in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Ideal for patients with anxiety or special healthcare needs.</li>
@@ -691,22 +691,22 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Ready to Explore Botox in Dentistry?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule a consultation and learn how Botox can enhance your oral health and facial aesthetics. Let us help you achieve a healthier, more confident smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule a consultation and learn how Botox can enhance your oral health and facial aesthetics. Let us help you achieve a healthier, more confident smile!</p>
   `,
   },
   {
     slug: "cleaning-and-prevention",
     title: "Cleaning and Prevention",
      description:
-      "Cleaning and Prevention: The Foundation of a Healthy Smile Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Richmond Shine Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up.",
+      "Cleaning and Prevention: The Foundation of a Healthy Smile Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Langley Care Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up.",
     image:
       "/assets/images/treatments/1-9.png", // Replace with your actual image URL
        icon: "https://cdn-icons-png.flaticon.com/512/4320/4320345.png",
     content: `
     <h2>Cleaning and Prevention: The Foundation of a Healthy Smile</h2>
-    <p>Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Richmond Shine Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up. Our comprehensive dental hygiene services are designed to keep your teeth and gums healthy while preventing future issues.</p>
+    <p>Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Langley Care Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up. Our comprehensive dental hygiene services are designed to keep your teeth and gums healthy while preventing future issues.</p>
 
-    <h3>Comprehensive Cleaning and Prevention Services at Richmond Shine Dental Clinic</h3>
+    <h3>Comprehensive Cleaning and Prevention Services at Langley Care Dental Clinic</h3>
     <p>We offer a full range of dental hygiene and preventive care services, including:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Examinations:</strong><br>Thorough check-ups to assess your oral health and identify potential issues early.</li>
@@ -718,8 +718,8 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
       <li><strong>Oral Hygiene Instruction:</strong><br>Personalized guidance to improve your at-home dental care routine.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Cleaning and Prevention?</h3>
-    <p>At Richmond Shine Dental Clinic, we are committed to providing exceptional care and ensuring your oral health is in top shape. Here’s why patients trust us:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Cleaning and Prevention?</h3>
+    <p>At Langley Care Dental Clinic, we are committed to providing exceptional care and ensuring your oral health is in top shape. Here’s why patients trust us:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every aspect of your dental hygiene and preventive needs.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -736,10 +736,10 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Partner with Us for a Healthier Smile</h3>
-    <p>Maintaining good oral hygiene at home and attending regular dental check-ups are key to preventing dental issues and promoting overall well-being. At Richmond Shine Dental Clinic, we work with you to develop a customized preventive plan tailored to your specific needs and lifestyle.</p>
+    <p>Maintaining good oral hygiene at home and attending regular dental check-ups are key to preventing dental issues and promoting overall well-being. At Langley Care Dental Clinic, we work with you to develop a customized preventive plan tailored to your specific needs and lifestyle.</p>
 
     <h3>Ready to Prioritize Your Oral Health?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your cleaning and check-up. Let us help you achieve a healthier, brighter smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your cleaning and check-up. Let us help you achieve a healthier, brighter smile!</p>
   `,
   },
   {
@@ -760,8 +760,8 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
       <li><strong>Dental Bridges:</strong><br>A bridge is a dental appliance used to replace one or more missing teeth by anchoring to the adjacent teeth or dental implants. It fills the gap, restoring your ability to chew, speak, and smile confidently.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Crowns and Bridges?</h3>
-    <p>At Richmond Shine Dental Clinic, we are committed to providing high-quality restorative dental care. Here’s why patients trust us:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Crowns and Bridges?</h3>
+    <p>At Langley Care Dental Clinic, we are committed to providing high-quality restorative dental care. Here’s why patients trust us:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every step of your crown or bridge treatment in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Ideal for patients with dental anxiety or special healthcare needs.</li>
@@ -789,7 +789,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <p>The choice between crowns and bridges depends on your specific dental needs and the condition of your teeth. Consulting with a qualified dentist is essential to determine the most appropriate treatment plan.</p>
 
     <h3>Ready to Restore Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and learn more about crowns and bridges. Let us help you achieve a healthier, more confident smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and learn more about crowns and bridges. Let us help you achieve a healthier, more confident smile!</p>
   `,
   },
   {
@@ -803,8 +803,8 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h2>Dental Implants: A Permanent Solution for a Natural Smile</h2>
     <p>Dental implants are a revolutionary advancement in modern dentistry, offering a reliable and long-lasting way to restore both the function and aesthetics of your smile. These titanium posts are surgically placed into the jawbone, mimicking the natural tooth structure from root to crown. Not only do they provide a stable and secure fit, but they also stimulate the jawbone, preventing bone loss and maintaining facial structure over time.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Dental Implants?</h3>
-    <p>At Richmond Shine Dental Clinic, we specialize in delivering exceptional dental implant care. Here’s why patients trust us:</p>
+    <h3>Why Choose Langley Care Dental Clinic for Dental Implants?</h3>
+    <p>At Langley Care Dental Clinic, we specialize in delivering exceptional dental implant care. Here’s why patients trust us:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Implants:</strong> We handle every step of the process in-house for a seamless experience.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -840,7 +840,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Ready to Restore Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile with dental implants!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile with dental implants!</p>
   `,
   },
   {
@@ -855,7 +855,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <p>Tooth extractions and bone grafting are essential dental procedures that address a variety of oral health concerns. Whether performed together or separately, these treatments play a crucial role in maintaining oral health, restoring function, and preparing for future dental solutions like implants.</p>
 
     <h3>Tooth Extractions: Simple to Complex</h3>
-    <p>At Richmond Shine Dental Clinic, we perform a wide range of extractions, from simple removals to complex surgical procedures. Extractions may be necessary for reasons such as:</p>
+    <p>At Langley Care Dental Clinic, we perform a wide range of extractions, from simple removals to complex surgical procedures. Extractions may be necessary for reasons such as:</p>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li>Severe tooth decay or damage</li>
       <li>Impacted wisdom teeth</li>
@@ -872,7 +872,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
     <p>If you’re considering dental implants after an extraction, bone grafting is often a critical step to ensure the success of the implant procedure.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Extractions and Bone Grafting?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Extractions and Bone Grafting?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every step of your treatment in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Ideal for patients with dental anxiety or special healthcare needs.</li>
@@ -891,19 +891,19 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Ready to Protect and Restore Your Oral Health?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and learn more about extractions and bone grafting. Let us help you build a strong foundation for a healthier, more confident smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and learn more about extractions and bone grafting. Let us help you build a strong foundation for a healthier, more confident smile!</p>
   `,
   },
   {
     slug: "root-canal-treatment",
     title: "Root Canal Treatment",
     description:
-      "Root Canal Treatment: Save Your Natural Teeth Your teeth are precious, and at Richmond Shine Dental Clinic, we believe in preserving them whenever possible.",
+      "Root Canal Treatment: Save Your Natural Teeth Your teeth are precious, and at Langley Care Dental Clinic, we believe in preserving them whenever possible.",
     image: "/assets/images/treatments/2-3.png", // Replace with actual image URL
      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736745.png",
     content: `
     <h2>Root Canal Treatment: Save Your Natural Teeth</h2>
-    <p>Your teeth are precious, and at Richmond Shine Dental Clinic, we believe in preserving them whenever possible. Root canal treatment (RCT), also known as endodontic therapy, is a highly effective procedure designed to treat infection or damage within the pulp (soft tissue) of a tooth. By addressing the issue promptly, RCT can save your natural tooth, relieve pain, and restore your oral health.</p>
+    <p>Your teeth are precious, and at Langley Care Dental Clinic, we believe in preserving them whenever possible. Root canal treatment (RCT), also known as endodontic therapy, is a highly effective procedure designed to treat infection or damage within the pulp (soft tissue) of a tooth. By addressing the issue promptly, RCT can save your natural tooth, relieve pain, and restore your oral health.</p>
 
     <h3>What is Root Canal Treatment?</h3>
     <p>Root canal treatment is performed when the nerve inside a tooth becomes infected or damaged due to decay, injury, or other factors. The procedure involves:</p>
@@ -915,7 +915,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
     <p>Root canal treatment is typically completed in 1-2 sittings and is a virtually painless procedure, thanks to modern techniques and anesthesia.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Root Canal Treatment?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Root Canal Treatment?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every step of your RCT in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -944,7 +944,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Don’t Wait to Address Tooth Pain</h3>
-    <p>If you’re experiencing symptoms or suspect you may need a root canal, contact Richmond Shine Dental Clinic today. Let us help you save your tooth and restore your smile with expert care!</p>
+    <p>If you’re experiencing symptoms or suspect you may need a root canal, contact Langley Care Dental Clinic today. Let us help you save your tooth and restore your smile with expert care!</p>
   `,
   },
   {
@@ -956,7 +956,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736727.png",
     content: `
     <h2>Teeth Whitening: Brighten Your Smile with Shine Family Dental Clinic</h2>
-    <p>Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging. Teeth whitening is a safe and effective way to restore the brightness of your smile, giving you a more youthful and confident appearance. At Richmond Shine Dental Clinic, we offer professional whitening solutions tailored to your needs.</p>
+    <p>Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging. Teeth whitening is a safe and effective way to restore the brightness of your smile, giving you a more youthful and confident appearance. At Langley Care Dental Clinic, we offer professional whitening solutions tailored to your needs.</p>
 
     <h3>Teeth Whitening Options</h3>
     <p>We provide two effective whitening methods to help you achieve a radiant smile:</p>
@@ -965,7 +965,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
       <li><strong>Take-Home Whitening Kits:</strong> For those who prefer the convenience of whitening at home, we offer custom take-home kits. These kits include professional-grade whitening gel and custom-fitted trays for safe and effective results over time.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Teeth Whitening?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Teeth Whitening?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every step of your whitening journey in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Ideal for patients with dental anxiety or special healthcare needs.</li>
@@ -983,7 +983,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Ready to Brighten Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and explore our teeth whitening options. Let us help you achieve a brighter, more confident smile!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and explore our teeth whitening options. Let us help you achieve a brighter, more confident smile!</p>
   `,
   },
   {
@@ -995,9 +995,9 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     icon: "https://cdn-icons-png.flaticon.com/512/5736/5736741.png",
     content: `
     <h2>Smile Makeovers: Transform Your Smile, Transform Your Life</h2>
-    <p>A Smile Makeover is a personalized and comprehensive approach to enhancing the beauty of your smile. By combining various cosmetic and restorative dental treatments, this transformative process goes beyond individual procedures to create a harmonious, radiant, and confident smile. At Richmond Shine Dental Clinic, we specialize in delivering stunning results tailored to your unique needs and goals.</p>
+    <p>A Smile Makeover is a personalized and comprehensive approach to enhancing the beauty of your smile. By combining various cosmetic and restorative dental treatments, this transformative process goes beyond individual procedures to create a harmonious, radiant, and confident smile. At Langley Care Dental Clinic, we specialize in delivering stunning results tailored to your unique needs and goals.</p>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Smile Makeovers?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Smile Makeovers?</h3>
     <ul class="list-image-[url(/assets/images/icon/check.svg)]">
       <li><strong>Start-to-Finish Smile Makeovers:</strong> We handle every step of your transformation in-house for a seamless experience.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with dental anxiety or special healthcare needs.</li>
@@ -1030,7 +1030,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Ready to Transform Your Smile?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to schedule your consultation and begin your Smile Makeover journey. Let us help you achieve a radiant, confident smile that lasts a lifetime!</p>
+    <p>Contact Langley Care Dental Clinic today to schedule your consultation and begin your Smile Makeover journey. Let us help you achieve a radiant, confident smile that lasts a lifetime!</p>
   `,
   },
 {
@@ -1055,7 +1055,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     </ul>
 
     <h3>Types of Sedation Offered</h3>
-    <p>At Richmond Shine Dental Clinic, we provide two main types of sedation to suit your needs:</p>
+    <p>At Langley Care Dental Clinic, we provide two main types of sedation to suit your needs:</p>
     <ul>
       <li><strong>Oral Sedation:</strong> A pill is taken before the procedure to induce a calming effect, reducing anxiety and helping you feel at ease.</li>
       <li><strong>Intravenous (IV) Sedation:</strong> Administered through a vein, IV sedation provides a deeper level of relaxation, making it ideal for lengthy or complex procedures.</li>
@@ -1069,7 +1069,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
       <li><strong>Improved Dental Health:</strong> By alleviating fear, sedation encourages patients to seek regular dental care, improving their overall oral health.</li>
     </ul>
 
-    <h3>Why Choose Richmond Shine Dental Clinic for Sedation Dentistry?</h3>
+    <h3>Why Choose Langley Care Dental Clinic for Sedation Dentistry?</h3>
     <ul>
       <li><strong>Start-to-Finish, Comprehensive Dental Care:</strong> We handle every step of your treatment in-house.</li>
       <li><strong>Safe and Effective Sedation Dentistry:</strong> Perfect for patients with anxiety or special healthcare needs.</li>
@@ -1082,7 +1082,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <p>Sedation dentistry is ideal for individuals who experience anxiety, fear, or discomfort during dental visits. Our team will work closely with you to determine the most appropriate sedation method based on your level of anxiety, the nature of the procedure, and your overall health.</p>
 
     <h3>Ready for a Stress-Free Dental Visit?</h3>
-    <p>Contact Richmond Shine Dental Clinic today to learn more about sedation dentistry and schedule your consultation. Let us help you achieve a healthier smile in a calm and comfortable environment!</p>
+    <p>Contact Langley Care Dental Clinic today to learn more about sedation dentistry and schedule your consultation. Let us help you achieve a healthier smile in a calm and comfortable environment!</p>
   `
 }
     ];
