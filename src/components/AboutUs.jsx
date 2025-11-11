@@ -24,10 +24,10 @@ export default function AboutUs() {
 
         {/* Right Content */}
         <div className="text-slate-800 space-y-6 wow fadeInUp">
-          <h4 className="text-sm font-semibold tracking-widest jost-font uppercase text-blue-500">
+          <h4 className="text-sm font-semibold !tracking-tight !jost-font uppercase text-blue-500">
             Welcome to Langley  dental Office
           </h4>
-          <h1 className="!text-4xl md:!text-5xl font-bold jost-font leading-tight text-slate-900">
+          <h1 className="!text-4xl md:!text-5xl font-bold !jost-font !tracking-tight text-slate-900">
            Dental care is our game. <br />
             <span className="text-blue-600">Excellence is our goal.</span>
           </h1>

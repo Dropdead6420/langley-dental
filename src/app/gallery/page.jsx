@@ -57,7 +57,7 @@ export default function App() {
 
           {categories?.length > 0 && (
             <div className="!mt-4 !p-4 !bg-gray-50 !rounded-lg">
-              <h3 className="!text-sm !font-semibold !text-gray-700 !mb-3">Categories</h3>
+              <h3 className="!text-sm !font-semibold !text-gray-700 !tracking-tight !mb-3">Categories</h3>
               <div className="!flex !flex-wrap !gap-2">
                 {categories.map((cat) => (
                   <button

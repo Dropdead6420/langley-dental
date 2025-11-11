@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import { getAllBlogs } from "@/services/blogService";
 import { useEffect, useMemo, useState } from "react";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 function BlogCard({ post, onOpen }) {
   return (
@@ -32,15 +33,9 @@ function BlogCard({ post, onOpen }) {
           {post.title}
         </h3>
 
-        {/* Excerpt: Slightly more muted text for contrast */}
-        <p className="text-base text-zinc-500 line-clamp-3">{post.content?.slice(0, 100).concat("...")}</p>
-
-        {/* Call to action: More prominent color */}
-        {false && <div className="mt-auto pt-2">
-          <span className="text-sm font-semibold text-indigo-600 transition duration-300 group-hover:text-indigo-700 group-hover:underline">
-            Read article →
-          </span>
-        </div>}
+        <p className="text-base text-zinc-500 line-clamp-3">
+          {post.content?.slice(0, 100).concat("...")}
+        </p>
       </div>
     </article>
   );
@@ -87,106 +82,41 @@ function Featured({ post, onOpen }) {
   );
 }
 
-function ReaderModal({ open, onClose, post }) {
-  if (!open || !post) return null;
-  return (
-    <div
-      // Full screen on mobile, centered on desktop
-      className="fixed inset-0 z-[60] flex items-end justify-center bg-black/75 p-0 sm:items-center sm:p-8 transition-opacity duration-300"
-      onClick={onClose}
-    >
-      <div
-        className="max-h-full w-full max-w-4xl overflow-y-auto rounded-t-xl bg-white p-5 sm:max-h-[95vh] sm:rounded-2xl sm:p-8 transform transition-transform duration-300 ease-out"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Header and Close Button (Optimized for space on mobile) */}
-        <div className="mb-6 flex flex-col sm:flex-row sm:items-start sm:justify-between sm:mb-8">
-
-          {/* Metadata Block: Stacks vertically on small screens if necessary */}
-          <div className="text-sm text-zinc-500 order-2 sm:order-1 mt-2 sm:mt-0">
-            {new Date(post.createdAt).toLocaleDateString()}
-            {/* Mobile Title: Visible on small screens, hidden on desktop */}
-            <h1 className="text-2xl font-bold text-zinc-900 mt-1 block ">{post.title}</h1>
-          </div>
-
-          <button
-            onClick={onClose}
-            className="rounded-full p-2 text-zinc-500 hover:bg-zinc-100 transition self-end sm:self-auto order-1 sm:order-2"
-            aria-label="Close reader"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-
-        {/* Desktop Title: Hidden on mobile, visible on desktop */}
-        <h1 className="text-3xl font-extrabold text-zinc-900 hidden sm:block mb-6">{post.title}</h1>
-
-        {/* Cover Image */}
-        <img
-          src={post.coverImage}
-          alt={post.title}
-          className="mb-8 aspect-[16/9] w-full rounded-xl object-cover shadow-md"
-        />
-
-        {/* Article Content */}
-        <article
-          className="prose prose-lg prose-indigo max-w-none prose-h1:text-zinc-900 prose-h2:text-zinc-800 prose-a:text-indigo-600"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
-      </div>
-    </div>
-  );
-}
-
 export default function BlogPage() {
+  const router = useRouter();
   const [search, setSearch] = useState("");
-  const [open, setOpen] = useState(false);
-  const [active, setActive] = useState(null);
   const [isSearching, setIsSearching] = useState(false);
   const [blogs, setBlogs] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(10);
 
-  const fetchBlogs = async (searchValue = search) => {
-    setLoading(true);
-    try {
-      const query = `page=${page}&limit=${limit}&title=${searchValue}`;
-      const response = await getAllBlogs(query);
-      if (response.status) {
-        setBlogs(response.data);
-      } else {
-        toast.error(response.message || "Failed to fetch the Blogs");
-      }
-    } catch (error) {
-      console.error("Error fetching blogs:", error);
-      toast.error("Something went wrong while fetching blogs");
-    } finally {
-      setLoading(false);
-    }
-  }
-
   useEffect(() => {
-    fetchBlogs();
-  }, [page, limit])
+    const fetchBlogs = async () => {
+      try {
+      const query = `page=${page}&limit=${limit}&title=${search}`;
+     const res = await getAllBlogs(query);
+        if (res?.status) {
+          setBlogs(res.data || []);
+        } else {
+          toast.error(res?.message || "Failed to fetch blogs");
+        }
+      } catch (err) {
+        console.error("Error fetching blogs:", err);
+        toast.error("Something went wrong while fetching blogs");
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  const featured = useMemo(
-    () => blogs.find((p) => p.featured) || blogs[0],
-    []
-  );
+    fetchBlogs();
+  }, [page, limit]);
+
+  const featured = useMemo(() => blogs.find((p) => p.featured) || blogs[0], [blogs]);
 
   const openPost = (post) => {
-    setActive(post);
-    setOpen(true);
+    if (!post?.slug) return;
+    router.push(`/blog/${post.slug}`);
   };
 
   const handleSearchClick = () => {
@@ -295,8 +225,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Reader Modal */}
-      <ReaderModal open={open} onClose={() => setOpen(false)} post={active} />
+   
       </div>
     </main>
   );

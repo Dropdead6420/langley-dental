@@ -1,5 +1,10 @@
 import { apiRequest } from "@/lib/apiClient";
 
-export const getAllBlogs = (query) => {
-    return apiRequest(`/api/blog?${query}`, "GET");
-}
+// Fetch all blogs
+export const getAllBlogs = async () => {
+  return apiRequest("/api/blog", "GET");
+};
+
+export const getBlogBySlug = async (slug) => {
+  return apiRequest(`/api/blog/${slug}`, "GET");
+};
