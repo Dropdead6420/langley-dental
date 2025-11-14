@@ -3,7 +3,9 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import AnimatedHoverLink from "../Common/AnimatedMenuLink";
 import { useContactModal } from "../ContactModal";
+import { useRouter } from "next/navigation";
 const Header = () => {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [translateY, setTranslateY] = useState("-500px");
@@ -119,19 +121,26 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/gallery" label="Invisalign®" />
+                <AnimatedHoverLink href="/invisalign" label="Invisalign®" />
               </div>
               <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/emergency-dental-care" label="Emergency Care" />
+                <Link 
+                  href="/cdcp" 
+                  className="link-fixed-nav w-inline-block"
+                >
+                  <div className="button-text-mask small">
+                    <div className="button-text-small _1">CDCP</div>
+                  </div>
+                </Link>
               </div>
                  <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="#" label="Financing" />
+                <AnimatedHoverLink href="/financing" label="Financing" />
               </div>
                 <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
@@ -140,11 +149,11 @@ const Header = () => {
                 <AnimatedHoverLink href="/contact" label="Contact" />
               </div>
               <button
-                onClick={() => setContactModalOpen(true)}
-                className="link-fixed-nav main w-inline-block"
+                onClick={() => router.push("/emergency-dental-care")}
+                className="link-fixed-nav main w-inline-block !bg-gray-800 hover:!bg-red-900  !text-red-500 hover:!text-white"
               >
                 <div className="button-text-mask small">
-                  <div className="button-text-small _1"> Book an Appointment</div>
+                  <div className="button-text-small _1">Emergency Care</div>
                 </div>
               </button>
            
@@ -213,6 +222,30 @@ const Header = () => {
                     className="nav-mobile-link w-inline-block"
                   >
                     <div className="text-h4">Contact</div>
+                  </Link>
+                   <Link
+                    href="/emergency-dental-care"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Emergency Care</div>
+                  </Link>
+                   <Link
+                    href="/financing"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Financing</div>
+                  </Link>
+                  <Link
+                    href="/invisalign"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">Invisalign</div>
+                  </Link>
+                  <Link
+                    href="/cdcp"
+                    className="nav-mobile-link w-inline-block"
+                  >
+                    <div className="text-h4">CDCP</div>
                   </Link>
                 </div>
                 <div

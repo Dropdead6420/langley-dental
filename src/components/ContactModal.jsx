@@ -41,9 +41,11 @@ const ContactModalContext = createContext();
 
 export function ContactModalProvider({ children }) {
   const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState(false);
+
 
   return (
-    <ContactModalContext.Provider value={{ open, setOpen }}>
+    <ContactModalContext.Provider value={{ open, setOpen, message, setMessage }}>
       {children}
       <ContactModal />
     </ContactModalContext.Provider>
@@ -63,6 +65,7 @@ function ContactModal() {
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const firstFieldRef = useRef(null);
+  const {message,setMessage} = useContactModal();
 
   // Close on Escape key press
   useEffect(() => {
@@ -114,7 +117,7 @@ function ContactModal() {
 
   const handleClose = () => {
     setOpen(false);
-    
+    setMessage('');
     setSuccess(false); 
   }
 
@@ -168,7 +171,8 @@ function ContactModal() {
               <div className="!relative !grid !gap-6 !p-6 sm:!p-8">
                 <div className="!space-y-1">
                   <h2 id="contact-heading" className="!text-xl sm:!text-2xl !font-semibold !tracking-tight !text-neutral-900">
-                    Book An Appointment
+                    
+                    {message ? message : 'Book An Appointment '}
                   </h2>
                   <p className="!text-sm !text-neutral-600">
                     We'd love to hear from you. Fill out the form and our team will get back within 1–2 business days.

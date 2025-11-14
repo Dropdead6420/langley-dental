@@ -41,6 +41,24 @@ const Footer = () => {
                   <div className="text-h4">Contact</div>
                   
                 </Link>
+                <Link
+                  href="/blog"
+                  className="link-footer-large w-inline-block"
+                >
+                  <div className="text-footer-link _1">Blogs</div>
+                </Link>
+                 <Link
+                  href="/gallery"
+                  className="link-footer-large w-inline-block"
+                >
+                  <div className="text-footer-link _1">Gallery</div>
+                </Link>
+                <Link
+                  href="/treatments"
+                  className="link-footer-large w-inline-block"
+                >
+                  <div className="text-footer-link _1">Treatments</div>
+                </Link>
               </div>
             </div>
             <div className="wrap-column-footer">

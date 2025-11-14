@@ -24,13 +24,13 @@ const { setOpen } = useContactModal();
           <div className="lg:!col-span-2">
             <div className="!bg-white !rounded-lg !shadow-sm !p-8 !mb-8">
               <h1 className="!text-4xl !font-bold !tracking-tight !text-[#03192c] !mb-4">
-                Emergency Dental Care in Richmond, BC
+                Emergency Dental Care in Langley, BC
 
               </h1>
               <p className="!text-lg !text-[#0b3d91] !leading-relaxed">
-                At Richmond Shine Dental, we know dental emergencies can happen when 
+                At Langley Dental, we know dental emergencies can happen when 
                 you least expect them. Whether it’s a sudden toothache, a chipped tooth,
-                 or a knocked-out tooth — <br/>our experienced Richmond dentists are ready to provide same-day emergency care to relieve pain and restore your smile.
+                 or a knocked-out tooth — <br/>our experienced Langley dentists are ready to provide same-day emergency care to relieve pain and restore your smile.
 
 
               </p>
@@ -38,7 +38,7 @@ const { setOpen } = useContactModal();
 
             <div className="!bg-gray-50 !rounded-lg !p-8 !mb-8">
               <h2 className="!text-2xl !font-bold !tracking-tight !text-[#03192c] !mb-6 !text-center">
-                Trusted Emergency Dentist in Richmond
+                Trusted Emergency Dentist in Langley
 
               </h2>
 
@@ -195,8 +195,8 @@ const { setOpen } = useContactModal();
                 <p className="!text-sm !mb-6 !text-blue-100">
                   The Clayburn Dental team offers sedation options to make every visit calm and stress-free.
                 </p>
-                <button className="!w-full !bg-white hover:!bg-gray-100 !text-[#0b3d91] !font-semibold !py-3 !px-6 !rounded !transition-colors">
-                  LEARN MORE
+                <button onClick={()=>setOpen(true)} className="!w-full !bg-white hover:!bg-gray-100 !text-[#0b3d91] !font-semibold !py-3 !px-6 !rounded !transition-colors">
+                  Book An Appointment
                 </button>
               </div>
             </div>
@@ -210,7 +210,7 @@ const { setOpen } = useContactModal();
             </div> */}
 
             <div className="!bg-white !rounded-lg !shadow-sm !p-6">
-              <h3 className="!text-sm !font-bold !text-[#0b3d91] !mb-4 !tracking-wide">Why Choose Richmond Shine Dental for Emergency Care?
+              <h3 className="!text-sm !font-bold !text-[#0b3d91] !mb-4 !tracking-wide">Why Choose Langley Shine Dental for Emergency Care?
 </h3>
 
               <div className="!bg-white !rounded-lg !shadow-sm !p-6">
@@ -223,7 +223,7 @@ const { setOpen } = useContactModal();
     <p>⚡ <strong>Same-Day Emergency Appointments</strong> available</p>
     <p>💙 <strong>Gentle, Compassionate Care</strong> focused on your comfort</p>
     <p>🦷 <strong>Comprehensive Treatments</strong> — from pain relief to full restoration</p>
-    <p>🏥 <strong>Modern Clinic</strong> in the heart of Richmond with advanced equipment</p>
+    <p>🏥 <strong>Modern Clinic</strong> in the heart of Langley with advanced equipment</p>
   </div>
 
   <div className="!mt-8 !text-center">
@@ -231,7 +231,7 @@ const { setOpen } = useContactModal();
       Your Smile Deserves Immediate Care
     </h4>
     <p className="!text-gray-600 !text-sm !mb-6">
-      Don’t wait in pain. At <strong>Richmond Shine Dental</strong>, we make emergency dental care
+      Don’t wait in pain. At <strong>Langley Shine Dental</strong>, we make emergency dental care
       simple, fast, and stress-free. Our goal is to get you smiling comfortably again — the same day.
     </p>
     <button onClick={()=>setOpen(true)} className="!w-full !bg-gradient-to-r !from-[#03192c] !to-[#0b3d91] hover:!opacity-90 !text-white !font-semibold !py-3 !rounded !transition">
@@ -259,22 +259,7 @@ const { setOpen } = useContactModal();
           </div>
         </div>
 
-        {/* Footer CTA */}
-        <div className="!bg-white !rounded-lg !shadow-sm !p-12 !mt-12 !text-center">
-          <h2 className="!text-3xl !tracking-tight !font-bold !text-[#03192c] !mb-4">
-            Visit us at:
-          </h2>
-          <p className="!text-gray-700 !mb-8 !text-lg">📍
-Richmond Shine Dental
-6180 Blundell Rd #171, Richmond, BC V7C 4W7<br/>
-☎️ Call (778) 366-7770<br/>
-💬 Book Online: www.richmondshinedental.com
-
-          </p>
-          <button onClick={()=>setOpen(true)} className="!bg-gradient-to-r !from-[#03192c] !to-[#0b3d91] hover:!opacity-90 !text-white !font-semibold !py-4 !px-12 !rounded !transition-colors !text-lg">
-            Book an Appointment
-          </button>
-        </div>
+        
       </div>
     </div>
   );
