@@ -3,11 +3,13 @@ import treatments from '@/data/treatments';
 import Link from 'next/link';
 import { useState } from 'react';
 import ContactModal, { useContactModal } from '@/components/ContactModal';
+import { faqs } from '@/data/faq';
+import FaqToggle from '@/components/Common/Faq';
 
 export default function TreatmentDetail({ params }) {
     const { setOpen } = useContactModal();
     const treatment = treatments.find(t => t.slug === params.slug);
-
+  const serviceFaqs = faqs[params.slug] || [];
   if (!treatment) {
     return (
       <div className="!min-h-screen !flex !items-center !justify-center !p-8 !text-center !text-red-600 !bg-gradient-to-br !from-gray-50 !to-blue-50">
@@ -50,6 +52,9 @@ export default function TreatmentDetail({ params }) {
             </button>
           </div>
         </div>
+      {serviceFaqs.length > 0 && (
+        <FaqToggle faqs={serviceFaqs} />
+      )}
       </div>
       <ContactModal />
     </div>
