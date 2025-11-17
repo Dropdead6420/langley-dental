@@ -54,16 +54,16 @@ const treatments = [
         <li>Durable and long-lasting solution for multiple cosmetic issues.</li>
       </ul>
       
-      <h3>Why Choose Langley Care Dental Clinic for Dental Implants?</h3>
+      <h3>Why Choose Langley Care Dental for Bondings & Veneers?</h3>
       <ul class="list-image-[url(/assets/images/icon/check.svg)]">
-        <li>Start-to-Finish Care: Comprehensive dental implant services under one roof.</li>
-        <li>Sedation Dentistry: Safe and effective options for patients with anxiety or special healthcare needs.</li>
-        <li>Patient-Focused Approach: Full-service care tailored to your unique needs.</li>
-        <li>Convenient Scheduling: Timely appointments to fit your busy lifestyle.</li>
-        <li>Caring Professionals: A team dedicated to your comfort and satisfaction.</li>
+        <li><b>Expertise in cosmetic dentistry:</b> Our skilled dentists have extensive experience in both direct bonding and veneer placement.</li>
+        <li><b>Personalized smile design:</b> We use digital mockups to preview your results before treatment.</li>
+        <li><b>High-quality materials:</b> From top-grade composite resin to premium porcelain, we choose durable and aesthetic materials.</li>
+        <li><b>Comfort-first care:</b> We focus on minimally invasive techniques and patient comfort throughout the process.</li>
+        <li><b>Long-term maintenance:</b> We guide you on how to care for your restorations to help maximize their lifespan.</li>
       </ul>
       
-      <p>At Langley Care Dental Clinic, we are committed to providing personalized care for all your dental needs. Whether you’re looking for cosmetic enhancements or restorative solutions, we’re here to help you achieve a healthy, radiant smile.</p>
+      <p>Ready for a smile upgrade? Book your cosmetic consultation at Langley Care Dental today to explore whether bonding or veneers are right for you.</p>
     `,
   },
   {
@@ -103,13 +103,17 @@ const treatments = [
 
       <h3>Why Choose Langley Care Dental Clinic for Your Child’s Dental Care?</h3>
       <ul class="list-image-[url(/assets/images/icon/check.svg)]">
-        <li><strong>Kid-Friendly Environment:</strong> Interactive play area and a welcoming atmosphere to ease anxiety.</li>
-        <li><strong>Experienced Professionals:</strong> Dr. Singh and our team specialize in treating children with care and compassion.</li>
-        <li><strong>Comprehensive Care:</strong> From preventive treatments to early orthodontic assessments, we cover all aspects of pediatric dentistry.</li>
-        <li><strong>Focus on Education:</strong> We empower kids and parents with the knowledge to maintain healthy smiles at home.</li>
+        <li><strong>Kid-Friendly Environment:</strong> Our clinic features a fun, interactive play area and a warm, welcoming atmosphere that helps children feel relaxed from the moment they walk in. We focus on reducing dental anxiety and creating positive experiences.</li>
+        <li><strong>Experienced Pediatric Dental Professionals
+:</strong> Led by Dr. Singh, our skilled team specializes in treating children with patience, care, and expertise. We understand the unique needs of young patients and use gentle techniques to ensure a smooth dental visit.
+</li>
+        <li><strong>Comprehensive Children’s Dental Services
+:</strong> From routine checkups and preventive treatments to early orthodontic assessments, we offer a full range of pediatric dental services. Our goal is to support your child’s oral health at every stage of development.</li>
+        <li><strong>Focus on Education & Healthy Habits:</strong> We believe in empowering both kids and parents with the right dental knowledge. Our team provides practical tips and guidance to help your child maintain strong, cavity-free teeth at home.</li>
       </ul>
 
-      <p>At Langley Care Dental Clinic, we’re dedicated to making dental visits enjoyable and stress-free for your little ones. Schedule an appointment today and let us partner with you in nurturing your child’s healthy, happy smile!</p>
+      <pAt Langley Care Dental Clinic, we are dedicated to creating a positive and enjoyable dental experience for your child. Book an appointment today and let us help you nurture your child’s healthy, happy smile!
+</p>
     `,
   },
   {
@@ -148,12 +152,18 @@ const treatments = [
         <li><strong>Removable:</strong> Easy to clean and maintain.</li>
       </ul>
 
-      <h3>Why Choose Langley Care Dental Clinic for Dentures?</h3>
+      <h3>Why Choose Langley Care Dental Clinic for Complete And Partial Dentures?</h3>
       <ul class="list-image-[url(/assets/images/icon/check.svg)]">
-        <li><strong>Custom-Made Solutions:</strong> We use precise impressions to create dentures tailored to your unique needs.</li>
-        <li><strong>Comprehensive Care:</strong> From initial consultation to final fitting, we guide you through every step of the process.</li>
-        <li><strong>Experienced Professionals:</strong> Our team is skilled in creating dentures that look natural and feel comfortable.</li>
-        <li><strong>Patient-Focused Approach:</strong> We prioritize your comfort and satisfaction throughout your dental journey.</li>
+        <li><strong>Custom-Made Denture Solutions:</strong> At Langley Care Dental Clinic, we take precise impressions to design dentures that fit your mouth perfectly. Every set is customized to restore your natural appearance and improve oral function.
+</li>
+        <li><strong>Comprehensive Denture Care:</strong> From your first consultation to the final fitting, our team provides complete support. We guide you through each step to ensure your new dentures feel comfortable and function smoothly.
+</li>
+        <li><strong>Experienced Denture Specialists
+:</strong>  Our skilled dental professionals have extensive experience crafting natural-looking, high-quality dentures. We focus on durability, comfort, and aesthetics to give you a confident smile.
+</li>
+        <li><strong>Patient-Focused & Comfort-Driven Approach
+:</strong>  Your comfort and satisfaction are our top priorities. We take the time to understand your needs, address your concerns, and deliver a seamless denture experience tailored specifically to you.
+</li>
       </ul>
 
       <h3>Looking for a Permanent Solution?</h3>
@@ -468,12 +478,17 @@ const treatments = [
     </ul>
     <p>This education empowers you to take charge of your dental health between appointments.</p>
 
-    <h2>Why Choose Langley Care Dental Clinic?</h2>
+    <h2>Why Choose Langley Care Dental Clinic for General Dentistry?
+</h2>
     <ul>
-      <li><strong>Comprehensive Services Under One Roof:</strong> From preventive care to restorative solutions, our full range of services caters to your entire family.</li>
-      <li><strong>Flexible and Convenient Scheduling:</strong> We offer timely appointments to fit your busy lifestyle.</li>
-      <li><strong>Highly Skilled Team:</strong> Our experienced, compassionate staff ensures your visit is safe, comfortable, and effective.</li>
-      <li><strong>Sedation Dentistry for Anxiety or Special Needs:</strong> Dental anxiety shouldn't stop you from receiving vital care. We offer sedation options to ensure a stress-free experience.</li>
+      <li><strong>Comprehensive Dental Services in One Place:</strong>  At Langley Care Dental Clinic, we provide a full range of dental treatments under one roof—including preventive, cosmetic, and restorative dentistry. Whether you need routine cleanings, veneers, fillings, or advanced dental solutions, we are equipped to care for every member of your family.
+</li>
+      <li><strong>Flexible & Convenient Appointment Scheduling:</strong>  We understand that your time is valuable. That’s why our clinic offers flexible scheduling options to accommodate busy lifestyles, ensuring you receive the dental care you need without hassle.</li>
+      <li><strong>Experienced & Compassionate Dental Team:</strong> Our highly trained dentists and friendly staff are committed to delivering exceptional, patient-focused care. With years of experience and a gentle approach, we ensure every visit feels comfortable, safe, and stress-free.
+</li>
+      <li><strong>Sedation Dentistry for Anxiety or Special Needs
+:</strong>  If dental anxiety, fear of procedures, or special healthcare needs make dental visits difficult, our sedation dentistry options can help. We offer safe and effective sedation methods to ensure a relaxed and pain-free experience, allowing you to receive essential treatment with confidence.
+</li>
     </ul>
   `,
 },
