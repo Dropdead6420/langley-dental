@@ -1,8 +1,13 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { useContactModal } from "../ContactModal";
+
 const HeroSection = () => {
-    const { setOpen } = useContactModal();
+    const { setOpen: setModalOpen } = useContactModal();
+    const [open, setOpen] = useState(false);
+    const pathname = usePathname();
+    
   return (
     <section className="section hero-about-b bg-white">
       <div className="w-layout-blockcontainer main-container w-container">
@@ -12,11 +17,16 @@ const HeroSection = () => {
             className="about-b-left-wrap"
           >
             <div className="about-b-top-tile">
+              {/* Your styled content block */}
+               {/* Book Appointment Button */}
               <Link
                 data-w-id="8d385fbb-a80a-30a7-a60b-8da8d45883c1"
                 href="#"
-                 onClick={() => setOpen(true)}
-                className="rating w-inline-block"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setModalOpen(true);
+                }}
+                className="rating w-inline-block mt-8"
               >
                 <div className="rating-icon-wrap">
                   <div className="icon-rating w-embed">
@@ -50,77 +60,60 @@ const HeroSection = () => {
                   <span className="text-underline">
                     <strong>Book An Appointment</strong>
                   </span>&nbsp;
-                 
                 </div>
               </Link>
-              <div
-                data-w-id="bd56ca11-fb3b-a2af-d2cf-0858bb545c06"
-                className="text-h3 !text-start wow fadeInUp"
-              >
-                At Langley Dental, we’re dedicated to creating healthy, beautiful
-                smiles. Trust our expert team to provide gentle, personalized
-                care for the whole family.
-              </div>
-            </div>
+              <div className="text-slate-800 space-y-6 wow fadeInUp text-left">
+  <h4 className="text-sm font-semibold !tracking-tight !jost-font uppercase text-blue-500 text-left">
+    Welcome to Langley dental Office
+  </h4>
+  <h1 className="!text-4xl md:!text-5xl font-bold !jost-font !tracking-tight text-slate-900 text-left">
+    Dental care is our game. <br />
+    <span className="text-blue-600">Excellence is our goal.</span>
+  </h1>
+  <p className="!text-base md:text-lg !mt-[20px] text-slate-600 !leading-relaxed text-left">
+    We are conveniently located in Surrey at the intersection of King George Blvd and 76th Ave in The King's Cross Shopping Centre. We have a huge parking lot and it's free at all the times. At Langley Dental our goal is to care for your teeth and help you maintain them.
+  </p>
+  {open && (
+    <p className="!text-base md:text-lg text-slate-600 !leading-relaxed text-left">
+      Our brand new, state of the art dental office uses the latest technology for your dental treatment. We provide dental care for your whole family. Whether you are looking for regular checkup and cleanings, cosmetic dentistry or a specific concern, you are always welcome.
+    </p>
+  )}
+  <div className="text-left">
+    {pathname === '/' ? (
+      <Link href="/about" className="!mt-6 px-6 py-3 rounded-xl !bg-blue-700 !text-white text-sm !font-semibold shadow-md hover:bg-blue-800 transition inline-block">
+        {open ? 'Read less':'Read more'} 
+      </Link>
+    ) : (
+      <button onClick={() => setOpen(!open)} className="!mt-6 px-6 py-3 rounded-xl !bg-blue-700 !text-white text-sm !font-semibold shadow-md hover:bg-blue-800 transition">
+        {open ? 'Read less':'Read more'} 
+      </button>
+    )}
+  </div>
+</div>         
+            </div>      
             <div
               data-w-id="d41ad41b-7a20-8ec4-ff1a-a7a278df708a"
               className="reviews-wrap"
             >
               <div className="reviews-tile">
                 <div className="reviews-avatars">
-                  {/* <div className="reviews-avatar">
-                    <img
-                      src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28ed3b2b62a63fcb3cbc_Avatar.avif"
-                      loading="lazy"
-                      alt
-                      className="image-cover"
-                    />
-                  </div> */}
-                  {/* <div className="reviews-avatar inside">
-                    <img
-                      src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28eddc80296b4cf34520_Avatar-1.avif"
-                      loading="lazy"
-                      alt
-                      className="image-cover"
-                    />
-                  </div> */}
-                  {/* <div className="reviews-avatar inside">
-                    <img
-                      src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28ed58770195fee933cc_Avatar-2.avif"
-                      loading="lazy"
-                      alt
-                      className="image-cover"
-                    />
-                  </div> */}
-                  {/* <div className="reviews-avatar inside">
-                    <img
-                      src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673e28ed0231b55fb8893011_Avatar-3.avif"
-                      loading="lazy"
-                      alt
-                      className="image-cover"
-                    />
-                  </div> */}
+                  {/* Avatar images commented out */}
                 </div>
-                {/* <div className="reviews-text">
-                  <span className="text-underline">Reviews:</span> 4.8 out of 5
-                </div> */}
+                {/* Reviews text commented out */}
               </div>
-              {/* <div className="review-number-wrap">
-                <div className="text-number">1M+</div>
-                <div className="reviews-text">Trusted users</div>
-              </div> */}
             </div>
           </div>
+          
           <div
             id="w-node-_4cf8bb86-9227-e7ce-5150-2b2fa1902cb4-e7a94e1c"
             className="about-b-image-wrap"
           >
             <img
-              src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673db118c379e23c771a3348_Pinned Article.avif"
+              src="/assets/images/satpreet-singh.png"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, 576px"
               alt={"image"}
-              className="image-cover"
+             className="w-full h-full object-contain"
             />
           </div>
         </div>
