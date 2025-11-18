@@ -5809,17 +5809,20 @@ figcaption {
 
 .home-a-tag-1 {
   position: absolute;
-  inset: -30px auto auto 20%;
+  top:-44px;
+  left:158px;
 }
 
 .home-a-tag-2 {
   position: absolute;
-  inset: auto 10% 40px auto;
+  top:26px;
+  right:-98px;
 }
 
 .home-a-tag-3 {
   position: absolute;
-  inset: auto auto -10px 10%;
+  top:148px;
+  left:-28px;
 }
 
 .headline-home-a-services {
@@ -8969,12 +8972,14 @@ figcaption {
   }
 
   .home-a-tag-2 {
-    bottom: 40%;
+    top:150px;
     right: 20%;
+    display: none;
   }
 
   .home-a-tag-3 {
     left: 25%;
+    display:none;
   }
 
   .about-item-home-a {

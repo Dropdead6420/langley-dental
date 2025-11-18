@@ -465,7 +465,7 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <p>While Invisalign is a popular choice for orthodontic correction, it’s important to consult with our dental professionals to determine if it’s the best option for your specific needs. Regular follow-up appointments and adherence to treatment guidelines are essential for achieving successful results.</p>
 
     <h3>Looking for a Permanent Solution?</h3>
-    <p>If you’re considering orthodontic treatment as part of a broader dental plan, explore our dental implants and other comprehensive services at Shine Family Dental Clinic.</p>
+    <p>If you’re considering orthodontic treatment as part of a broader dental plan, explore our dental implants and other comprehensive services at Langley Care Dental Clinic.</p>
 
     <p>At Langley Care Dental Clinic, we’re here to help you achieve the smile you’ve always wanted. Schedule your Invisalign consultation today and take the first step toward a straighter, healthier smile!</p>
   `,
@@ -951,11 +951,11 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     slug: "teeth-whitening",
     title: "Teeth Whitening",
     description:
-      "Teeth Whitening: Brighten Your Smile with Shine Family Dental Clinic Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging.",
+      "Teeth Whitening: Brighten Your Smile with Langley Care Dental Clinic Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging.",
     image: "/assets/images/treatments/treatment-1.jpg", // Replace with actual image URL
      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736727.png",
     content: `
-    <h2>Teeth Whitening: Brighten Your Smile with Shine Family Dental Clinic</h2>
+    <h2>Teeth Whitening: Brighten Your Smile with Langley Care Dental Clinic</h2>
     <p>Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging. Teeth whitening is a safe and effective way to restore the brightness of your smile, giving you a more youthful and confident appearance. At Langley Care Dental Clinic, we offer professional whitening solutions tailored to your needs.</p>
 
     <h3>Teeth Whitening Options</h3>

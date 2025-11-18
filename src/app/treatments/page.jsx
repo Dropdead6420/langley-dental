@@ -119,7 +119,7 @@ const treatments = [
   {
     slug: "teeth-whitening",
     title: "Teeth Whitening",
-    description: "Teeth Whitening: Brighten Your Smile with Shine Family Dental Clinic Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging.",
+    description: "Teeth Whitening: Brighten Your Smile with Lengley Care Dental Clinic Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging.",
     image: "/assets/images/treatments/treatment-1.jpg",
     content: ""
   },

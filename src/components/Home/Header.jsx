@@ -150,7 +150,7 @@ const Header = () => {
               </div>
               <button
                 onClick={() => router.push("/emergency-dental-care")}
-                className="link-fixed-nav main w-inline-block !bg-gray-800 hover:!bg-red-900  !text-red-500 hover:!text-white"
+                className="link-fixed-nav main w-inline-block  hover:!bg-red-900  !text-red-500 hover:!text-white !bg-red-200"
               >
                 <div className="button-text-mask small">
                   <div className="button-text-small _1">Emergency Care</div>
