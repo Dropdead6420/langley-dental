@@ -212,7 +212,7 @@ const Header = () => {
                     <div className="text-h4">Gallery</div>
                   </Link>
                   <Link
-                    href="/services"
+                    href="/treatments"
                     className="nav-mobile-link w-inline-block"
                   >
                     <div className="text-h4">Services</div>

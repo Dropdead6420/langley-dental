@@ -11,7 +11,7 @@ const AboutMain = () => {
   return (
     <>
       <HeroSection/>
-      <AboutUs/>
+      {/* <AboutUs/> */}
       <ClientLogo/>
       <AboutImages/>
       <Team/>
