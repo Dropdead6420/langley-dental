@@ -110,9 +110,9 @@ console.log("video url",videoUrl)
                 <div className="label-small"> smile</div>
               </div>
             </div>
-             <button   onClick={() => setOpen(true)} class="relative !mx-auto inline-flex items-center justify-center !mt-4 px-8 !py-3 overflow-hidden text-lg font-semibold !text-white bg-gradient-to-r from-sky-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-  <span class="relative z-10">Book an Appointment</span>
-  <span class="absolute inset-0 bg-gradient-to-r from-blue-400 to-sky-500 opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></span>
+             <button   onClick={() => setOpen(true)} className="relative !mx-auto inline-flex items-center justify-center !mt-4 px-8 !py-3 overflow-hidden text-lg font-semibold !text-white bg-gradient-to-r from-sky-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+  <span className="relative z-10">Book an Appointment</span>
+  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-sky-500 opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></span>
 </button>
           </div>
          
@@ -162,26 +162,26 @@ console.log("video url",videoUrl)
                 data-wf--cta-main--variant="base"
                 className="cta-main w-inline-block"
               >
-                <div button-text className="button-text-mask">
+                <div  className="button-text-mask">
                   <div className="button-text _1">Get template</div>
                   <div className="button-text _2" style={{ opacity: 0 }}>
                     Get template
                   </div>
                 </div>
-                <div button-bg className="button-bg" />
+                <div  className="button-bg" />
               </a>
               <a
                 href="/about/about-a"
                 data-wf--cta-main--variant="bg-2"
                 className="cta-main w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9 w-inline-block"
               >
-                <div button-text className="button-text-mask">
+                <div  className="button-text-mask">
                   <div className="button-text _1">explore</div>
                   <div className="button-text _2" style={{ opacity: 0 }}>
                     explore
                   </div>
                 </div>
-                <div button-bg className="button-bg w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9" />
+                <div  className="button-bg w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9" />
               </a>
             </div>
           </div>
