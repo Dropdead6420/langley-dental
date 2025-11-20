@@ -4,6 +4,7 @@ import treatments from '@/data/treatments';
 import Link from 'next/link';
 import { useState } from 'react';
 import ContactModal, { useContactModal } from '@/components/ContactModal';
+import { Mail } from 'lucide-react';
 import { faqs } from '@/data/faq';
 import FaqToggle from '@/components/Common/Faq';
 import OtherTreatment from './OtherTreatment';
@@ -257,9 +258,15 @@ export default function TreatmentDetail({ params }) {
               </p>
 
               <div className="!space-y-3">
-                <button className="!w-full !py-3 !px-4 !bg-gray-100 !text-gray-800 !font-semibold !tracking-tight !rounded-md hover:!bg-gray-200 !transition">
-                  EMAIL US 📧
-                </button>
+                <a href="mailto:info@langleycaredental.com">
+                  <button className="!w-full !mb-2 !py-3 !px-4 !bg-gray-100 !text-gray-800 !font-semibold !tracking-tight 
+                                    !rounded-md hover:!bg-gray-200 !transition flex items-center justify-center gap-2">
+                    <Mail className="w-5 h-5 stroke-[2.5]" />
+                    EMAIL US
+                  </button>
+                </a>
+
+
                 <button
                   onClick={() => setOpen(true)}
                   className="!w-full !py-3 !px-4 !bg-teal-600 hover:!bg-teal-700 !text-white !font-semibold !tracking-tight !rounded-md !transition"

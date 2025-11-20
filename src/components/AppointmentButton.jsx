@@ -31,11 +31,9 @@ const AppointmentButton = () => {
         }
 
         @media (max-width: 768px) {
-          .appointment-button {
-            right: 50%;
-            top: auto;
-            bottom: 24px;
-            transform: translateX(50%);
+           .appointment-button {
+            right: 0;
+            top: 50%;
           }
 
           .appointment-button:hover {
