@@ -54,10 +54,10 @@ const Footer = () => {
                   <div className="text-footer-link _1">Gallery</div>
                 </Link>
                 <Link
-                  href="/treatments"
+                  href="/services"
                   className="link-footer-large w-inline-block"
                 >
-                  <div className="text-footer-link _1">Treatments</div>
+                  <div className="text-footer-link _1">Services</div>
                 </Link>
               </div>
             </div>

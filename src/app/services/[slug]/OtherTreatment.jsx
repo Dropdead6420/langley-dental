@@ -68,7 +68,7 @@ const OtherTreatment = ({ slug, limit }) => {
             {items.map((t) => (
               <SwiperSlide key={t.slug}>
                 <Link
-                  href={`/treatments/${t.slug}`}
+                  href={`/services/${t.slug}`}
                   onClick={(e) => e.stopPropagation()}
                   className="group/item !block !rounded-2xl !bg-white !shadow-md !overflow-hidden !transition-all hover:!shadow-2xl hover:!-translate-y-2"
                 >

@@ -24,7 +24,7 @@ const Services = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2">
           <Link 
-          href={`/treatments/${treatment.slug}`}
+          href={`/services/${treatment.slug}`}
           >
             <img
               src={treatment.image}
@@ -38,13 +38,13 @@ const Services = () => {
           {/* Text Content */}
           <div className="w-full lg:w-1/2 wow fadeInUp">
           <Link 
-          href={`/treatments/${treatment.slug}`}
+          href={`/services/${treatment.slug}`}
           >
             <h2 className="text-2xl font-bold mb-4">{treatment.title}</h2>
           </Link>
             <p className="text-gray-100 mb-4">{treatment.description}</p>
             <Link
-              href={`/treatments/${treatment.slug}`}
+              href={`/services/${treatment.slug}`}
               className="text-blue-600 font-medium underline hover:no-underline"
             >
               Read more →
