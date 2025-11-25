@@ -6,11 +6,11 @@ const Services = () => {
     <section className="section journal-home-a-section">
   <div className="w-layout-blockcontainer main-container w-container !max-w-7xl">
     <div className="headline-home-a-journal">
-      <div className="label-master">
+      {/* <div className="label-master">
         <div className="label-small">Your thoughts &amp; work</div>
-      </div>
-      <h2 animate="title" data-w-id="292c5d2c-c769-eb72-28e3-95fda83a3ad3"  className="no-margins">
-        A journal of your process
+      </div> */}
+      <h2 animate="title" data-w-id="292c5d2c-c769-eb72-28e3-95fda83a3ad3"  className="!tracking-tight no-margins">
+        Our Services
       </h2>
     </div>
     <div className="master-home-a-journal space-y-12">
