@@ -1,26 +1,29 @@
 'use client';
 import React, { useState } from 'react';
+import { createAppointment } from "@/services/appointmentService";
+import toast from 'react-hot-toast';
+
 
 const cases = [
-  { id: 'crossbite', title: 'CROSSBITE', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-crossbite.svg' },
-  { id: 'gap', title: 'GAP TEETH', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-gap-teeth.svg' },
-  { id: 'openbite', title: 'OPEN BITE',  image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-open-bite.svg' },
-  { id: 'overbite', title: 'OVERBITE', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-overbite.svg' },
-  { id: 'underbite', title: 'UNDERBITE',  image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-underbite.svg' },
-  { id: 'crooked', title: 'CROOKED TEETH', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-crooked-teeth.svg' },
+  { id: 'Invisalign : Crossbite', title: 'CROSSBITE', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-crossbite.svg' },
+  { id: 'Invisalign : Gap Teeth', title: 'GAP TEETH', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-gap-teeth.svg' },
+  { id: 'Invisalign : Open bite', title: 'OPEN BITE',  image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-open-bite.svg' },
+  { id: 'Invisalign : Overbite', title: 'OVERBITE', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-overbite.svg' },
+  { id: 'Invisalign : Underbite', title: 'UNDERBITE',  image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-underbite.svg' },
+  { id: 'Invisalign : Crooked Teeth', title: 'CROOKED TEETH', image: 'https://www.clayburndental.com/files/smile-assessment-quiz-bite-crooked-teeth.svg' },
 ];
 
 export default function TreatableCasesInteractivePage() {
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({
-    iAm: '',
-    reason: '',
-    goal: '',
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    contactMethod: 'Phone',
+    iAm: "",
+    reason: "",
+    goal: "Invisalign : Crossbite",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    contactMethod: "Phone",
   });
 
   // NEW: enable start only if a case is selected
@@ -32,26 +35,70 @@ export default function TreatableCasesInteractivePage() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((f) => ({ ...f, [name]: value }));
+    let v = value;
+    if (name === "phone") v = value.replace(/\D/g, "").slice(0, 10);
+    setForm((f) => ({ ...f, [name]: v }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Assessment submitted:
-I am: ${form.iAm}
-Reason: ${form.reason}
-Primary goal: ${form.goal}
-Name: ${form.firstName} ${form.lastName}
-Email: ${form.email}
-Phone: ${form.phone}
-Preferred contact: ${form.contactMethod}`);
+
+    // basic validation
+    if (!form.firstName.trim() ||
+        !form.lastName.trim() ||
+        !form.email.trim() ||
+        form.phone.length !== 10 ||
+        !form.goal ||
+        !form.reason) {
+      toast.error("Please fill all required fields.");
+      return;
+    }
+
+    const payload = {
+      firstName: form.firstName,
+      lastName: form.lastName,
+      email: form.email,
+      phone: "+1" + form.phone, 
+      treatment: form.goal,     
+      message: form.reason,     
+    };
+
+    try {
+      const res = await createAppointment(payload);
+
+      if (!res.status) {
+        toast.error(res.message || "Something went wrong.");
+        return;
+      }
+
+      toast.success("Assessment submitted successfully!");
+
+      setForm({
+        iAm: "",
+        reason: "",
+        goal: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        contactMethod: "Phone",
+      });
+
+      setShowForm(false);
+
+    } catch (error) {
+      toast.error("Submission failed.");
+      console.error("Something went wrong",error);
+    }
   };
 
   return (
     <div className="!min-h-screen !bg-white !text-slate-800">
-      <main className="!mx-auto !max-w-6xl !px-4  sm:!px-6 !py-8 sm:!py-12">
-        {/* Title + Intro */}
-        <header className="!mb-6 sm:my-20 md:my-12 sm:!mb-8">
+      
+      <main className="!mx-auto !max-w-6xl !px-4 sm:!px-6 !py-28 sm:!py-12">
+
+        {/* Title */}
+        <header className="!mb-6 sm:!my-220 md:!my-20 sm:!mb-8">
           <h1 className="!text-2xl sm:!text-3xl !font-semibold !tracking-tight !text-blue-900">
             Invisalign® Treatable Cases
           </h1>
@@ -64,7 +111,7 @@ Preferred contact: ${form.contactMethod}`);
         {/* 👇 Treatable Cases section OR form dynamically */}
         {!showForm ? (
           <section className="!rounded !border !border-slate-200 !bg-slate-50 !p-6 sm:!p-8 !mb-10">
-            <h2 className="!text-center !text-sm sm:!text-base  !font-extrabold !uppercase !tracking-wide !text-blue-900">
+            <h2 className="!text-center !text-sm sm:!text-base !font-extrabold !uppercase !tracking-wide !text-blue-900">
               What Cases Can Invisalign Treat?
             </h2>
             <p className="!mt-2 !text-center !text-slate-600">
@@ -83,7 +130,7 @@ Preferred contact: ${form.contactMethod}`);
               ))}
             </div>
 
-            <div className="!mt-6 sm:!mt-8 !grid !grid-cols-2 md:!grid-cols-4 !gap-x-6 !gap-y-8">
+            <div className="!mt-6 sm:!mt-8 !grid !grid-cols-2  md:!grid-cols-4 !gap-x-6 !gap-y-8">
               {cases.slice(4).map((c) => (
                 <CaseTile
                   key={c.id}
@@ -102,7 +149,7 @@ Preferred contact: ${form.contactMethod}`);
               <button
                 onClick={() => setShowForm(true)}
                 disabled={!canStart}
-                className="!inline-flex !items-center !justify-center !rounded !border !border-blue-700 !px-5 !py-2.5 !text-[13px] !font-semibold !tracking-wide !text-blue-800 hover:!bg-blue-900 hover:!text-white !transition disabled:!border-slate-300 disabled:!text-slate-400 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:!bg-transparent disabled:hover:!text-slate-400"
+                className="!inline-flex !items-center !justify-center !rounded !border !border-blue-700 !px-5 !py-2.5 !text-[13px] !font-semibold !tracking-wide !text-blue-800 hover:!bg-blue-900 hover:!text-white !transition disabled:!border-slate-300 disabled:! text-slate-400 disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 START YOUR ASSESSMENT
               </button>
@@ -124,10 +171,9 @@ Preferred contact: ${form.contactMethod}`);
                   className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !bg-white !px-3 !py-2 !text-sm !shadow-sm focus:!border-blue-600 focus:!outline-none focus:!ring-2 focus:!ring-blue-600"
                 >
                   <option value="">Please select</option>
-                  <option value="Parent/Guardian">A parent/guardian</option>
-                  <option value="Adult (18+)">An adult (18+)</option>
-                  <option value="Teen (13-17)">A teen (13–17)</option>
-                  <option value="Child (12 and under)">A child (12 and under)</option>
+                  <option value="An adult seeking treatment for myself">An adult seeking treatment for myself</option>
+                  <option value="A parent / caregiver seeking treatment for my teen">A parent / caregiver seeking treatment for my teen</option>
+                  <option value="A teen seeking treatment for myself">A teen seeking treatment for myself</option>
                   <option value="Other">Other</option>
                 </select>
               </Field>
@@ -137,69 +183,34 @@ Preferred contact: ${form.contactMethod}`);
                   name="reason"
                   value={form.reason}
                   onChange={handleChange}
-                  className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !bg-white !px-3 !py-2 !text-sm !shadow-sm focus:!border-blue-600 focus:!outline-none focus:!ring-2 focus:!ring-blue-600"
+                  className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !px-3 !py-2 !text-sm"
                 >
                   <option value="">Please select</option>
-                  <option value="Crowding">Crowding</option>
-                  <option value="Spacing">Spacing</option>
-                  <option value="Bite issues">Bite issues</option>
-                  <option value="Aesthetics">Aesthetics</option>
-                  <option value="Other">Other</option>
+                  <option value="Reason: Wedding">Wedding</option>
+                  <option value="Reason: New job">New job (starting or hunting)</option>
+                  <option value="Reason: Graduating from school">Graduating from school (soon or recently)</option>
+                  <option value="Reason: I want to feel more confident">I want to feel more confident</option>
+                  <option value="Reason: Other">Other</option>
                 </select>
               </Field>
 
+              {/* Primary Goal */}
               <div>
-                <div className="!flex  !gap-2">
-                  <Label required>My primary goal is to treat</Label>
-                  {form.goal && form.goal !== "none" && (
-                    <span className="!text-sm !font-semibold !text-gray-900">
-                      {cases.find((c) => c.id === form.goal)?.title}
-                    </span>
-                  )}
-                  {form.goal === "none" && (
-                    <span className="!text-sm !font-semibold !text-blue-700">
-                      Straighter Teeth (General)
-                    </span>
-                  )}
+                <Label required>My primary goal is to treat</Label>
+                <div className="!mt-2 !font-semibold !text-blue-900">
+                  {cases.find((c) => c.id === form.goal)?.title}
                 </div>
-
-                {/* <Label required>My primary goal is to treat</Label>
-                <div role="radiogroup" className="!mt-2 !grid !grid-cols-1 !gap-3 sm:!grid-cols-2 lg:!grid-cols-3">
-                  {cases.map((g) => (
-                    <OptionCard
-                      key={g.id}
-                      title={g.title}
-                      desc={g.desc}
-                      selected={form.goal === g.id}
-                      onClick={() => setForm((f) => ({ ...f, goal: g.id }))}
-                    />
-                  ))}
-                  <button
-                    type="button"
-                    onClick={() => setForm((f) => ({ ...f, goal: 'none' }))}
-                    className={`!col-span-1 sm:!col-span-2 lg:!col-span-3 !w-full !rounded-md !border !p-5 !text-left !transition
-                      ${form.goal === 'none'
-                        ? '!border-blue-600 !bg-blue-50 !ring-2 !ring-blue-600'
-                        : '!border-slate-200 hover:!border-blue-500 hover:!shadow-sm'}`}
-                  >
-                    <div className="!flex !items-center !gap-4">
-                      <TeethIcon className={form.goal === 'none' ? '!text-blue-600' : '!text-slate-400'} />
-                      <p className="!text-sm !font-medium !text-slate-800">
-                        None of the above, I just want generally straighter teeth
-                      </p>
-                    </div>
-                  </button>
-                </div> */}
               </div>
 
-              <div className="!grid !grid-cols-1 !gap-4 sm:!grid-cols-2">
+              {/* Name fields */}
+              <div className="!grid !grid-cols-1 sm:!grid-cols-2 !gap-4">
                 <Field label="First Name" required>
                   <input
                     type="text"
                     name="firstName"
                     value={form.firstName}
                     onChange={handleChange}
-                    className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !bg-white !px-3 !py-2 !text-sm !shadow-sm focus:!border-blue-600 focus:!outline-none focus:!ring-2 focus:!ring-blue-600"
+                    className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !px-3 !py-2 !text-sm"
                   />
                 </Field>
                 <Field label="Last Name" required>
@@ -208,28 +219,31 @@ Preferred contact: ${form.contactMethod}`);
                     name="lastName"
                     value={form.lastName}
                     onChange={handleChange}
-                    className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !bg-white !px-3 !py-2 !text-sm !shadow-sm focus:!border-blue-600 focus:!outline-none focus:!ring-2 focus:!ring-blue-600"
+                    className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !px-3 !py-2 !text-sm"
                   />
                 </Field>
               </div>
 
+              {/* Email */}
               <Field label="Email" required>
                 <input
                   type="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !bg-white !px-3 !py-2 !text-sm !shadow-sm focus:!border-blue-600 focus:!outline-none focus:!ring-2 focus:!ring-blue-600"
+                  className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !px-3 !py-2 !text-sm"
                 />
               </Field>
 
+              {/* Phone */}
               <Field label="Phone" required>
                 <input
                   type="tel"
                   name="phone"
                   value={form.phone}
                   onChange={handleChange}
-                  className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !bg-white !px-3 !py-2 !text-sm !shadow-sm focus:!border-blue-600 focus:!outline-none focus:!ring-2 focus:!ring-blue-600"
+                  maxLength={10}
+                  className="!mt-1 !block !w-full !rounded-md !border !border-slate-300 !px-3 !py-2 !text-sm"
                 />
               </Field>
 
@@ -249,7 +263,7 @@ Preferred contact: ${form.contactMethod}`);
               <div className="!pt-2">
                 <button
                   type="submit"
-                  className="!inline-flex !items-center !justify-center !rounded-md !bg-green-700 !px-5 !py-3 !text-sm !font-semibold !text-white !shadow-sm hover:!bg-green-800 focus:!outline-none focus:!ring-2 focus:!ring-green-600"
+                  className="!rounded-md !bg-green-700 !px-5 !py-3 !text-sm !font-semibold !text-white hover:!bg-green-800"
                 >
                   Get Your Results
                 </button>
@@ -291,17 +305,10 @@ function CaseTile({ image, selected, onClick }) {
     <button
       type="button"
       onClick={onClick}
-      className={`!relative !w-auto !overflow-hidden  !border !transition-all 
-        ${selected
-          ? '!border-blue-900 !ring-2 !ring-blue-900'
-          : '!border-slate-200 hover:!border-blue-900 hover:!shadow-md'}`}
+      className={`!border !transition ${selected ? '!border-blue-900 !ring-2 !ring-blue-900' : '!border-slate-200 hover:!border-blue-900'}`}
     >
-      <div className="!w-full !aspect-[1/1] !overflow-hidden !bg-gray-100">
-        <img
-          src={image}
-          alt="case"
-          className="!h-full !w-full !object-contain !transition-transform !duration-300 hover:!scale-105"
-        />
+      <div className="!aspect-[1/1] !bg-gray-100">
+        <img src={image} alt="case" className="!h-full !w-full !object-contain" />
       </div>
     </button>
   );
@@ -325,49 +332,13 @@ function Label({ children, required }) {
   );
 }
 
-function OptionCard({ title, desc, selected, onClick }) {
-  return (
-    <button
-      type="button"
-      role="radio"
-      aria-checked={selected}
-      onClick={onClick}
-      className={`!flex !h-40 !w-full !flex-col !items-center !justify-center !rounded-md !border !p-6 !text-center !transition
-      ${selected ? '!border-blue-600 !bg-blue-50 !ring-2 !ring-blue-600' : '!border-slate-200 hover:!border-blue-500 hover:!shadow-sm'}`}
-    >
-      <TeethIcon className={selected ? '!text-blue-600' : '!text-slate-400'} />
-      <p className="!mt-3 !text-[11px] !font-extrabold !uppercase !tracking-wide !text-slate-800">{title}</p>
-      <p className="!mt-1 !text-[11px] !text-slate-500">{desc}</p>
-    </button>
-  );
-}
+
 
 function InfoCard({ title, text }) {
   return (
     <div className="!rounded !border !border-slate-200 !bg-slate-50 !p-5">
       <h4 className="!mb-2 !font-semibold !text-slate-800">{title}</h4>
-      <p className="!text-sm !leading-relaxed !text-slate-700">{text}</p>
+      <p className="!text-sm !text-slate-700">{text}</p>
     </div>
-  );
-}
-
-function TeethIcon({ className = '' }) {
-  return (
-    <svg
-      viewBox="0 0 96 56"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="M6 28c2-12 16-22 42-22s40 10 42 22-16 22-42 22S8 40 6 28z" />
-      {Array.from({ length: 10 }).map((_, i) => {
-        const x = 10 + i * 7.4;
-        return <rect key={i} x={x} y="20" width="6" height="16" rx="2" />;
-      })}
-    </svg>
   );
 }

@@ -1,8 +1,63 @@
+"use client";
+
 import React from "react";
 import { useContactModal } from "../ContactModal";
+import { createAppointment } from "@/services/appointmentService";
+import toast from "react-hot-toast";
+
 
 const ContactMain = () => {
   const { setOpen } = useContactModal();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = new FormData(e.currentTarget);
+
+    const email = form.get("Email")?.trim() || "";
+    const fullName = form.get("Name")?.trim() || "";
+    const message = form.get("Message")?.trim() || "";
+
+    // Basic validation (minimal)
+    if (!email) return toast.error("Email is required.");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      return toast.error("Enter a valid email.");
+    if (!fullName.includes(" "))
+      return toast.error("Enter full name (first & last).");
+    if (!message || message.length < 5)
+      return toast.error("Message is too short.");
+
+    const [firstName, ...rest] = fullName.split(" ");
+    const lastName = rest.join(" ");
+    const phone = form.get("Phone")?.replace(/\D/g, "").slice(0, 10) || "";
+
+if (phone.length !== 10)
+  return toast.error("Enter a 10-digit phone number.");
+
+    const apiPayload = {
+      firstName,
+      lastName,
+      email,
+      phone: `+1${phone}`,
+      treatment: "General Inquiry",
+      message,
+    };
+
+    try {
+      const res = await createAppointment(apiPayload);
+      if (!res?.status) {
+        toast.error(res?.message || "Something went wrong.");
+        return;
+      }
+      toast.success("Your message has been sent!");
+      console.log(res.message);
+      e.target.reset();
+
+    } catch (err) {
+      console.error(err);
+      toast.error("Submission failed.");
+    }
+  };
+
   return (
     <>
       <div>
@@ -103,69 +158,59 @@ const ContactMain = () => {
                   </div>
                 </div>
                 <div className="w-form">
-                  <form
-                    id="wf-form-Email-Form"
-                    name="wf-form-Email-Form"
-                    data-name="Email Form"
-                    method="get"
-                    className="contact-form"
-                    data-wf-page-id="673a4bd12ac9f488e7a94da0"
-                    data-wf-element-id="a19f286b-3013-4611-4b5a-a87d255434c2"
-                  >
+                  <form onSubmit={handleSubmit} className="contact-form">
                     <div className="w-layout-grid input-halves">
                       <div className="contact-input-wrap">
                         <div className="text-body">Email</div>
                         <input
-                          className="text-field contact-b w-input wow fadeInUp"
-                          maxlength="{256}"
+                          className="text-field contact-b w-input"
                           name="Email"
-                          data-name="Email"
                           placeholder="example@gmail.com"
                           type="email"
-                          id="Email-4"
                           required
                         />
                       </div>
                       <div className="contact-input-wrap">
                         <div className="text-body">Name</div>
                         <input
-                          className="text-field contact-b w-input wow fadeInUp"
-                          maxlength="{256}"
+                          className="text-field contact-b w-input"
                           name="Name"
-                          data-name="Name"
                           placeholder="Thomas Coit"
                           type="text"
-                          id="Name-3"
+                          required
                         />
                       </div>
                     </div>
+                     <div className="contact-input-wrap">
+                          <div className="text-body">Phone</div>
+                          <input
+                            className="text-field contact-b w-input"
+                            name="Phone"
+                            placeholder="10-digit phone number"
+                            maxLength={10}
+                            required
+                            onInput={(e) => {
+                              e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
+                            }}
+                          />
+                        </div>
+
                     <div className="contact-input-wrap">
                       <div className="text-body">Message</div>
                       <textarea
                         placeholder="Your message..."
-                        maxLength={5000}
-                        id="Message-3"
                         name="Message"
-                        data-name="Message"
-                        className="text-field contact-b text-area w-input wow fadeInUp"
-                        defaultValue={""}
+                        className="text-field contact-b text-area w-input"
+                        required
                       />
                     </div>
+
                     <input
                       type="submit"
-                      data-wait="Please wait..."
                       className="cta-main w-button"
-                      defaultValue="Send message"
+                      value="Send message"
                     />
                   </form>
-                  <div className="success-message w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                  </div>
-                  <div className="error-message w-form-fail">
-                    <div>
-                      Oops! Something went wrong while submitting the form.
-                    </div>
-                  </div>
                 </div>
               </div>
               <div
@@ -175,17 +220,17 @@ const ContactMain = () => {
                 <img
                   src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673db11847fa67e4e56afaa4_Article Thumbnail-4.avif"
                   loading="lazy"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 578px"
-                  alt
+                  alt=""
                   className="image-cover"
                 />
               </div>
             </div>
           </div>
+
           <img
             src="https://cdn.prod.website-files.com/673a4bd12ac9f488e7a94d2a/673b7b2d99645bd98cbdc566_Gradient Right.svg"
             loading="lazy"
-            alt
+            alt=""
             className="hero-gradient-right"
           />
         </section>
@@ -210,7 +255,6 @@ const ContactMain = () => {
                     type="button"
                     className="cta-main w-inline-block"
                     onClick={() => setOpen(true)}
-                    aria-label="Get started — open contact modal"
                   >
                     <div>Get started</div>
                   </button>

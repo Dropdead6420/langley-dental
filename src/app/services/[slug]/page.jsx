@@ -8,37 +8,122 @@ import { Mail } from 'lucide-react';
 import { faqs } from '@/data/faq';
 import FaqToggle from '@/components/Common/Faq';
 import OtherTreatment from './OtherTreatment';
+import toast from "react-hot-toast";
+import { createAppointment } from "@/services/appointmentService";
 
 export default function TreatmentDetail({ params }) {
   const { setOpen } = useContactModal();
   const treatment = treatments.find(t => t.slug === params.slug);
   const serviceFaqs = faqs[params.slug] || [];
 
+    const TREATMENT_OPTIONS = [
+    { value: "", label: "Select a treatment..." },
+    { value: "bondings-veneers", label: "Bondings and Veneers" },
+    { value: "childrens-dentistry", label: "Children’s Dentistry" },
+    { value: "dentures", label: "Complete and Partial Dentures" },
+    { value: "dental-emergencies", label: "Dental Emergencies" },
+    { value: "digital-radiography", label: "Digital Radiography" },
+    { value: "invisalign", label: "Invisalign Treatment" },
+    { value: "full-mouth-reconstruction", label: "Full Mouth Reconstruction" },
+    { value: "amalgam-removal", label: "Amalgam Removal and White Fillings" },
+    { value: "cosmetic", label: "Cosmetic Dentistry" },
+    { value: "general-dentistry", label: "General Dentistry" },
+    { value: "botox", label: "Botox Treatment" },
+    { value: "cleaning-prevention", label: "Cleaning and Prevention" },
+    { value: "crowns-bridges", label: "Crowns and Bridges" },
+    { value: "implants", label: "Dental Implants" },
+    { value: "extractions-grafting", label: "Extractions and Bone Grafting" },
+    { value: "root-canal", label: "Root Canal Treatment" },
+    { value: "teeth-whitening", label: "Teeth Whitening" },
+    { value: "smile-makeover", label: "Smile Makeovers" },
+    { value: "sedation", label: "Sedation Dentistry" },
+    { value: "orthodontics", label: "Orthodontics (Braces/Aligners)" },
+    { value: "emergency", label: "Emergency Dental Care" },
+    { value: "other", label: "Other / Not Sure" },
+  ];
+
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
-    patientType: '',
-    treatment: treatment?.title || '',
-    provider: '',
+    treatment:  '',
     additionalInfo: '',
     termsAccepted: false,
   });
 
   const handleInputChange = (e) => {
-    const { name, value, type } = e.target;
-    const checked = e.target.checked;
+    const { name, value, type, checked } = e.target;
+
+    // Phone restriction
+    if (name === "phone") {
+      const digits = value.replace(/\D/g, "").slice(0, 10);
+      return setFormData(prev => ({ ...prev, phone: digits }));
+    }
+
     setFormData({
       ...formData,
       [name]: type === 'checkbox' ? checked : value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setOpen(true);
+
+    // BASIC VALIDATION  
+    if (!formData.firstName || !formData.lastName)
+      return toast.error("Enter full name.");
+
+    if (!formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
+      return toast.error("Enter a valid email.");
+
+    if (formData.phone.length !== 10)
+      return toast.error("Enter a valid 10-digit phone.");
+
+    if (!formData.termsAccepted)
+      return toast.error("Accept the terms to continue.");
+
+    const payload = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: `+1${formData.phone}`,
+      treatment: formData.treatment || "General Inquiry",
+      message: formData.additionalInfo || "",
+    };
+
+    try {
+      setLoading(true);
+
+      const res = await createAppointment(payload);
+
+      if (!res?.status) {
+        toast.error(res?.message || "Something went wrong.");
+        return;
+      }
+
+      toast.success("Your appointment request has been sent!");
+      // setOpen(true); // open modal after success
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        treatment: treatment?.title || "",
+        additionalInfo: '',
+        termsAccepted: false,
+      });
+
+    } catch (err) {
+      console.error(err);
+      toast.error("Submission failed.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (!treatment) {
@@ -137,7 +222,7 @@ export default function TreatmentDetail({ params }) {
                     value={formData.firstName}
                     onChange={handleInputChange}
                     required
-                    className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !placeholder-gray-400 !tracking-tight !w-full !transition-colors"
+                    className="!border-b !border-gray-300 focus:!border-teal-500 !py-2"
                   />
                   <input
                     type="text"
@@ -146,11 +231,11 @@ export default function TreatmentDetail({ params }) {
                     value={formData.lastName}
                     onChange={handleInputChange}
                     required
-                    className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !placeholder-gray-400 !tracking-tight !w-full !transition-colors"
+                    className="!border-b !border-gray-300 focus:!border-teal-500 !py-2"
                   />
                 </div>
 
-                {/* Contact Info */}
+                {/* Contact */}
                 <input
                   type="email"
                   name="email"
@@ -166,110 +251,86 @@ export default function TreatmentDetail({ params }) {
                   placeholder="Your Phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !placeholder-gray-400 !tracking-tight !w-full"
+                  required
+                  className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !bg-transparent !tracking-tight !w-full"
                 />
 
-                {/* Dropdowns */}
-                <select
-                  name="patientType"
-                  value={formData.patientType}
-                  onChange={handleInputChange}
-                  className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !bg-transparent !tracking-tight !w-full"
-                >
-                  <option value="">Select a patient type</option>
-                  <option value="new">New Patient</option>
-                  <option value="existing">Existing Patient</option>
-                </select>
-
+                {/* Treatment */}
                 <select
                   name="treatment"
                   value={formData.treatment}
                   onChange={handleInputChange}
+                  required
                   className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !bg-transparent !tracking-tight !w-full"
                 >
-                  <option value="">Select a treatment</option>
-                  <option value={treatment.slug}>{treatment.title}</option>
+                  {TREATMENT_OPTIONS.map((opt) => (
+                    <option key={opt.value} value={opt.value} disabled={!opt.value}>
+                      {opt.label}
+                    </option>
+                  ))}
                 </select>
 
-                <select
-                  name="provider"
-                  value={formData.provider}
-                  onChange={handleInputChange}
-                  className="!border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !bg-transparent !tracking-tight !w-full"
-                >
-                  <option value="">Select a provider</option>
-                  <option value="dr-smith">Dr. Smith</option>
-                  <option value="dr-jones">Dr. Jones</option>
-                </select>
 
-                {/* Additional Info */}
-                <textarea
+                {/* Message */}
+                 <textarea
                   name="additionalInfo"
-                  placeholder="Additional information"
                   rows={3}
+                  placeholder="Additional information"
                   value={formData.additionalInfo}
                   onChange={handleInputChange}
-                  className="!w-full !border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !placeholder-gray-400 !resize-none !tracking-tight !transition"
+                  className="!w-full !border-b !border-gray-300 focus:!border-teal-500 !py-2 !text-gray-800 !placeholder-gray-400  !tracking-tight !transition"
                 />
 
                 {/* Terms */}
-                <div className="!flex !items-start !pt-2">
+                <div className="flex items-start">
                   <input
                     type="checkbox"
-                    id="terms"
                     name="termsAccepted"
                     checked={formData.termsAccepted}
                     onChange={handleInputChange}
-                    className="!mt-1 !mr-2 !h-4 !w-4 !text-teal-600 !border-gray-300 !rounded !focus:!ring-0 cursor-pointer"
+                    className="!mt-1 !mr-2"
                   />
-                  <label htmlFor="terms" className="!text-sm !text-gray-700 !tracking-tight">
-                    I acknowledge and accept the{' '}
-                    <a href="#" className="!text-teal-600 hover:!underline !font-medium">
-                      Terms of Use
-                    </a>.
+                  <label className="!text-sm">
+                     I acknowledge and accept the{" "}
+                    <span className="!text-teal-600 !font-semibold">Terms of Use</span>.
                   </label>
                 </div>
 
                 {/* Submit */}
                 <button
                   type="submit"
-                  disabled={!formData.termsAccepted}
-                  className={`!w-full !py-3 !mt-4 !rounded-md !font-semibold !tracking-tight !transition-all ${
-                    formData.termsAccepted
-                      ? '!bg-teal-600 hover:!bg-teal-700 !text-white'
-                      : '!bg-gray-200 !text-gray-500 !cursor-not-allowed'
+                  disabled={!formData.termsAccepted || loading}
+                  className={`!w-full !py-3 !rounded-md !font-semibold !tracking-tight ${
+                    loading || !formData.termsAccepted
+                      ? "!bg-gray-300 !cursor-not-allowed"
+                      : "!bg-teal-600 hover:!bg-teal-700 !text-white"
                   }`}
                 >
-                  SUBMIT →
+                  {loading ? "Submitting…" : "SUBMIT →"}
                 </button>
               </form>
             </div>
 
-            {/* CONTACT CARD */}
+            {/* Contact Card */}
             <div className="!rounded-xl !shadow-lg !bg-white !p-6">
               <img
-                src="https://img.freepik.com/free-photo/close-up-ecological-toothbrushes_23-2148889818.jpg?ga=GA1.1.36719787.1758170710&semt=ais_hybrid&w=740&q=80"
-                alt="Toothbrush gift"
+                src="https://img.freepik.com/free-photo/close-up-ecological-toothbrushes_23-2148889818.jpg"
                 className="!w-full !rounded-md !mb-4"
               />
-              <p className="!text-sm !text-gray-700 !tracking-tight !leading-relaxed !mb-4">
-                You can book an appointment immediately via the form above, or reach out to us via
-                email or phone.
+              <p className="!text-sm !mb-4">
+                You can book an appointment immediately or contact us directly.
               </p>
 
-              <div className="!space-y-3">
+              <div className="space-y-3">
                 <a href="mailto:info@langleycaredental.com">
-                  <button className="!w-full !mb-2 !py-3 !px-4 !bg-gray-100 !text-gray-800 !font-semibold !tracking-tight 
-                                    !rounded-md hover:!bg-gray-200 !transition flex items-center justify-center gap-2">
-                    <Mail className="w-5 h-5 stroke-[2.5]" />
-                    EMAIL US
+                  <button className="!w-full !py-3 !bg-gray-100 hover:!bg-gray-200 flex items-center justify-center gap-2">
+                    <Mail className="w-5 h-5" /> EMAIL US
                   </button>
                 </a>
 
-
                 <button
                   onClick={() => setOpen(true)}
-                  className="!w-full !py-3 !px-4 !bg-teal-600 hover:!bg-teal-700 !text-white !font-semibold !tracking-tight !rounded-md !transition"
+                  className="!w-full !py-3 !bg-teal-600 hover:!bg-teal-700 !text-white"
                 >
                   CONTACT →
                 </button>
