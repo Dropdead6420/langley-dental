@@ -4,6 +4,10 @@ import CircleService from "./CircleService";
 import AboutUs from "../AboutUs";
 import Services from "./Services";
 import ImageSwitcher from "./ImageSwitcher";
+import WhyChoose from "./WhyChoose";
+import Testimonials from "./TestiMonials";
+import Gallery from "./Gallery";
+
 
 const HomeMain = () => {
   return (
@@ -11,7 +15,10 @@ const HomeMain = () => {
       <HeroSection />
       <AboutUs />
       <Services />
+      <WhyChoose />
       <ImageSwitcher />
+      <Gallery />
+      <Testimonials />
       <CircleService />
     </>
   );

@@ -115,7 +115,7 @@ const Header = () => {
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
                 className="nav-link-wrap"
               >
-                <AnimatedHoverLink href="/treatments" label="Services" />
+                <AnimatedHoverLink href="/services" label="Services" />
               </div>
               <div
                 data-w-id="64d05c77-2322-f25f-df27-655b16f4e25c"
@@ -212,7 +212,7 @@ const Header = () => {
                     <div className="text-h4">Gallery</div>
                   </Link>
                   <Link
-                    href="/treatments"
+                    href="/services"
                     className="nav-mobile-link w-inline-block"
                   >
                     <div className="text-h4">Services</div>

@@ -32,7 +32,7 @@ export default function AboutUs() {
             <span className="text-blue-600">Excellence is our goal.</span>
           </h1>
           <p className="!text-base md:text-lg !mt-[20px] text-slate-600 !leading-relaxed">
-            We are conveniently located in Surrey at the intersection of King George Blvd and 76th Ave in The King’s Cross Shopping Centre. We have a huge parking lot and it’s free at all the times. At Langley Dental our goal is to care for your teeth and help you maintain them.
+           We are conveniently located in 20654 Fraser Hwy Unit #1, Langley, BC V3A 4G5, Canada. We have a huge parking lot and it’s free at all the times. At Langley Dental our goal is to care for your teeth and help you maintain them.
           </p>
           {open && (
           <p className="!text-base md:text-lg text-slate-600 !leading-relaxed">

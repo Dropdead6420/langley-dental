@@ -144,25 +144,28 @@ Based on this plan, a series of custom Invisalign aligners will be made to fit y
             </p>
 
             <div className="!flex !flex-wrap !justify-center !gap-4">
-              {/* SCROLL TO FAQ BUTTON */}
-              <button
+            {/* Example with a hover transform */}
+            <button
                 onClick={() => faqRef.current?.scrollIntoView({ behavior: "smooth" })}
-                className="!bg-[#16609f] hover:!bg-[#145689] !text-white !px-6 !py-3 !rounded !font-semibold"
-              >
+                className="!bg-[#16609f] hover:!bg-cyan-900 !text-white !px-6 !py-3 !rounded !font-semibold !transition-all !duration-200 hover:!-translate-y-1"
+            >
                 INVISALIGN FAQS
-              </button>
+            </button>
 
-              <button
+            <button
                 onClick={() => router.push("/options-dental")}
-                className="!bg-gray-600 hover:!bg-gray-700 !text-white !px-6 !py-3 !rounded !font-semibold !transition-all !duration-200"
-              >
+                className="!bg-gray-600 hover:!bg-cyan-900 !text-white !px-6 !py-3 !rounded !font-semibold !transition-all !duration-200 hover:!-translate-y-1"
+            >
                 TREATABLE CASES
-              </button>
+            </button>
 
-              <button onClick={() => router.push("/options-dental")} className="!bg-gray-300 hover:!bg-gray-400 !text-gray-800 !px-6 !py-3 !rounded !font-semibold">
+            <button
+                onClick={() => router.push("/options-dental")}
+                className="!bg-gray-300 hover:!bg-cyan-900 hover:!text-white !text-gray-800 !px-6 !py-3 !rounded !font-semibold !transition-all !duration-200 hover:!-translate-y-1"
+            >
                 SMILE ASSESSMENT
-              </button>
-            </div>
+            </button>
+        </div>
           </section>
 
           {/* FAQ SECTION */}

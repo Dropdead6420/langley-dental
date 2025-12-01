@@ -6,11 +6,11 @@ const Services = () => {
     <section className="section journal-home-a-section">
   <div className="w-layout-blockcontainer main-container w-container !max-w-7xl">
     <div className="headline-home-a-journal">
-      <div className="label-master">
+      {/* <div className="label-master">
         <div className="label-small">Your thoughts &amp; work</div>
-      </div>
-      <h2 animate="title" data-w-id="292c5d2c-c769-eb72-28e3-95fda83a3ad3"  className="no-margins">
-        A journal of your process
+      </div> */}
+      <h2 animate="title" data-w-id="292c5d2c-c769-eb72-28e3-95fda83a3ad3"  className="!tracking-tight no-margins">
+        Our Services
       </h2>
     </div>
     <div className="master-home-a-journal space-y-12">
@@ -24,7 +24,7 @@ const Services = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2">
           <Link 
-          href={`/treatments/${treatment.slug}`}
+          href={`/services/${treatment.slug}`}
           >
             <img
               src={treatment.image}
@@ -38,13 +38,13 @@ const Services = () => {
           {/* Text Content */}
           <div className="w-full lg:w-1/2 wow fadeInUp">
           <Link 
-          href={`/treatments/${treatment.slug}`}
+          href={`/services/${treatment.slug}`}
           >
             <h2 className="text-2xl font-bold mb-4">{treatment.title}</h2>
           </Link>
             <p className="text-gray-100 mb-4">{treatment.description}</p>
             <Link
-              href={`/treatments/${treatment.slug}`}
+              href={`/services/${treatment.slug}`}
               className="text-blue-600 font-medium underline hover:no-underline"
             >
               Read more →

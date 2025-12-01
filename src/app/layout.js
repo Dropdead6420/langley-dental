@@ -6,6 +6,7 @@ import { ContactModalProvider } from "@/components/ContactModal";
 import Header from "@/components/Home/Header";
 import Footer from "@/components/Home/Footer";
 import AppointmentButton from "@/components/AppointmentButton";
+import { Toaster } from "react-hot-toast";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         <Header/>
         {children}
         <Footer/>
+         <Toaster position="top-right" reverseOrder={false} />
         <AppointmentButton/>
         </ContactModalProvider>
       </body>

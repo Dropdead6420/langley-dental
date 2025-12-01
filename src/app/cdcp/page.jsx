@@ -1,9 +1,10 @@
 "use client";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Link2, link, Mail, MapPin } from "lucide-react";
 
 function Page() {
   return (
-    <div className="font-jost  lg:px-8">
+    <div className="font-jost  ">
+    
       <div className="!min-h-screen pt-14 px-4 !bg-gradient-to-br !from-blue-50 !via-white !to-blue-50">
         <div className="!max-w-7xl !mx-auto !py-8 sm:!py-12 lg:!py-16">
 
@@ -274,7 +275,12 @@ function Page() {
               </h3>
               <form className="!space-y-4 lg:!space-y-5">
                 <select className="!w-full !px-4 lg:!px-5 !py-3 lg:!py-4 !rounded-lg lg:!rounded-xl !border-0 !text-gray-700 !bg-white/95 focus:!ring-4 focus:!ring-white/30 !font-medium !text-sm sm:!text-base">
-                  <option>Dental Studio Atilia Craig</option>
+                  <option>Richmond Shine Dental</option>
+                  <option>Simply white Dental</option>
+                  <option>Brookwood Shine Dental</option>
+                  <option>Family Dental Clinic</option>
+                  <option>Langley Dental</option>
+
                 </select>
                 <div className="!flex !gap-4 lg:!gap-6 !bg-white/10 !p-3 lg:!p-4 !rounded-lg lg:!rounded-xl">
                   <label className="!flex !items-center !text-white !cursor-pointer !text-sm sm:!text-base">
@@ -301,28 +307,33 @@ function Page() {
               <h3 className="!text-xl sm:!text-2xl lg:!text-3xl !font-bold !bg-gradient-to-r !from-blue-600 !to-blue-800 !bg-clip-text !text-transparent !mb-6 lg:!mb-8 !tracking-tight ">Participating CDCP clinics</h3>
               <div className="!space-y-4 lg:!space-y-6">
                 {[
-                  { name: "Richmond Shine Dental ", address: "Surrey at the intersection of King George Blvd ", link: "000000000", email: "sample@dentalstudiolondon.com" },
-                  { name: "Simply white Dental", address: "1051 Wonderland Rd S, London, ON", link: "226-781-7641", email: "londonsouth@dentalstudiolondon.com" },
-                  { name: "Brookwood Shine Dental", address: "151 Atilia Craig Main St, ON", link: "226-270-7086", email: "atilicraig@dentalstudiolondon.com" },
-                  { name: "The Shine Dental Whiterock", address: "151 Atilia Craig Main St, ON", link: "226-270-7086", email: "atilicraig@dentalstudiolondon.com" },
-                  { name: "Family Dental Clinic", address: "151 Atilia Craig Main St, ON", link: "226-270-7086", email: "atilicraig@dentalstudiolondon.com" }
+                  { name: "Richmond Shine Dental ", address: "Surrey at the intersection of King George Blvd ", link: "https://www.richmondshinedental.com", email: "sample@dentalstudiolondon.com" },
+                  { name: "Simply white Dental", address: "1051 Wonderland Rd S, London, ON", link: "https://simplywhitedental.ca", email: "londonsouth@dentalstudiolondon.com" },
+                  { name: "Brookwood Shine Dental", address: "151 Atilia Craig Main St, ON", link: "https://brookswoodshinedental.com", email: "atilicraig@dentalstudiolondon.com" },
+                  { name: "The Shine Dental Whiterock", address: "151 Atilia Craig Main St, ON", link: "https://whiterockshinedental.com", email: "atilicraig@dentalstudiolondon.com" },
+                  { name: "Family Dental Clinic", address: "151 Atilia Craig Main St, ON", link: "https://shinefamilydental.com", email: "atilicraig@dentalstudiolondon.com" }
 
                 ].map((clinic, i) => (
                   <div key={i} className="!bg-white !p-4 sm:!p-5 lg:!p-6 !rounded-xl lg:!rounded-2xl !shadow-md lg:!shadow-lg hover:!shadow-xl lg:hover:!shadow-2xl !transition-all !duration-300 !border !border-blue-100 hover:!border-blue-300 !transform hover:!-translate-y-1">
                     <h4 className="!text-base sm:!text-lg lg:!text-xl !font-bold !text-blue-900 !mb-3 lg:!mb-4">{clinic.name}</h4>
                     <div className="!space-y-2 !text-gray-600">
-                      {/* <div className="!flex !items-start hover:!text-blue-600 !transition-colors !text-xs sm:!text-sm">
+                      {/* {/* <div className="!flex !items-start hover:!text-blue-600 !transition-colors !text-xs sm:!text-sm">
                         <MapPin className="!w-4 lg:!w-5 !h-4 lg:!h-5 !text-blue-500 !mr-2 lg:!mr-3 !mt-0.5 !flex-shrink-0" />
                         <span className="!break-words">{clinic.address}</span>
-                      </div>
-                      <div className="!flex !items-center hover:!text-blue-600 !transition-colors !text-xs sm:!text-sm">
-                        <Phone className="!w-4 lg:!w-5 !h-4 lg:!h-5 !text-blue-500 !mr-2 lg:!mr-3 !flex-shrink-0" />
-                        <span>{clinic.link}</span>
-                      </div>
-                      <div className="!flex !items-start hover:!text-blue-600 !transition-colors !text-xs sm:!text-sm">
+                      </div> */}
+                      <a 
+                        href={clinic.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="!flex !items-center hover:!text-blue-600 !transition-colors !text-xs sm:!text-sm cursor-pointer"
+                      >
+                        <Link2 className="!w-4 lg:!w-5 !h-4 lg:!h-5 !text-blue-500 !mr-2 lg:!mr-3 !flex-shrink-0" />
+                        <span className="truncate">{clinic.link}</span>
+                      </a>
+                      {/* <div className="!flex !items-start hover:!text-blue-600 !transition-colors !text-xs sm:!text-sm">
                         <Mail className="!w-4 lg:!w-5 !h-4 lg:!h-5 !text-blue-500 !mr-2 lg:!mr-3 !mt-0.5 !flex-shrink-0" />
                         <span className="!break-all">{clinic.email}</span>
-                      </div> */}
+                      </div>  */}
                     </div>
                   </div>
                 ))}
@@ -379,8 +390,43 @@ function Page() {
             <p className="!text-blue-100 !text-sm sm:!text-base lg:!text-lg !mb-4 lg:!mb-6">
               Renew before <strong className="!text-white">June 1, 2025</strong>. Coverage ends June 30 if renewal isn't complete.
             </p>
-            <a href="https://srv024.service.canada.ca/en/apply/66a5683c-7098-4711-bc85-dc98bee2483a/terms-and-conditions" className="!inline-block !bg-white !text-blue-600 !px-6 lg:!px-8 !py-3 lg:!py-4 !rounded-lg lg:!rounded-xl hover:!bg-blue-50 !font-bold !transition-all !transform hover:!scale-105 !shadow-lg !text-sm sm:!text-base">
+            <a 
+            target="_blank" 
+            href="https://srv024.service.canada.ca/en/apply/6958b4dd-701e-40bf-a8cf-66ea812df812/terms-and-conditions" className="!inline-block !bg-white !text-blue-600 !px-6 lg:!px-8 !py-3 lg:!py-4 !rounded-lg lg:!rounded-xl hover:!bg-blue-50 !font-bold !transition-all !transform hover:!scale-105 !shadow-lg !text-sm sm:!text-base">
+
               Renew Online Now →
+            </a>
+          </section>
+
+                    {/* How to Apply Section */}
+          <section className="!mb-12 lg:!mb-20 !bg-gray-50 !p-6 sm:!p-8 lg:!p-10 !rounded-xl lg:!rounded-2xl">
+            <h2 className="!text-2xl !tracking-tight sm:!text-3xl lg:!text-4xl !font-bold !text-cyan-600 !mb-6">How to Apply for the CDCP?</h2>
+
+            <div className="!mb-6">
+              <h3 className="!text-base sm:!text-lg lg:!text-xl !tracking-tight !font-semibold !text-gray-800 !mb-2">What You Need:</h3>
+              <ul className="!list-disc !pl-6 !space-y-1 !text-gray-700 !text-sm sm:!text-base">
+                <li>Social Insurance Number (SIN) for each applicant (including spouse/common-law partner)</li>
+                <li>Date of birth and tax filing details</li>
+                <li>Your adjusted family net income from your latest tax return (line 23600)</li>
+              </ul>
+            </div>
+
+            <div className="!mb-6">
+              <h3 className="!text-base sm:!text-lg !tracking-tight lg:!text-xl !font-semibold !text-gray-800 !mb-2">Important Application Tips:</h3>
+              <ul className="!list-disc !pl-6 !space-y-1 !text-gray-700 !text-sm sm:!text-base">
+                <li>Include <strong className="!font-semibold">all children under 18</strong> in one single application.</li>
+                <li>Only one parent/guardian should apply on behalf of minors.</li>
+                <li>Confirm all eligibility criteria before applying to prevent delays.</li>
+              </ul>
+            </div>
+
+            <a
+              href="https://srv024.service.canada.ca/en/apply/6b609c35-2e02-4f5c-87c9-4e4a31deafc6/terms-and-conditions"
+              className="!text-cyan-600 !text-sm sm:!text-base hover:!underline font-medium"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Apply or Check Eligibility Online
             </a>
           </section>
 
