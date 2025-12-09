@@ -224,8 +224,6 @@ function ContactModal() {
                 <h2 className="!tracking-tight !text-xl !mt-0 sm:!text-2xl !font-semibold mb-0">
                   {message || "Book An Appointment"}
                 </h2>
-                <p className="!text-sm !text-neutral-600">Fill out the form and we’ll contact you soon.</p>
-
                 {success ? (
                   // Priority added to success message classes
                   <div className="!rounded-xl !border !border-emerald-200 !bg-emerald-50 !px-4 !py-3 !text-emerald-900">
