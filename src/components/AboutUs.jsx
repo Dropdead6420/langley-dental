@@ -28,7 +28,7 @@ export default function AboutUs() {
             Welcome to Langley  dental Office
           </h4>
           <h1 className="!text-4xl md:!text-5xl font-bold !jost-font !tracking-tight text-slate-900">
-           Dental care is our game. <br />
+           {/* Dental care is our game. <br /> */}
             <span className="text-blue-600">Excellence is our goal.</span>
           </h1>
           <p className="!text-base md:text-lg !mt-[20px] text-slate-600 !leading-relaxed">
