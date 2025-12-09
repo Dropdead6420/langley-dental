@@ -208,7 +208,7 @@ function ContactModal() {
           >
             <div
               // MODIFIED: Added !max-h-[90vh] and !overflow-y-auto to allow internal scrolling on content overflow.
-              className="!relative !w-full !max-w-lg !max-h-[90vh] !overflow-y-auto !rounded-2xl !bg-white !shadow-2xl !ring-1 !ring-black/5"
+              className="!relative !w-full !max-w-lg !max-h-[90vh]  !rounded-2xl !bg-white !shadow-2xl !ring-1 !ring-black/5"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -221,7 +221,7 @@ function ContactModal() {
               </button>
 
               <div className="!p-6 sm:!p-8">
-                <h2 className="!tracking-tight !text-xl sm:!text-2xl !font-semibold mb-0">
+                <h2 className="!tracking-tight !text-xl !mt-0 sm:!text-2xl !font-semibold mb-0">
                   {message || "Book An Appointment"}
                 </h2>
                 <p className="!text-sm !text-neutral-600">Fill out the form and we’ll contact you soon.</p>
@@ -232,7 +232,7 @@ function ContactModal() {
                     🎉 Your message has been sent!
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="!mt-6 !grid !gap-4">
+                  <form onSubmit={handleSubmit} className="!mt-6 !grid !gap-2">
                     <div className="!grid !grid-cols-1 sm:!grid-cols-2 !gap-4">
                       <LabelInput
                         ref={firstFieldRef}
