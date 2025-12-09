@@ -204,7 +204,7 @@ function ContactModal() {
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ type: "spring", stiffness: 260, damping: 24 }}
             // Sets modal position (top aligned with dynamic margin)
-          className="!fixed !inset-0 !z-50 !grid !justify-items-center !items-start !p-5 !pb-12 sm:!pb-16 !mt-8 sm:!mt-24"
+          className="!fixed !inset-0 !z-50 !grid !justify-items-center !overflow-y-auto !items-start !p-5 !pb-12 sm:!pb-16 !mt-8 sm:!mt-24"
           >
             <div
               // MODIFIED: Added !max-h-[90vh] and !overflow-y-auto to allow internal scrolling on content overflow.
@@ -221,7 +221,7 @@ function ContactModal() {
               </button>
 
               <div className="!p-6 sm:!p-8">
-                <h2 className="!tracking-tight !text-xl sm:!text-2xl !font-semibold">
+                <h2 className="!tracking-tight !text-xl sm:!text-2xl !font-semibold mb-0">
                   {message || "Book An Appointment"}
                 </h2>
                 <p className="!text-sm !text-neutral-600">Fill out the form and we’ll contact you soon.</p>
@@ -319,7 +319,7 @@ const LabelSelect = ({ id, label, icon, options, required = false }) => (
         name={id}
         required={required}
         defaultValue=""
-        className="!w-full !bg-transparent !px-3 !py-3 !text-sm "
+        className="!w-full !bg-transparent !px-3 !py-3 !text-sm !ring-0 !outline-none"
       >
         {options.map((opt) => (
           <option key={opt.value} value={opt.value} disabled={!opt.value}>

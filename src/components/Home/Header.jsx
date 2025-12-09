@@ -10,7 +10,7 @@ const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [translateY, setTranslateY] = useState("-500px");
   const { setOpen: setContactModalOpen } = useContactModal();
-
+ const {open:openForm} = useContactModal();
   useEffect(() => {
     if (open) {
       setIsVisible(true); // Show overlay
@@ -27,6 +27,9 @@ const Header = () => {
       }, 400); // match the transition duration
     }
   }, [open]);
+  if(openForm){
+  return null;
+  }
   return (
     <div className="master-navigation">
       <div
