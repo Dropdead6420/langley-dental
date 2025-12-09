@@ -204,11 +204,11 @@ function ContactModal() {
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ type: "spring", stiffness: 260, damping: 24 }}
             // Sets modal position (top aligned with dynamic margin)
-          className="!fixed !inset-0 !z-50 !grid !justify-items-center !overflow-y-auto !items-start !p-5 !pb-12 sm:!pb-16 !mt-8 sm:!mt-24"
+          className="!fixed !inset-0 !z-50 !grid !justify-items-center !items-start !p-2 !pb-12 sm:!pb-16 !overflow-y-auto"
           >
             <div
               // MODIFIED: Added !max-h-[90vh] and !overflow-y-auto to allow internal scrolling on content overflow.
-              className="!relative !w-full !max-w-lg !max-h-[90vh]  !rounded-2xl !bg-white !shadow-2xl !ring-1 !ring-black/5"
+              className="!relative !w-full !max-w-lg !max-h-[90vh]  !rounded-2xl !bg-white !shadow-2xl !ring-1 min-h-[631px] !ring-black/5"
               onClick={(e) => e.stopPropagation()}
             >
               <button
