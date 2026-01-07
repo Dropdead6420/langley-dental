@@ -5,20 +5,21 @@ import AboutImages from './AboutImages'
 import Team from './Team'
 import Testimonials from './TestiMonials'
 import AboutCta from './AboutCta'
+import TeamSection from './TeamSection'
 import AboutUs from '../AboutUs'
 import TeamTwo from './TeamTwo'
 
 const AboutMain = () => {
   return (
     <>
-      <HeroSection/>
+      <HeroSection />
       {/* <AboutUs/> */}
-      <ClientLogo/>
-      <AboutImages/>
-      {/* <Team/> */}
-      <TeamTwo />
-      <Testimonials/>
-      <AboutCta/>
+      <ClientLogo />
+      {/* <AboutImages/> */}
+      {/* <Team /> */}
+      <TeamSection />
+      <Testimonials />
+      <AboutCta />
     </>
   )
 }

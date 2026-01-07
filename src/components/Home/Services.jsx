@@ -3,7 +3,8 @@ import treatments from "@/data/treatments";
 import Link from "next/link";
 const Services = () => {
   return (
-    <section className="section journal-home-a-section">
+    <section className="section journal-home-a-section bg-gradient-to-b from-white to-transparent
+ overflow-hidden relative py-20">
   <div className="w-layout-blockcontainer main-container w-container !max-w-7xl">
     <div className="headline-home-a-journal">
       {/* <div className="label-master">
@@ -42,7 +43,7 @@ const Services = () => {
           >
             <h2 className="text-2xl font-bold mb-4">{treatment.title}</h2>
           </Link>
-            <p className="text-gray-100 mb-4">{treatment.description}</p>
+            <p className="text-gray-800 mb-4">{treatment.description}</p>
             <Link
               href={`/services/${treatment.slug}`}
               className="text-blue-600 font-medium underline hover:no-underline"

@@ -9,14 +9,14 @@ gsap.registerPlugin(ScrollTrigger);
 const HeroSection = () => {
   const [videoUrl, setVideoUrl] = useState("");
   const rootRef = useRef(null);
-   const { setOpen } = useContactModal();
+  const { setOpen } = useContactModal();
 
   useEffect(() => {
     const fetchSlider = async () => {
       try {
-        const res = await getHeroSliders(); 
+        const res = await getHeroSliders();
         if (res?.status) {
-            setVideoUrl(res?.data[0].media?.url);
+          setVideoUrl(res?.data[0].media?.url);
         }
       } catch (err) {
         console.error("Failed to fetch hero slider:", err);
@@ -69,7 +69,7 @@ const HeroSection = () => {
 
     return () => ctx.revert();
   }, []);
-console.log("video url",videoUrl)
+  console.log("video url", videoUrl)
 
   return (
     <>
@@ -110,12 +110,12 @@ console.log("video url",videoUrl)
                 <div className="label-small"> smile</div>
               </div>
             </div>
-             <button   onClick={() => setOpen(true)} className="relative !mx-auto inline-flex items-center justify-center !mt-4 px-8 !py-3 overflow-hidden text-lg font-semibold !text-white bg-gradient-to-r from-sky-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-  <span className="relative z-10">Book an Appointment</span>
-  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-sky-500 opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></span>
-</button>
+            <button onClick={() => setOpen(true)} className="relative !mx-auto inline-flex items-center justify-center !mt-4 px-8 !py-3 overflow-hidden text-lg font-semibold !text-white bg-gradient-to-r from-sky-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+              <span className="relative z-10">Book an Appointment</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-sky-500 opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></span>
+            </button>
           </div>
-         
+
 
         </div>
 
@@ -133,20 +133,20 @@ console.log("video url",videoUrl)
             }}
           >
             <div className="video-home-a w-background-video-2 w-background-video-atom">
-  <video
-    id="hero-video"
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="auto"
-    className="w-full h-full object-cover"
-    crossOrigin="anonymous"
-  >
-    {videoUrl && <source src={videoUrl} type="video/mp4" />}
-    Your browser does not support the video tag.
-  </video>
-</div>
+              <video
+                id="hero-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                className="w-full h-full object-cover"
+                crossOrigin="anonymous"
+              >
+                {videoUrl && <source src={videoUrl} type="video/mp4" />}
+                Your browser does not support the video tag.
+              </video>
+            </div>
 
           </div>
         </div>
@@ -162,26 +162,26 @@ console.log("video url",videoUrl)
                 data-wf--cta-main--variant="base"
                 className="cta-main w-inline-block"
               >
-                <div  className="button-text-mask">
+                <div className="button-text-mask">
                   <div className="button-text _1">Get template</div>
                   <div className="button-text _2" style={{ opacity: 0 }}>
                     Get template
                   </div>
                 </div>
-                <div  className="button-bg" />
+                <div className="button-bg" />
               </a>
               <a
                 href="/about/about-a"
                 data-wf--cta-main--variant="bg-2"
                 className="cta-main w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9 w-inline-block"
               >
-                <div  className="button-text-mask">
+                <div className="button-text-mask">
                   <div className="button-text _1">explore</div>
                   <div className="button-text _2" style={{ opacity: 0 }}>
                     explore
                   </div>
                 </div>
-                <div  className="button-bg w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9" />
+                <div className="button-bg w-variant-a1840c4f-2b79-2581-2891-0be2f69320c9" />
               </a>
             </div>
           </div>
@@ -190,28 +190,10 @@ console.log("video url",videoUrl)
         <div data-w-id="14785626-1f9c-e5e3-32e4-fff0fcb7ff94" className="parallax-master z-10">
           <div className="parallax-text">
             <div className="home-a-video-feature">
-              <div className="label-master dark-32">
-                <div className="label-small">Your First Step</div>
-              </div>
-              <h2 animate="text" className="no-margins">
-                We listen to your goals for a healthier smile.
+              <h2 animate="text" className="no-margins !tracking-tight">
+                Welcome To Langley Dental Clinic
               </h2>
-            </div>
-            <div className="home-a-video-feature">
-              <div className="label-master dark-32">
-                <div className="label-small">Our Proven Results</div>
-              </div>
-              <h2 animate="text" className="no-margins">
-                Confidence isn't just cosmetic —<br /> it's foundational.
-              </h2>
-            </div>
-            <div className="home-a-video-feature">
-              <div className="label-master dark-32">
-                <div className="label-small">Our Commitment</div>
-              </div>
-              <h2 animate="text" className="no-margins">
-                Because your comfort and<br /> care matter most to us.
-              </h2>
+              <p className="!text-xl">20654 Fraser Hwy Unit #1, Langley, BC V3A 4G5, Canada.</p>
             </div>
           </div>
         </div>

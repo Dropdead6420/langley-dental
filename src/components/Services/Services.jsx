@@ -1,17 +1,17 @@
 
- import Link from "next/link";
+import Link from "next/link";
 import React from "react";
 // import {  Smile } from "lucide-react";
 const Services = () => {
-    const services = [
-        {
-            title: "General Dentistry",
-            description:
-                "Patient can get general treatments with single sitting.",
-            image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/6571595b87e6de31df8e25b0_service-01.jpg",
-            icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/6571598b987ad31d4ca923ea_clinic.svg",
-            link: "/services/general-dentistry",
-            content: `
+  const services = [
+    {
+      title: "General Dentistry",
+      description:
+        "Patient can get general treatments with single sitting.",
+      image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/6571595b87e6de31df8e25b0_service-01.jpg",
+      icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/6571598b987ad31d4ca923ea_clinic.svg",
+      link: "/services/general-dentistry",
+      content: `
     <h1>General Dentistry</h1>
 
     <p>Maintaining optimal dental health is crucial for your overall well-being. At Langley Care Dental Clinic, we pride ourselves on offering exceptional general dentistry services designed for every age group. From routine check-ups to advanced treatments, our family dental care ensures you and your loved ones achieve healthy, beautiful smiles.</p>
@@ -79,15 +79,15 @@ const Services = () => {
       <li><strong>Sedation Dentistry for Anxiety or Special Needs:</strong> Dental anxiety shouldn't stop you from receiving vital care. We offer sedation options to ensure a stress-free experience.</li>
     </ul>
   `,
-        },
-        {
-            title: "Dental Implants",
-            description:
-                "Patient can get general treatments with single sitting.",
-            image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/657159b17edc226931b9a739_service-02.jpg",
-            icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/6571597682dfecc9c1dbcf86_dental-implant.svg",
-            link: "/services/dental-implants",
-            content: `
+    },
+    {
+      title: "Dental Implants",
+      description:
+        "Patient can get general treatments with single sitting.",
+      image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/657159b17edc226931b9a739_service-02.jpg",
+      icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/6571597682dfecc9c1dbcf86_dental-implant.svg",
+      link: "/services/dental-implants",
+      content: `
     <h2>Dental Implants: A Permanent Solution for a Natural Smile</h2>
     <p>Dental implants are a revolutionary advancement in modern dentistry, offering a reliable and long-lasting way to restore both the function and aesthetics of your smile. These titanium posts are surgically placed into the jawbone, mimicking the natural tooth structure from root to crown. Not only do they provide a stable and secure fit, but they also stimulate the jawbone, preventing bone loss and maintaining facial structure over time.</p>
 
@@ -130,50 +130,50 @@ const Services = () => {
     <h3>Ready to Restore Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile with dental implants!</p>
   `,
-        },
-        {
-            title: "Cavity Protection",
-            description:
-                "Patient can get general treatments with single sitting.",
-            image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715ce55262312767b4dbc5_service-05.jpg",
-            icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715cedc41731789d25f9e6_periodontal-scaler.svg",
-            link: "/services/cavity-protection",
-        },
-        {
-            title: "Paradontosis",
-            description:
-                "Patient can get general treatments with single sitting.",
-            image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715caa17defee615ed90a2_service-04.jpg",
-            icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715cc017defee615ed9a65_root-canal.svg",
-            link: "/services/paradontosis",
-        },
-        {
-            title: "Teeth Whitening",
-            description:
-                "Patient can get general treatments with single sitting.",
-            image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715c750888a8c72afeff9a_service-03.jpg",
-            icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715c8219f5eea4b0665af4_dental-care.svg",
-            link: "/services/teeth-whitening",
-        },
-        {
-            title: "Radiographs",
-            description:
-                "Patient can get general treatments with single sitting.",
-            image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715d2984999b1ed9f56873_service-06.jpg",
-            icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715d559da5271e8990bc41_happy-tooth.svg",
-            link: "/services/radiographs",
-        },
+    },
+    {
+      title: "Cavity Protection",
+      description:
+        "Patient can get general treatments with single sitting.",
+      image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715ce55262312767b4dbc5_service-05.jpg",
+      icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715cedc41731789d25f9e6_periodontal-scaler.svg",
+      link: "/services/cavity-protection",
+    },
+    {
+      title: "Paradontosis",
+      description:
+        "Patient can get general treatments with single sitting.",
+      image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715caa17defee615ed90a2_service-04.jpg",
+      icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715cc017defee615ed9a65_root-canal.svg",
+      link: "/services/paradontosis",
+    },
+    {
+      title: "Teeth Whitening",
+      description:
+        "Patient can get general treatments with single sitting.",
+      image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715c750888a8c72afeff9a_service-03.jpg",
+      icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715c8219f5eea4b0665af4_dental-care.svg",
+      link: "/services/teeth-whitening",
+    },
+    {
+      title: "Radiographs",
+      description:
+        "Patient can get general treatments with single sitting.",
+      image: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715d2984999b1ed9f56873_service-06.jpg",
+      icon: "https://cdn.prod.website-files.com/656d63a5a8c1cffefeee75d0/65715d559da5271e8990bc41_happy-tooth.svg",
+      link: "/services/radiographs",
+    },
 
 
 
-          {
-    slug: "bondings-and-veneers",
-    title: "Bondings and Veneers",
-    description:
-      "At Langley Care Dental Clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth.",
-    image: "/assets/images/treatments/boundings-veneers.jpg",
-icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
-    content: `
+    {
+      slug: "bondings-and-veneers",
+      title: "Bondings and Veneers",
+      description:
+        "At Langley Care Dental Clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth.",
+      image: "/assets/images/treatments/boundings-veneers.jpg",
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
+      content: `
       <p><strong>At Langley Care Dental Clinic, we offer effective solutions to correct irregularities in your teeth, such as chipped teeth, spacing issues, peg laterals, and proclined or retroclined teeth. Whether you choose dental bonding or veneers, our treatments are designed to enhance your smile and boost your confidence.</strong></p>
 
       <h3>Dental Bonding</h3>
@@ -231,15 +231,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 
       <p>At Langley Care Dental Clinic, we are committed to providing personalized care for all your dental needs. Whether you’re looking for cosmetic enhancements or restorative solutions, we’re here to help you achieve a healthy, radiant smile.</p>
     `,
-  },
-  {
-    slug: "childrens-dentistry",
-    title: "Children’s Dentistry",
-    description:
-      "At Langley Care Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority.",
-    image: "/assets/images/treatments/1-8.png", // (example image – you can change)
- icon: "https://cdn-icons-png.flaticon.com/512/616/616655.png",
-    content: `
+    },
+    {
+      slug: "childrens-dentistry",
+      title: "Children’s Dentistry",
+      description:
+        "At Langley Care Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority.",
+      image: "/assets/images/treatments/1-8.png", // (example image – you can change)
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616655.png",
+      content: `
       <p>At Langley Care Dental Clinic, we believe that children are the heart of our community, and their dental health is our top priority. Dr. Singh and our team are passionate about creating positive dental experiences for kids, setting the foundation for a lifetime of healthy smiles.</p>
 
       <p>We understand that children can feel anxious or fearful about dental visits, which is why we’ve designed our clinic to be a welcoming and fun environment. Our interactive play area helps kids feel at ease, and we ensure every visit ends with a positive experience.</p>
@@ -278,16 +278,16 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 
       <p>At Langley Care Dental Clinic, we’re dedicated to making dental visits enjoyable and stress-free for your little ones. Schedule an appointment today and let us partner with you in nurturing your child’s healthy, happy smile!</p>
     `,
-  },
-  {
-    slug: "complete-and-partial-dentures",
-    title: "Complete and Partial Dentures",
-     description:
-      "Restore your smile and confidence with custom-made dentures at Langley Care Dental Clinic.",
-    image:
-      "/assets/images/treatments/Screenshot_1.png", // Replace with your preferred image URL
-       icon: "https://cdn-icons-png.flaticon.com/512/616/616663.png",
-    content: `
+    },
+    {
+      slug: "complete-and-partial-dentures",
+      title: "Complete and Partial Dentures",
+      description:
+        "Restore your smile and confidence with custom-made dentures at Langley Care Dental Clinic.",
+      image:
+        "/assets/images/treatments/Screenshot_1.png", // Replace with your preferred image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616663.png",
+      content: `
       <p>Restore your smile and confidence with custom-made dentures at Langley Care Dental Clinic. Dentures are artificial replacements for natural teeth and gums, designed to help you regain the appearance and function of a full set of teeth. Whether you’ve lost teeth due to an accident, disease, or poor oral health, dentures can be an effective solution.</p>
 
       <h3>What Are Dentures?</h3>
@@ -329,15 +329,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 
       <p>At Langley Care Dental Clinic, we’re here to help you regain your smile and confidence. Whether you need complete or partial dentures, our caring team is ready to provide personalized care. Schedule your consultation today and take the first step toward a healthier, happier smile!</p>
     `,
-  },
-  {
-    slug: "dental-emergencies",
-    title: "Dental Emergencies",
-    description:
-      "Dental emergencies can happen unexpectedly and often require immediate attention to alleviate pain, prevent further damage, and preserve your oral health. ",
-    image: "/assets/images/treatments/1-14.png", // Replace with the actual image URL
- icon: "https://cdn-icons-png.flaticon.com/512/4320/4320348.png",
-    content: `
+    },
+    {
+      slug: "dental-emergencies",
+      title: "Dental Emergencies",
+      description:
+        "Dental emergencies can happen unexpectedly and often require immediate attention to alleviate pain, prevent further damage, and preserve your oral health. ",
+      image: "/assets/images/treatments/1-14.png", // Replace with the actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/4320/4320348.png",
+      content: `
     <p>Dental emergencies can happen unexpectedly and often require immediate attention to alleviate pain, prevent further damage, and preserve your oral health. At Langley Care Dental Clinic, we’re here to provide prompt and effective care when you need it most.</p>
 
     <h3>What to Do in a Dental Emergency</h3>
@@ -384,15 +384,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 
     <p>At Langley Care Dental Clinic, we’re here to help you through any dental emergency. Don’t wait—call us immediately if you’re experiencing pain, discomfort, or an urgent dental issue. Your oral health is our priority!</p>
   `,
-  },
-  {
-    slug: "digital-radiography",
-    title: "Digital Radiography",
-    description:
-      "At Langley Care Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging.",
-    image: "/assets/images/treatments/1-15.png", // Replace with your preferred image URL
-    icon: "https://cdn-icons-png.flaticon.com/512/3223/3223924.png",
-    content: `
+    },
+    {
+      slug: "digital-radiography",
+      title: "Digital Radiography",
+      description:
+        "At Langley Care Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging.",
+      image: "/assets/images/treatments/1-15.png", // Replace with your preferred image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/3223/3223924.png",
+      content: `
     <p>At Langley Care Dental Clinic, we utilize advanced digital radiography to provide precise and efficient diagnostic imaging. This modern technology has replaced traditional film-based X-rays, offering numerous benefits for both patients and dental professionals.</p>
 
     <h3>What is Digital Radiography?</h3>
@@ -420,15 +420,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 
     <p>At Langley Care Dental Clinic, we’re committed to using the best technology to enhance your dental care. Schedule your appointment today and experience the benefits of digital radiography for yourself!</p>
   `,
-  },
-  {
-    slug: "invisalign",
-    title: "Invisalign Treatment",
-    description:
-      "Achieve a straighter, more confident smile with Invisalign a Langley Care Dental Clinic. ",
-    image: "/assets/images/treatments/1-19.png", // Replace with your actual image URL
+    },
+    {
+      slug: "invisalign",
+      title: "Invisalign Treatment",
+      description:
+        "Achieve a straighter, more confident smile with Invisalign a Langley Care Dental Clinic. ",
+      image: "/assets/images/treatments/1-19.png", // Replace with your actual image URL
       icon: "https://cdn-icons-png.flaticon.com/512/616/616660.png",
-    content: `
+      content: `
     <p>Achieve a straighter, more confident smile with Invisalign a Langley Care Dental Clinic. Invisalign is a modern orthodontic treatment that uses clear, removable aligners to correct a variety of dental issues without the need for traditional metal braces.</p>
 
     <h3>What is Invisalign?</h3>
@@ -469,16 +469,16 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
 
     <p>At Langley Care Dental Clinic, we’re here to help you achieve the smile you’ve always wanted. Schedule your Invisalign consultation today and take the first step toward a straighter, healthier smile!</p>
   `,
-  },
-  {
-    slug: "full-mouth-reconstruction",
-    title: "Full Mouth Reconstruction",
-     description:
-      "Full Mouth Reconstruction: Transform Your Smile and Oral Health Full Mouth Reconstruction is a comprehensive dental solution designed to address multiple oral health issues while restoring the functionality and aesthetics of your entire mouth.",
-    image:
-      "/assets/images/treatments/tumblr_o6q4ycAodI1sfyngeo2_1280.jpg", // Replace with your actual image URL
-        icon: "https://cdn-icons-png.flaticon.com/512/5736/5736745.png",
-    content: `
+    },
+    {
+      slug: "full-mouth-reconstruction",
+      title: "Full Mouth Reconstruction",
+      description:
+        "Full Mouth Reconstruction: Transform Your Smile and Oral Health Full Mouth Reconstruction is a comprehensive dental solution designed to address multiple oral health issues while restoring the functionality and aesthetics of your entire mouth.",
+      image:
+        "/assets/images/treatments/tumblr_o6q4ycAodI1sfyngeo2_1280.jpg", // Replace with your actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736745.png",
+      content: `
     <h2>Full Mouth Reconstruction: Transform Your Smile and Oral Health</h2>
     <p>Full Mouth Reconstruction is a comprehensive dental solution designed to address multiple oral health issues while restoring the functionality and aesthetics of your entire mouth. This personalized treatment plan is tailored to meet your unique needs, whether you’re dealing with missing teeth, damaged or decayed teeth, bite alignment problems, or overall oral health concerns.</p>
 
@@ -507,15 +507,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <h3>Ready to Transform Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile!</p>
   `,
-  },
-  {
-    slug: "amalgam-removal-and-white-fillings",
-    title: "Amalgam Removal and White Fillings",
-    description:
-      " A Healthier, More Aesthetic Choice Say goodbye to dark, unsightly fillings and hello to a brighter, healthier smile! White fillings are a modern, mercury-free alternative to traditional silver (amalgam) fillings.",
-    image: "/assets/images/treatments/1-22.png", // Replace with your actual image URL
+    },
+    {
+      slug: "amalgam-removal-and-white-fillings",
+      title: "Amalgam Removal and White Fillings",
+      description:
+        " A Healthier, More Aesthetic Choice Say goodbye to dark, unsightly fillings and hello to a brighter, healthier smile! White fillings are a modern, mercury-free alternative to traditional silver (amalgam) fillings.",
+      image: "/assets/images/treatments/1-22.png", // Replace with your actual image URL
       icon: "https://cdn-icons-png.flaticon.com/512/616/616494.png",
-    content: `
+      content: `
     <h2>A Healthier, More Aesthetic Choice</h2>
     <p>Say goodbye to dark, unsightly fillings and hello to a brighter, healthier smile! White fillings are a modern, mercury-free alternative to traditional silver (amalgam) fillings. Not only do they offer excellent bond strength and durability comparable to metal fillings, but they also enhance the aesthetics of your teeth. Whether you’re dealing with a leaky metal filling or simply want a more natural look, replacing old amalgam fillings with white fillings is a safe and effective solution.</p>
 
@@ -540,16 +540,16 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <h3>Ready to Upgrade Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and learn more about amalgam removal and white fillings. Let us help you achieve a healthier, more beautiful smile!</p>
   `,
-  },
-  {
-    slug: "cosmetic-dentistry",
-    title: "Cosmetic Dentistry",
-    description:
-      "Cosmetic Dentistry: Transform Your Smile with Langley Care Dental Clinic Cosmetic dentistry is all about enhancing the beauty of your smile.",
-    image:
-      "/assets/images/treatments/tumblr_og2gy8QaPk1sfyngeo3_1280.jpg", // Replace with your actual image URL
-       icon: "https://cdn-icons-png.flaticon.com/512/5736/5736741.png",
-    content: `
+    },
+    {
+      slug: "cosmetic-dentistry",
+      title: "Cosmetic Dentistry",
+      description:
+        "Cosmetic Dentistry: Transform Your Smile with Langley Care Dental Clinic Cosmetic dentistry is all about enhancing the beauty of your smile.",
+      image:
+        "/assets/images/treatments/tumblr_og2gy8QaPk1sfyngeo3_1280.jpg", // Replace with your actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736741.png",
+      content: `
     <h2>Cosmetic Dentistry: Transform Your Smile with Langley Care Dental Clinic</h2>
     <p>Cosmetic dentistry is all about enhancing the beauty of your smile. Unlike traditional dentistry, which focuses on oral health and functionality, cosmetic dentistry is dedicated to improving the visual appeal of your teeth and gums. From whitening to veneers, these treatments are designed to create a radiant, harmonious smile that boosts your confidence.</p>
 
@@ -575,15 +575,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
     <h3>Ready to Enhance Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and explore the cosmetic dentistry options that are right for you. Let us help you achieve a smile you’ll love to show off!</p>
   `,
-  },
-  {
-  title: 'General Dentistry',
-  slug: 'general-dentistry',
-  image:'/assets/images/treatments/divesfikatsiya.jpg',
-   description:
-      "Maintaining optimal dental health is crucial for your overall well-being.",
-       icon: "https://cdn-icons-png.flaticon.com/512/616/616494.png",
-  content: `
+    },
+    {
+      title: 'General Dentistry',
+      slug: 'general-dentistry',
+      image: '/assets/images/treatments/divesfikatsiya.jpg',
+      description:
+        "Maintaining optimal dental health is crucial for your overall well-being.",
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616494.png",
+      content: `
     <h1>General Dentistry</h1>
 
     <p>Maintaining optimal dental health is crucial for your overall well-being. At Langley Care Dental Clinic, we pride ourselves on offering exceptional general dentistry services designed for every age group. From routine check-ups to advanced treatments, our family dental care ensures you and your loved ones achieve healthy, beautiful smiles.</p>
@@ -651,16 +651,16 @@ icon: "https://cdn-icons-png.flaticon.com/512/616/616556.png",
       <li><strong>Sedation Dentistry for Anxiety or Special Needs:</strong> Dental anxiety shouldn't stop you from receiving vital care. We offer sedation options to ensure a stress-free experience.</li>
     </ul>
   `,
-},
+    },
 
-  {
-    slug: "botox-treatment",
-    title: "Botox Treatment",
-     description:
-      "Maintaining optimal dental health is crucial for your overall well-being.",
-    image: "/assets/images/treatments/1-23.png", // Replace with your actual image URL
-icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
-    content: `
+    {
+      slug: "botox-treatment",
+      title: "Botox Treatment",
+      description:
+        "Maintaining optimal dental health is crucial for your overall well-being.",
+      image: "/assets/images/treatments/1-23.png", // Replace with your actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
+      content: `
     <h2>Botox Treatment in Dentistry: Therapeutic and Cosmetic Benefits</h2>
     <p>Botox isn’t just for cosmetic and medical purposes—it has valuable applications in dentistry as well. At Langley Care Dental Clinic, we use Botox for both therapeutic and cosmetic treatments to address a variety of oral and facial concerns. Whether you’re dealing with TMJ disorders, bruxism, or a gummy smile, Botox can be an effective solution when administered by trained professionals.</p>
 
@@ -693,16 +693,16 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Explore Botox in Dentistry?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule a consultation and learn how Botox can enhance your oral health and facial aesthetics. Let us help you achieve a healthier, more confident smile!</p>
   `,
-  },
-  {
-    slug: "cleaning-and-prevention",
-    title: "Cleaning and Prevention",
-     description:
-      "Cleaning and Prevention: The Foundation of a Healthy Smile Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Langley Care Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up.",
-    image:
-      "/assets/images/treatments/1-9.png", // Replace with your actual image URL
-       icon: "https://cdn-icons-png.flaticon.com/512/4320/4320345.png",
-    content: `
+    },
+    {
+      slug: "cleaning-and-prevention",
+      title: "Cleaning and Prevention",
+      description:
+        "Cleaning and Prevention: The Foundation of a Healthy Smile Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Langley Care Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up.",
+      image:
+        "/assets/images/treatments/1-9.png", // Replace with your actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/4320/4320345.png",
+      content: `
     <h2>Cleaning and Prevention: The Foundation of a Healthy Smile</h2>
     <p>Dental hygiene is a vital part of everyone’s daily routine—but are you doing it correctly at home? At Langley Care Dental Clinic, we ensure that nothing is overlooked during your cleaning and check-up. Our comprehensive dental hygiene services are designed to keep your teeth and gums healthy while preventing future issues.</p>
 
@@ -741,16 +741,16 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Prioritize Your Oral Health?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your cleaning and check-up. Let us help you achieve a healthier, brighter smile!</p>
   `,
-  },
-  {
-    slug: "crowns-and-bridges",
-    title: "Crowns and Bridges",
-     description:
-      "Crowns and Bridges: Restoring Function and Aesthetics Dental crowns and bridges are essential restorative treatments designed to address damaged or missing teeth.",
-    image:
-      "/assets/images/treatments/1-9.png", // Replace with your actual image URL
-        icon: "https://cdn-icons-png.flaticon.com/512/616/616554.png",
-    content: `
+    },
+    {
+      slug: "crowns-and-bridges",
+      title: "Crowns and Bridges",
+      description:
+        "Crowns and Bridges: Restoring Function and Aesthetics Dental crowns and bridges are essential restorative treatments designed to address damaged or missing teeth.",
+      image:
+        "/assets/images/treatments/1-9.png", // Replace with your actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616554.png",
+      content: `
     <h2>Crowns and Bridges: Restoring Function and Aesthetics</h2>
     <p>Dental crowns and bridges are essential restorative treatments designed to address damaged or missing teeth. Whether you need to restore a single tooth or replace multiple missing teeth, these solutions play a vital role in improving both the function and appearance of your smile.</p>
 
@@ -791,15 +791,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Restore Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and learn more about crowns and bridges. Let us help you achieve a healthier, more confident smile!</p>
   `,
-  },
-  {
-    slug: "dental-implants",
-    title: "Dental Implants",
-    description:
-      "Dental Implants: A Permanent Solution for a Natural Smile Dental implants are a revolutionary advancement in modern dentistry, offering a reliable and long-lasting way to restore both the function and aesthetics of your smile.",
-    image: "/assets/images/treatments/treatment-1.jpg", // Replace with your actual image URL
-     icon: "https://cdn-icons-png.flaticon.com/512/616/616655.png",
-    content: `
+    },
+    {
+      slug: "dental-implants",
+      title: "Dental Implants",
+      description:
+        "Dental Implants: A Permanent Solution for a Natural Smile Dental implants are a revolutionary advancement in modern dentistry, offering a reliable and long-lasting way to restore both the function and aesthetics of your smile.",
+      image: "/assets/images/treatments/treatment-1.jpg", // Replace with your actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616655.png",
+      content: `
     <h2>Dental Implants: A Permanent Solution for a Natural Smile</h2>
     <p>Dental implants are a revolutionary advancement in modern dentistry, offering a reliable and long-lasting way to restore both the function and aesthetics of your smile. These titanium posts are surgically placed into the jawbone, mimicking the natural tooth structure from root to crown. Not only do they provide a stable and secure fit, but they also stimulate the jawbone, preventing bone loss and maintaining facial structure over time.</p>
 
@@ -842,15 +842,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Restore Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and take the first step toward a healthier, more confident smile with dental implants!</p>
   `,
-  },
-  {
-    slug: "extractions-and-bone-grafting",
-    title: "Extractions and Bone Grafting",
-    description:
-      "Extractions and Bone Grafting: Preserving Oral Health and Preparing for Implants Tooth extractions and bone grafting are essential dental procedures that address a variety of oral health concerns.",
-    image: "/assets/images/treatments/1-17.png", // Replace with actual image URL
-     icon: "https://cdn-icons-png.flaticon.com/512/616/616650.png",
-    content: `
+    },
+    {
+      slug: "extractions-and-bone-grafting",
+      title: "Extractions and Bone Grafting",
+      description:
+        "Extractions and Bone Grafting: Preserving Oral Health and Preparing for Implants Tooth extractions and bone grafting are essential dental procedures that address a variety of oral health concerns.",
+      image: "/assets/images/treatments/1-17.png", // Replace with actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/616/616650.png",
+      content: `
     <h2>Extractions and Bone Grafting: Preserving Oral Health and Preparing for Implants</h2>
     <p>Tooth extractions and bone grafting are essential dental procedures that address a variety of oral health concerns. Whether performed together or separately, these treatments play a crucial role in maintaining oral health, restoring function, and preparing for future dental solutions like implants.</p>
 
@@ -893,15 +893,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Protect and Restore Your Oral Health?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and learn more about extractions and bone grafting. Let us help you build a strong foundation for a healthier, more confident smile!</p>
   `,
-  },
-  {
-    slug: "root-canal-treatment",
-    title: "Root Canal Treatment",
-    description:
-      "Root Canal Treatment: Save Your Natural Teeth Your teeth are precious, and at Langley Care Dental Clinic, we believe in preserving them whenever possible.",
-    image: "/assets/images/treatments/2-3.png", // Replace with actual image URL
-     icon: "https://cdn-icons-png.flaticon.com/512/5736/5736745.png",
-    content: `
+    },
+    {
+      slug: "root-canal-treatment",
+      title: "Root Canal Treatment",
+      description:
+        "Root Canal Treatment: Save Your Natural Teeth Your teeth are precious, and at Langley Care Dental Clinic, we believe in preserving them whenever possible.",
+      image: "/assets/images/treatments/2-3.png", // Replace with actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736745.png",
+      content: `
     <h2>Root Canal Treatment: Save Your Natural Teeth</h2>
     <p>Your teeth are precious, and at Langley Care Dental Clinic, we believe in preserving them whenever possible. Root canal treatment (RCT), also known as endodontic therapy, is a highly effective procedure designed to treat infection or damage within the pulp (soft tissue) of a tooth. By addressing the issue promptly, RCT can save your natural tooth, relieve pain, and restore your oral health.</p>
 
@@ -946,15 +946,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Don’t Wait to Address Tooth Pain</h3>
     <p>If you’re experiencing symptoms or suspect you may need a root canal, contact Langley Care Dental Clinic today. Let us help you save your tooth and restore your smile with expert care!</p>
   `,
-  },
-  {
-    slug: "teeth-whitening",
-    title: "Teeth Whitening",
-    description:
-      "Teeth Whitening: Brighten Your Smile with Langley Care Dental Clinic Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging.",
-    image: "/assets/images/treatments/treatment-1.jpg", // Replace with actual image URL
-     icon: "https://cdn-icons-png.flaticon.com/512/5736/5736727.png",
-    content: `
+    },
+    {
+      slug: "teeth-whitening",
+      title: "Teeth Whitening",
+      description:
+        "Teeth Whitening: Brighten Your Smile with Langley Care Dental Clinic Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging.",
+      image: "/assets/images/treatments/treatment-1.jpg", // Replace with actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736727.png",
+      content: `
     <h2>Teeth Whitening: Brighten Your Smile with Langley Care Dental Clinic</h2>
     <p>Over time, teeth can become yellow or stained due to genetics, lifestyle habits, or aging. Teeth whitening is a safe and effective way to restore the brightness of your smile, giving you a more youthful and confident appearance. At Langley Care Dental Clinic, we offer professional whitening solutions tailored to your needs.</p>
 
@@ -985,15 +985,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Brighten Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and explore our teeth whitening options. Let us help you achieve a brighter, more confident smile!</p>
   `,
-  },
-  {
-    slug: "smile-makeovers",
-    title: "Smile Makeovers",
-    description:
-      "Smile Makeovers: Transform Your Smile, Transform Your Life A Smile Makeover is a personalized and comprehensive approach to enhancing the beauty of your smile.",
-    image: "/assets/images/treatments/woman-sits-dental-chair-doctors-bowed-her-1280x748.jpg", // Replace with actual image URL
-    icon: "https://cdn-icons-png.flaticon.com/512/5736/5736741.png",
-    content: `
+    },
+    {
+      slug: "smile-makeovers",
+      title: "Smile Makeovers",
+      description:
+        "Smile Makeovers: Transform Your Smile, Transform Your Life A Smile Makeover is a personalized and comprehensive approach to enhancing the beauty of your smile.",
+      image: "/assets/images/treatments/woman-sits-dental-chair-doctors-bowed-her-1280x748.jpg", // Replace with actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736741.png",
+      content: `
     <h2>Smile Makeovers: Transform Your Smile, Transform Your Life</h2>
     <p>A Smile Makeover is a personalized and comprehensive approach to enhancing the beauty of your smile. By combining various cosmetic and restorative dental treatments, this transformative process goes beyond individual procedures to create a harmonious, radiant, and confident smile. At Langley Care Dental Clinic, we specialize in delivering stunning results tailored to your unique needs and goals.</p>
 
@@ -1032,15 +1032,15 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready to Transform Your Smile?</h3>
     <p>Contact Langley Care Dental Clinic today to schedule your consultation and begin your Smile Makeover journey. Let us help you achieve a radiant, confident smile that lasts a lifetime!</p>
   `,
-  },
-{
-  slug: "sedation-dentistry",
-  title: "Sedation Dentistry",
-   description:
-      "Sedation Dentistry: Relax and Enjoy a Stress-Free Dental Experience For many individuals, dental anxiety or fear can make visiting the dentist a daunting experience.",
-  image: "/assets/images/treatments/dentist-examine-female-patient-with-braces-denal-office.jpg", // Replace with the actual image URL
-   icon: "https://cdn-icons-png.flaticon.com/512/5736/5736752.png",
-  content: `
+    },
+    {
+      slug: "sedation-dentistry",
+      title: "Sedation Dentistry",
+      description:
+        "Sedation Dentistry: Relax and Enjoy a Stress-Free Dental Experience For many individuals, dental anxiety or fear can make visiting the dentist a daunting experience.",
+      image: "/assets/images/treatments/dentist-examine-female-patient-with-braces-denal-office.jpg", // Replace with the actual image URL
+      icon: "https://cdn-icons-png.flaticon.com/512/5736/5736752.png",
+      content: `
     <h2>Sedation Dentistry: Relax and Enjoy a Stress-Free Dental Experience</h2>
     <p>For many individuals, dental anxiety or fear can make visiting the dentist a daunting experience. Sedation dentistry offers a specialized approach to help patients feel calm, relaxed, and comfortable during dental procedures. By using safe and effective sedatives, this technique ensures a stress-free visit, whether for routine check-ups or more complex treatments.</p>
 
@@ -1084,92 +1084,92 @@ icon: "https://cdn-icons-png.flaticon.com/512/4320/4320337.png",
     <h3>Ready for a Stress-Free Dental Visit?</h3>
     <p>Contact Langley Care Dental Clinic today to learn more about sedation dentistry and schedule your consultation. Let us help you achieve a healthier smile in a calm and comfortable environment!</p>
   `
-}
-    ];
-    return (
-        <section>
-            <div className="section-gap">
-                <div className="w-layout-blockcontainer container w-container">
-                    <div className="flex justify-center items-center gap-2 mb-2">
-                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                        <span className="text-sm font-medium tracking-widest text-gray-600 uppercase">
-                            Treatments We Offer
-                        </span>
-                    </div>
-                    <h2 className="text-4xl md:text-6xl jost-font font-bold text-[#0d072c] leading-tight text-center">
-                        Dentistry for the whole <br /> Family
-                    </h2>
+    }
+  ];
+  return (
+    <section className="bg-gradient-to-tr from-blue-50/80 via-white to-indigo-50/80 relative">
+      <div className="section-gap">
+        <div className="w-layout-blockcontainer container w-container">
+          <div className="flex justify-center items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+            <span className="text-sm font-medium tracking-widest text-gray-600 uppercase">
+              Treatments We Offer
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-6xl jost-font font-bold text-[#0d072c] leading-tight text-center">
+            Dentistry for the whole <br /> Family
+          </h2>
 
-                    <div className="service-two w-dyn-list">
-                        <div className="service-two-list grid w-dyn-items">
-                            {services.map((service, index) => (
-                                <div
-                                    key={index}
-                                    className="service-two-item w-dyn-item h-full"
-                                    style={{
-                                        opacity: 1,
-                                        transform:
-                                            "translate3d(0px, 0px, 0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                        transformStyle: "preserve-3d",
-                                    }}
-                                >
-                                    <Link
-                                       href={`/services/${service.slug}`}
-                                        className="service-two-link w-inline-block h-full flex flex-col"
-                                    >
-                                        <div className="service-two-image-wrap w-full h-52 overflow-hidden rounded-md">
-                                            <img
-                                                src={service.image}
-                                                alt={service.title}
-                                                className="service-two-image object-cover"
-                                                width={500}
-                                                height={250}
-                                                loading="lazy"
-                                                style={{
-                                                    transform:
-                                                        "translate3d(0px, 0px, 0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                                    transformStyle:
-                                                        "preserve-3d",
-                                                    borderBottomColor:
-                                                        "rgba(0,0,0,0)",
-                                                    willChange: "transform",
-                                                }}
-                                            />
-                                        </div>
-                                        <div className="service-two-icon-wrap">
-                                            <div className="service-two-icon-border">
-                                                <img
-                                                    src={service.icon}
-                                                    alt="Service Icon"
-                                                    className="service-two-icon"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="service-two-overlay">
-                                            <h4 className="service-two-title">
-                                                {service.title}
-                                            </h4>
-                                            <div className="service-two-line"></div>
-                                            <div className="service-two-text">
-                                                {service.description}
-                                            </div>
-                                            <Link
-                                                href={`/services/${service.slug}`}
-                                                className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-                                            >
-                                                Read More
-                                            </Link>
-                                        </div>
-                                    </Link>
-                                </div>
-                            ))}
-                        </div>
+          <div className="service-two w-dyn-list">
+            <div className="service-two-list grid w-dyn-items">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="service-two-item w-dyn-item h-full"
+                  style={{
+                    opacity: 1,
+                    transform:
+                      "translate3d(0px, 0px, 0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                    transformStyle: "preserve-3d",
+                  }}
+                >
+                  <Link
+                    href={`/services/${service.slug}`}
+                    className="service-two-link w-inline-block h-full flex flex-col"
+                  >
+                    <div className="service-two-image-wrap w-full h-52 overflow-hidden rounded-md">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="service-two-image object-cover"
+                        width={500}
+                        height={250}
+                        loading="lazy"
+                        style={{
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                          transformStyle:
+                            "preserve-3d",
+                          borderBottomColor:
+                            "rgba(0,0,0,0)",
+                          willChange: "transform",
+                        }}
+                      />
                     </div>
+                    <div className="service-two-icon-wrap">
+                      <div className="service-two-icon-border">
+                        <img
+                          src={service.icon}
+                          alt="Service Icon"
+                          className="service-two-icon"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div className="service-two-overlay">
+                      <h4 className="service-two-title">
+                        {service.title}
+                      </h4>
+                      <div className="service-two-line"></div>
+                      <div className="service-two-text">
+                        {service.description}
+                      </div>
+                      <Link
+                        href={`/services/${service.slug}`}
+                        className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  </Link>
                 </div>
+              ))}
             </div>
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Services;

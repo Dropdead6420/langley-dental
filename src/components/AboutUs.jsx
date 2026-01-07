@@ -14,7 +14,7 @@ export default function AboutUs() {
         {/* Left Image */}
         <div className="overflow-hidden rounded-2xl shadow-xl max-h-[600px]">
           <Image
-            src="/assets/images/satpreet-singh.png" // replace with actual image in /public folder
+            src="/clinic.webp" // replace with actual image in /public folder
             alt="Dental Care"
             width={700}
             height={500}
@@ -23,19 +23,19 @@ export default function AboutUs() {
         </div>
 
         {/* Right Content */}
-        <div className="text-slate-800 space-y-6 wow fadeInUp">
+        <div className="text-slate-800 space-y-6 wow fadeInUp ">
           <h4 className="text-sm font-semibold !tracking-tight !jost-font uppercase text-blue-500">
             Welcome to Langley  dental Office
           </h4>
           <h1 className="!text-4xl md:!text-5xl font-bold !jost-font !tracking-tight text-slate-900">
            {/* Dental care is our game. <br /> */}
-            <span className="text-blue-600">Excellence is our goal.</span>
+            <span className="text-[#05C7F2]">Excellence is our goal.</span>
           </h1>
           <p className="!text-base md:text-lg !mt-[20px] text-slate-600 !leading-relaxed">
            We are conveniently located in 20654 Fraser Hwy Unit #1, Langley, BC V3A 4G5, Canada. We have a huge parking lot and it’s free at all the times. At Langley Dental our goal is to care for your teeth and help you maintain them.
           </p>
           {open && (
-          <p className="!text-base md:text-lg text-slate-600 !leading-relaxed">
+          <p className="!text-base md:text-lg text-slate-600 !leading-relaxed !mb-10">
            Our brand new, state of the art dental office uses the latest technology for your dental treatment. We provide dental care for your whole family. Whether you are looking for regular checkup and cleanings, cosmetic dentistry or a specific concern,  you are always welcome.
           </p>
           )}

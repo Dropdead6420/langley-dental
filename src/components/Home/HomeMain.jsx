@@ -7,6 +7,7 @@ import ImageSwitcher from "./ImageSwitcher";
 import WhyChoose from "./WhyChoose";
 import Testimonials from "./TestiMonials";
 import Gallery from "./Gallery";
+import LocationSection from "./LocationSection";
 
 
 const HomeMain = () => {
@@ -15,11 +16,12 @@ const HomeMain = () => {
       <HeroSection />
       <AboutUs />
       <Services />
-      <WhyChoose />
-      <ImageSwitcher />
+      {/* <WhyChoose /> */}
+      {/* <ImageSwitcher /> */}
       <Gallery />
       <Testimonials />
       <CircleService />
+      <LocationSection />
     </>
   );
 };

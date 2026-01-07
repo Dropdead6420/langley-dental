@@ -30,8 +30,8 @@ const ContactMain = () => {
     const lastName = rest.join(" ");
     const phone = form.get("Phone")?.replace(/\D/g, "").slice(0, 10) || "";
 
-if (phone.length !== 10)
-  return toast.error("Enter a 10-digit phone number.");
+    if (phone.length !== 10)
+      return toast.error("Enter a 10-digit phone number.");
 
     const apiPayload = {
       firstName,
@@ -181,19 +181,19 @@ if (phone.length !== 10)
                         />
                       </div>
                     </div>
-                     <div className="contact-input-wrap">
-                          <div className="text-body">Phone</div>
-                          <input
-                            className="text-field contact-b w-input"
-                            name="Phone"
-                            placeholder="10-digit phone number"
-                            maxLength={10}
-                            required
-                            onInput={(e) => {
-                              e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
-                            }}
-                          />
-                        </div>
+                    <div className="contact-input-wrap">
+                      <div className="text-body">Phone</div>
+                      <input
+                        className="text-field contact-b w-input"
+                        name="Phone"
+                        placeholder="10-digit phone number"
+                        maxLength={10}
+                        required
+                        onInput={(e) => {
+                          e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
+                        }}
+                      />
+                    </div>
 
                     <div className="contact-input-wrap">
                       <div className="text-body">Message</div>
@@ -207,7 +207,7 @@ if (phone.length !== 10)
 
                     <input
                       type="submit"
-                      className="cta-main w-button"
+                      className="cta-main w-button !text-white"
                       value="Send message"
                     />
                   </form>
